@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function OurCentres() {
-  const [selectedCity, setSelectedCity] = useState('Delhi');
+  const [selectedCity, setSelectedCity] = useState('Haryana');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 

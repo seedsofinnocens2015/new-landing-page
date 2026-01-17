@@ -22,7 +22,7 @@ export default function FindUsHere() {
             <div className="w-full md:w-1/2 flex justify-center">
               <div className="relative w-full max-w-md h-auto">
                 <Image
-                  src="/assets/image/malviyanagar.webp"
+                  src="/assets/image/Gurugram.webp"
                   alt="Seeds Of Innocens Women & Children's Hospital"
                   width={500}
                   height={600}
@@ -57,7 +57,7 @@ export default function FindUsHere() {
                 </div>
                 {/* Address Text */}
                 <p className="text-gray-800 text-base md:text-lg leading-relaxed">
-                3, opposite Aurbindo College, MMTC Colony, Malviya Nagar, New Delhi, Delhi 110017
+                Plot No-2, near Nagar Nigam Office, Sector 42, Gurugram, Haryana 122009
                 </p>
               </div>
 
@@ -86,7 +86,7 @@ export default function FindUsHere() {
                 {/* Phone Number in Rounded Box */}
                 <div className="flex-1 px-4 py-3 bg-white">
                   <p className="text-gray-800 text-base md:text-lg font-medium">
-                    96203 96203
+                  98103 50512
                   </p>
                 </div>
               </div>
