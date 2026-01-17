@@ -22,7 +22,7 @@ export default function FindUsHere() {
             <div className="w-full md:w-1/2 flex justify-center">
               <div className="relative w-full max-w-md h-auto">
                 <Image
-                  src="/assets/image/malviyanagar.webp"
+                  src="/assets/image/kochi.webp"
                   alt="Seeds Of Innocens Women & Children's Hospital"
                   width={500}
                   height={600}
@@ -57,7 +57,7 @@ export default function FindUsHere() {
                 </div>
                 {/* Address Text */}
                 <p className="text-gray-800 text-base md:text-lg leading-relaxed">
-                3, opposite Aurbindo College, MMTC Colony, Malviya Nagar, New Delhi, Delhi 110017
+                Opp Royal drive showroom, land mark near SBI Bank, Kannadikadu, Upasana Rd, Kundannoor, Maradu, Kochi, Kerala 682304
                 </p>
               </div>
 
