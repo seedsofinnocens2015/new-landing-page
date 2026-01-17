@@ -1,13 +1,13 @@
-import Banner from './malviyanagarcomponents/Banner';
-import PackageIncludes from './malviyanagarcomponents/PackageIncludes';
-import Specialists from './malviyanagarcomponents/Specialists';
-import WhyChoose from './malviyanagarcomponents/WhyChoose';
-import OurServices from './malviyanagarcomponents/OurServices';
-import PatientSuccessStories from './malviyanagarcomponents/PatientSuccessStories';
-import OurCentres from './malviyanagarcomponents/OurCentres';
-import FAQs from './malviyanagarcomponents/FAQs';
-import Awards from './malviyanagarcomponents/Awards';
-import FindUsHere from './malviyanagarcomponents/FindUsHere';
+import Banner from './delhicomponents/Banner';
+import PackageIncludes from './delhicomponents/PackageIncludes';
+import Specialists from './delhicomponents/Specialists';
+import WhyChoose from './delhicomponents/WhyChoose';
+import OurServices from './delhicomponents/OurServices';
+import PatientSuccessStories from './delhicomponents/PatientSuccessStories';
+import OurCentres from './delhicomponents/OurCentres';
+import FAQs from './delhicomponents/FAQs';
+import Awards from './delhicomponents/Awards';
+import FindUsHere from './delhicomponents/FindUsHere';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

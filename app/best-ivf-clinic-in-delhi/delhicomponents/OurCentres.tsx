@@ -175,13 +175,13 @@ export default function OurCentres() {
               }`}
               style={selectedCity === city.name ? { backgroundColor: '#F4DD95' } : {}}
             >
-              <Image
+                {/* <Image
                 src={city.icon}
                 alt={city.name}
                 width={14}
                 height={14}
                 className="w-3.5 h-3.5"
-              />
+              /> */}
               <span className="font-medium text-sm whitespace-nowrap">{city.name}</span>
             </button>
           ))}

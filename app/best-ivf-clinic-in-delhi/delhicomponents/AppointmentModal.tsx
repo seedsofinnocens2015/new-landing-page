@@ -30,7 +30,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
       const payload = {
         fullName: formData.fullName,
         phoneNumber: formData.phoneNumber,
-        source: 'Gurugram Google Ads',
+        source: 'Delhi Google Ads',
         message: `Language preference: ${formData.language || 'Not specified'}`,
       };
 

@@ -24,7 +24,7 @@ export default function Banner() {
       const payload = {
         fullName: formData.fullName,
         phoneNumber: formData.phoneNumber,
-        source: 'Kochi Google Ads',
+        source: 'Delhi Google Ads',
         message: `Language preference: ${formData.language || 'Not specified'}`,
       };
 
@@ -88,7 +88,7 @@ export default function Banner() {
       {/* Desktop Banner Image */}
       <div className="relative w-full hidden md:block">
         <img 
-          src="/assets/image/kochi.svg"
+          src="/assets/image/delhi.svg"
           alt="Banner"
           className="w-full h-auto"
         />
@@ -97,7 +97,7 @@ export default function Banner() {
       {/* Mobile Banner Image */}
       <div className="relative w-full block md:hidden">
         <img 
-          src="/assets/image/kochi.svg"
+          src="/assets/image/koka1.svg"
           alt="Banner Mobile"
           className="w-full h-auto"
         />

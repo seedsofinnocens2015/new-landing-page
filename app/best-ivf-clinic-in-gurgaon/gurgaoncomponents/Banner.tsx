@@ -88,7 +88,7 @@ export default function Banner() {
       {/* Desktop Banner Image */}
       <div className="relative w-full hidden md:block">
         <img 
-          src="/assets/image/koka.svg"
+          src="/assets/image/gurgaon.svg"
           alt="Banner"
           className="w-full h-auto"
         />

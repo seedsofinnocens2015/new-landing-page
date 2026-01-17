@@ -19,40 +19,40 @@ export default function Specialists() {
   const specialists = [
     {
       id: 1,
-      name: 'Dr. Gauri Agarwal',
+      name: 'Dr. Sonia Raju',
       qualifications: 'MD, DNB, MBBS',
       specialization: 'IVF, Reproductive Endocrinology, Advanced Fertility Techniques',
-      experience: '15+ Years',
-      location: 'Delhi/NCR',
-      image: '/assets/image/gaurimam.jpg', // Update with actual image path
+      experience: '10+ Years',
+      location: 'Kochi, Kerala',
+      image: '/assets/image/Dr. Sonia Raju.png', // Update with actual image path
     },
     {
       id: 2,
-      name: 'Dr. Aditi Bhatnagar',
+      name: 'Dr. Vinod Kumar B',
       qualifications: 'MBBS, MD (Obstetrics & Gynecology), Fellowship in IVF',
       specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
-      experience: '12+ Years',
-      location: 'Gurugram, Haryana',
-      image: '/assets/image/Dr. Aditi Bhatnagar.jpg', // Update with actual image path
+      experience: '7+ Years',
+      location: 'Kochi, Kerala',
+      image: '/assets/image/DR. VINOD KUMAR B.png', // Update with actual image path
     },
     {
       id: 3,
-      name: 'Dr. Lisha Singh',
+      name: 'Dr. Jasna Mohammed',
       qualifications: 'MBBS, DGO, DNB, Fellowship in IVF',
       specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
       experience: '7+ Years',
-      location: 'Malviya Nagar, New Delhi',
-      image: '/assets/image/Dr. Lisha Singh.jpg', // Update with actual image path
+      location: 'Kochi, Kerala',
+      image: '/assets/image/Dr.-jASNA.png', // Update with actual image path
     },
-    {
-        id: 4,
-        name: 'Dr. Manju Gupta',
-        qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in ART',
-        specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',
-        experience: '8+ Years',
-        location: 'Pitampura, Delhi',
-        image: '/assets/image/Monika.png', // Update with actual image path
-      },
+    // {
+    //     id: 4,
+    //     name: 'Dr. Manju Gupta',
+    //     qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in ART',
+    //     specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',
+    //     experience: '8+ Years',
+    //     location: 'Pitampura, Delhi',
+    //     image: '/assets/image/Monika.png', // Update with actual image path
+    //   },
   ];
 
   return (
@@ -64,15 +64,37 @@ export default function Specialists() {
         </h2>
 
         {/* Specialists Cards Container */}
-        <div className="relative max-w-6xl mx-auto">
+        <div className="relative max-w-6xl mx-auto mt-10">
           {/* Cards Container with Overflow */}
           <div className="overflow-hidden mb-12 md:mb-0">
             <div 
               className="flex gap-6 transition-transform duration-300 ease-in-out"
               style={{ 
-                transform: isMobile 
-                  ? `translateX(calc(-${currentIndex} * (100% + 1.5rem)))`
-                  : `translateX(calc(-${currentIndex} * (100% / 3 + 1.5rem)))`
+                transform: (() => {
+                  const visibleCards = isMobile ? 1 : 3;
+                  const hasFewerCards = specialists.length < visibleCards;
+                  
+                  if (hasFewerCards) {
+                    // Center the cards when there are fewer than visible
+                    if (isMobile) {
+                      // For mobile: center 1 card
+                      return 'translateX(0)';
+                    } else {
+                      // For desktop: center 1 or 2 cards
+                      if (specialists.length === 1) {
+                        return 'translateX(calc((100% / 3 + 1.5rem) * 1))';
+                      } else if (specialists.length === 2) {
+                        return 'translateX(calc((100% / 3 + 1.5rem) * 0.5))';
+                      }
+                      return 'translateX(0)';
+                    }
+                  }
+                  
+                  // Normal transform for when we have enough cards
+                  return isMobile 
+                    ? `translateX(calc(-${currentIndex} * (100% + 1.5rem)))`
+                    : `translateX(calc(-${currentIndex} * (100% / 3 + 1.5rem)))`;
+                })()
               }}
             >
               {specialists.map((specialist) => (
