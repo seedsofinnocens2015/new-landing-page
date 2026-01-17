@@ -97,7 +97,7 @@ export default function Banner() {
       {/* Mobile Banner Image */}
       <div className="relative w-full block md:hidden">
         <img 
-          src="/assets/image/koka1.svg"
+          src="/assets/image/gurgaon1.svg"
           alt="Banner Mobile"
           className="w-full h-auto"
         />
