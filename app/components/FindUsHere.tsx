@@ -23,7 +23,7 @@ export default function FindUsHere() {
               <div className="relative w-full max-w-md h-auto">
                 <Image
                   src="/assets/image/malviyanagar.webp"
-                  alt="Motherhood Women & Children's Hospital"
+                  alt="Seeds Of Innocens Women & Children's Hospital"
                   width={500}
                   height={600}
                   className="w-full h-auto object-contain"

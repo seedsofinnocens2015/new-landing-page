@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Motherhood Fertility & IVF",
-  description: "Motherhood Fertility & IVF",
+  title: "Seeds Of Innocens Fertility & IVF",
+  description: "Seeds Of Innocens Fertility & IVF",
 };
 
 export default function RootLayout({

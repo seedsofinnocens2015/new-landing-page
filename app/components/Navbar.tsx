@@ -15,7 +15,7 @@ export default function Navbar() {
                     <div className="flex items-center gap-2">
                         <Image
                             src="/assets/image/Header Logo.svg"
-                            alt="Motherhood Fertility & IVF Logo"
+                            alt="Seeds Of Innocens Fertility & IVF Logo"
                             width={200}
                             height={60}
                             className="h-auto"

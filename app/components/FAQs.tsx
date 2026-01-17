@@ -8,23 +8,23 @@ export default function FAQs() {
   const faqs = [
     {
       id: 1,
-      question: 'What is IVF and how does it work?',
-      answer: 'IVF (In Vitro Fertilization) is a fertility treatment where eggs are retrieved from the ovaries and fertilized with sperm in a laboratory. The fertilized eggs (embryos) are then transferred to the uterus.',
+      question: 'How do I choose the best IVF doctor near me?',
+      answer: 'If you are looking for an experience, personalized treatment, and patient reviews. At Seeds of Innocens, our IVF specialists in Gurgaon will follow evidence-based protocols and will provide individualized fertility care.',
     },
     {
       id: 2,
-      question: 'What is the success rate for IVF?',
-      answer: 'The success rate of IVF varies depending on factors like age, medical history, and the specific clinic. On average, success rates range from 40-50% for women under 35, and decrease with age.',
+      question: 'When should I consult a fertility doctor?',
+      answer: 'If you’ve been trying to conceive for over 12 months (or 6 months if you’re above 35), it’s advisable to consult a fertility doctor near me for proper evaluation and guidance.',
     },
     {
       id: 3,
-      question: 'How long does the IVF process take?',
-      answer: 'A complete IVF cycle typically takes about 4-6 weeks, including ovarian stimulation, egg retrieval, fertilization, embryo development, and embryo transfer.',
+      question: 'Do you offer treatment for failed IVF cases?',
+      answer: 'Yes, We specialize in evaluating and treating recurrent IVF failures through detailed diagnostics, uterine assessment, and embryo analysis when required',
     },
     {
       id: 4,
-      question: 'How much does IVF cost?',
-      answer: 'IVF costs vary by location and clinic, typically ranging from ₹1.5 lakh to ₹3 lakh per cycle in India. Costs may include medications, procedures, and additional services.',
+      question: 'Is IVF painful or complicated?',
+      answer: 'IVF is a structured medical process. While certain steps may cause mild discomfort, our team ensures your comfort and explains every stage clearly before proceeding.',
     },
   ];
 

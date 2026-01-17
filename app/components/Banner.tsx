@@ -129,7 +129,7 @@ export default function Banner() {
                 htmlFor="consent"
                 className="text-sm text-gray-600 leading-relaxed cursor-pointer"
               >
-                I consent to get contacted by Motherhood IVF representatives
+                I consent to get contacted by Seeds Of Innocens IVF representatives
               </label>
             </div>
 
