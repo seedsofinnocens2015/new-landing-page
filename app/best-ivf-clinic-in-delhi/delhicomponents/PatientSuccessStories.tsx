@@ -141,7 +141,7 @@ export default function PatientSuccessStories() {
         {/* Reviews and Ratings Section */}
         <div className="max-w-4xl mx-auto mt-16">
           {/* Top Ratings Section */}
-          <div className="flex flex-col md:flex-row">
+          <div className="flex flex-row justify-center items-center gap-6 md:flex-row md:justify-center md:gap-0">
             {/* Google Reviews */}
             <div className="text-center md:mx-auto md:w-auto">
               <div className="text-7xl font-bold text-black mb-2">4.8</div>
