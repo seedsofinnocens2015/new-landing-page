@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function OurCentres() {
-  const [selectedCity, setSelectedCity] = useState('Delhi');
+  const [selectedCity, setSelectedCity] = useState('Kerala');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -58,7 +58,7 @@ export default function OurCentres() {
     {
       id: 5,
       location: 'Lucknow',
-      image: '/gads/assets/image/lucknow3.webp',
+      image: '/gads/assets/image/lucknow.webp',
       city: 'Uttar Pradesh',
     },
     {

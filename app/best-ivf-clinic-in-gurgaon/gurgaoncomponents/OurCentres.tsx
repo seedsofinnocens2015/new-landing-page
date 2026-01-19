@@ -58,7 +58,7 @@ export default function OurCentres() {
     {
       id: 5,
       location: 'Lucknow',
-      image: '/gads/assets/image/lucknow3.webp',
+      image: '/gads/assets/image/lucknow.webp',
       city: 'Uttar Pradesh',
     },
     {
