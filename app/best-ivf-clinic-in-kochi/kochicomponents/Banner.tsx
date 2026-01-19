@@ -88,7 +88,7 @@ export default function Banner() {
       {/* Desktop Banner Image */}
       <div className="relative w-full hidden md:block">
         <img 
-          src="/assets/image/kochi.svg"
+          src="/gads/assets/image/kochi.svg"
           alt="Banner"
           className="w-full h-auto"
         />
@@ -97,7 +97,7 @@ export default function Banner() {
       {/* Mobile Banner Image */}
       <div className="relative w-full block md:hidden">
         <img 
-          src="/assets/image/kochi1.svg"
+          src="/gads/assets/image/kochi1.svg"
           alt="Banner Mobile"
           className="w-full h-auto"
         />

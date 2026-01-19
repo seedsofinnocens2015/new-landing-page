@@ -25,29 +25,29 @@ npm run build
 
 3. **File Structure:**
    ```
-   public_html/gads/
+   public_htmlgads/
    ├── _next/
    ├── best-ivf-clinic-in-delhi/
    ├── best-ivf-clinic-in-gurgaon/
    ├── best-ivf-clinic-in-kochi/
    ├── ... (other routes)
-   ├── assets/
+   ├── gads/assets/
    ├── index.html
    └── ... (other files)
    ```
 
 ## Step 3: Configure .htaccess (Optional but Recommended)
 
-`public_html/gads` folder में `.htaccess` file बनाएं:
+`public_htmlgads` folder में `.htaccess` file बनाएं:
 
 ```apache
 RewriteEngine On
-RewriteBase /gads/
+RewriteBase gads/
 
 # Handle Next.js routing
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /gads/$1.html [L]
+RewriteRule ^(.*)$ gads/$1.html [L]
 
 # Redirect .html extension
 RewriteCond %{REQUEST_FILENAME}.html -f
@@ -56,7 +56,7 @@ RewriteRule ^(.*)$ $1.html [L]
 
 ## Step 4: Verify
 
-1. Browser में अपनी website खोलें: `https://yourdomain.com/gads/`
+1. Browser में अपनी website खोलें: `https://yourdomain.comgads/`
 2. सभी pages check करें कि वे properly load हो रहे हैं
 
 ## Troubleshooting

@@ -7,28 +7,28 @@ export default function WhyChoose() {
       id: 1,
       number: '20,000+',
       description: 'Healthy Babies',
-      icon: '/assets/image/icons/healthybabies.svg',
+      icon: '/gads/assets/image/icons/healthybabies.svg',
       bgColor: '#CBC8F4', // Light purple
     },
     {
       id: 2,
       number: '30+',
       description: 'Doctors',
-      icon: '/assets/image/icons/doctors.svg',
+      icon: '/gads/assets/image/icons/doctors.svg',
       bgColor: '#F4B5AC', // Light orange/coral
     },
     {
       id: 3,
       number: '35+',
       description: 'IVF Centres',
-      icon: '/assets/image/icons/ivfcentres.svg',
+      icon: '/gads/assets/image/icons/ivfcentres.svg',
       bgColor: '#F6BDDE', // Light pink
     },
     {
       id: 4,
       number: '78%+',
       description: 'Success Rate',
-      icon: '/assets/image/icons/successrate.svg',
+      icon: '/gads/assets/image/icons/successrate.svg',
       bgColor: '#F4DD95', // Light yellow
     },
   ];

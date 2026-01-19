@@ -7,37 +7,37 @@ export default function OurServices() {
       id: 1,
       title: 'Egg Freezing',
       description: 'Preserve your fertility by safely freezing semen or eggs now for future pregnancy plans.',
-      icon: '/assets/image/icons/eggfreezing.svg',
+      icon: '/gads/assets/image/icons/eggfreezing.svg',
     },
     {
       id: 2,
       title: 'Embryo Freezing',
       description: 'Preserve future pregnancy options by safely freezing embryos created with your eggs and sperm today.',
-      icon: '/assets/image/icons/embryofreezing.svg',
+      icon: '/gads/assets/image/icons/embryofreezing.svg',
     },
     {
       id: 3,
       title: 'Oocyte Vitrification',
       description: 'Protect your fertility by rapidly freezing your eggs with advanced vitrification for future pregnancy plans.',
-      icon: '/assets/image/icons/oocyte.svg',
+      icon: '/gads/assets/image/icons/oocyte.svg',
     },
     {
       id: 4,
       title: 'Laser Assisted Hatching',
       description: 'A gentle laser is used to thin the embryo\'s outer shell, helping it hatch and attach better to the uterus.',
-      icon: '/assets/image/icons/laser.svg',
+      icon: '/gads/assets/image/icons/laser.svg',
     },
     {
       id: 5,
       title: 'Reproductive Surgery',
       description: 'Specialized surgeries to correct reproductive problems and improve your chances of natural or assisted pregnancy.',
-      icon: '/assets/image/icons/reproductive.svg',
+      icon: '/gads/assets/image/icons/reproductive.svg',
     },
     {
       id: 6,
       title: 'Ovulation Induction',
       description: 'Medicines are used to gently stimulate your ovaries so they release eggs regularly and improve your chances of pregnancy.',
-      icon: '/assets/image/icons/ovulation.svg',
+      icon: '/gads/assets/image/icons/ovulation.svg',
     },
   ];
 

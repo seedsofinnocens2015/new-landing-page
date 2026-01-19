@@ -24,7 +24,7 @@ export default function Specialists() {
       specialization: 'IVF, Reproductive Endocrinology, Advanced Fertility Techniques',
       experience: '10+ Years',
       location: 'Kochi, Kerala',
-      image: '/assets/image/Dr. Sonia Raju.png', // Update with actual image path
+      image: '/gads/assets/image/Dr. Sonia Raju.png', // Update with actual image path
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export default function Specialists() {
       specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
       experience: '7+ Years',
       location: 'Kochi, Kerala',
-      image: '/assets/image/DR. VINOD KUMAR B.png', // Update with actual image path
+      image: '/gads/assets/image/DR. VINOD KUMAR B.png', // Update with actual image path
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ export default function Specialists() {
       specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
       experience: '7+ Years',
       location: 'Kochi, Kerala',
-      image: '/assets/image/Dr.-jASNA.png', // Update with actual image path
+      image: '/gads/assets/image/Dr.-jASNA.png', // Update with actual image path
     },
     // {
     //     id: 4,
@@ -51,7 +51,7 @@ export default function Specialists() {
     //     specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',
     //     experience: '8+ Years',
     //     location: 'Pitampura, Delhi',
-    //     image: '/assets/image/Monika.png', // Update with actual image path
+    //     image: '/gads/assets/image/Monika.png', // Update with actual image path
     //   },
   ];
 

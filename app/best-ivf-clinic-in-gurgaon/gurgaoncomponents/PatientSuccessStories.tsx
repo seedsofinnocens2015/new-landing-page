@@ -148,7 +148,7 @@ export default function PatientSuccessStories() {
               <div className="text-xs text-gray-600">1,956 reviews</div>
               <div className="flex flex-col items-center">
                 <Image
-                  src="/assets/image/icons/googlereview.svg"
+                  src="/gads/assets/image/icons/googlereview.svg"
                   alt="Google"
                   width={80}
                   height={30}
@@ -163,7 +163,7 @@ export default function PatientSuccessStories() {
               <div className="text-xs text-gray-600 mb-4">1,956 reviews</div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/assets/image/icons/practo.svg"
+                  src="/gads/assets/image/icons/practo.svg"
                   alt="Practo"
                   width={100}
                   height={30}
@@ -212,7 +212,7 @@ export default function PatientSuccessStories() {
                   </div>
                   <div className="flex items-center gap-1 justify-center">
                     <Image
-                      src="/assets/image/icons/googlereview.svg"
+                      src="/gads/assets/image/icons/googlereview.svg"
                       alt="Google"
                       width={60}
                       height={20}
@@ -256,7 +256,7 @@ export default function PatientSuccessStories() {
                   </div>
                   <div className="flex items-center gap-1 justify-center">
                     <Image
-                      src="/assets/image/icons/googlereview.svg"
+                      src="/gads/assets/image/icons/googlereview.svg"
                       alt="Google"
                       width={60}
                       height={20}

@@ -23,7 +23,7 @@ export default function PackageIncludes() {
                 <div className="flex items-center gap-4">
                   <div className="flex-shrink-0">
                     <Image
-                      src="/assets/image/icons/circle-check-big.svg"
+                      src="/gads/assets/image/icons/Tick 1.svg"
                       alt="Free Consultation"
                       width={48}
                       height={48}
@@ -39,7 +39,7 @@ export default function PackageIncludes() {
                 <div className="flex items-center gap-4">
                   <div className="flex-shrink-0">
                     <Image
-                      src="/assets/image/icons/circle-check-big.svg"
+                      src="/gads/assets/image/icons/Tick 1.svg"
                       alt="Free Scan"
                       width={48}
                       height={48}
@@ -63,7 +63,7 @@ export default function PackageIncludes() {
                 <div className="flex items-center gap-4">
                   <div className="flex-shrink-0">
                     <Image
-                      src="/assets/image/icons/No Cost EMI.svg"
+                      src="/gads/assets/image/icons/EMI-Icon 1.svg"
                       alt="No Cost EMI"
                       width={48}
                       height={48}
@@ -75,19 +75,19 @@ export default function PackageIncludes() {
                   </span>
                 </div>
 
-                {/* Insurance Coverage */}
+                {/* Free Semen Analysi */}
                 <div className="flex items-center gap-4">
                   <div className="flex-shrink-0">
                     <Image
-                      src="/assets/image/icons/Insurance Coverage.svg"
-                      alt="Insurance Coverage"
+                      src="/gads/assets/image/icons/Tick 1.svg"
+                      alt="Free Semen Analysi"
                       width={48}
                       height={48}
                       className="w-12 h-12"
                     />
                   </div>
                   <span className="text-lg text-gray-700 font-medium">
-                    Insurance Coverage
+                    Free Semen Analysi
                   </span>
                 </div>
               </div>
@@ -107,7 +107,7 @@ export default function PackageIncludes() {
               <div className="flex flex-col items-center gap-3">
                 <div className="flex-shrink-0">
                   <Image
-                    src="/assets/image/icons/circle-check-big.svg"
+                    src="/gads/assets/image/icons/Tick 1.svg"
                     alt="Free Consultation"
                     width={80}
                     height={80}
@@ -123,7 +123,7 @@ export default function PackageIncludes() {
               <div className="flex flex-col items-center gap-3">
                 <div className="flex-shrink-0">
                   <Image
-                    src="/assets/image/icons/circle-check-big.svg"
+                    src="/gads/assets/image/icons/Tick 1.svg"
                     alt="Free Scan"
                     width={80}
                     height={80}
@@ -147,7 +147,7 @@ export default function PackageIncludes() {
               <div className="flex flex-col items-center gap-3">
                 <div className="flex-shrink-0">
                   <Image
-                    src="/assets/image/icons/No Cost EMI.svg"
+                    src="/gads/assets/image/icons/EMI-Icon 1.svg"
                     alt="No Cost EMI"
                     width={80}
                     height={80}
@@ -159,19 +159,19 @@ export default function PackageIncludes() {
                 </span>
               </div>
 
-              {/* Insurance Coverage */}
+              {/* Free Semen Analysi */}
               <div className="flex flex-col items-center gap-3">
                 <div className="flex-shrink-0">
                   <Image
-                    src="/assets/image/icons/Insurance Coverage.svg"
-                    alt="Insurance Coverage"
+                    src="/gads/assets/image/icons/Tick 1.svg"
+                    alt="Free Semen Analysi"
                     width={80}
                     height={80}
                     className="w-30 h-30"
                   />
                 </div>
                 <span className="text-lg text-gray-700 font-medium">
-                  Insurance Coverage
+                  Free Semen Analysi
                 </span>
               </div>
             </div>

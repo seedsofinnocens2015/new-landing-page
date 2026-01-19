@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Seeds Of Innocens Fertility & IVF",
   description: "Seeds Of Innocens Fertility & IVF - Best IVF Clinic",
+  icons: {
+    icon: '/icon.webp',
+    shortcut: '/icon.webp',
+    apple: '/icon.webp',
+  },
 };
 
 export default function RootLayout({

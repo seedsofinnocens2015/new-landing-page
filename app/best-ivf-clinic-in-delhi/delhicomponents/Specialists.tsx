@@ -24,7 +24,7 @@ export default function Specialists() {
       specialization: 'IVF, Reproductive Endocrinology, Advanced Fertility Techniques',
       experience: '15+ Years',
       location: 'Delhi/NCR',
-      image: '/assets/image/gaurimam.jpg', // Update with actual image path
+      image: '/gads/assets/image/gaurimam.jpg', // Update with actual image path
     },
     // {
     //   id: 2,
@@ -33,7 +33,7 @@ export default function Specialists() {
     //   specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
     //   experience: '12+ Years',
     //   location: 'Gurugram, Haryana',
-    //   image: '/assets/image/Dr. Aditi Bhatnagar.jpg', // Update with actual image path
+    //   image: '/gads/assets/image/Dr. Aditi Bhatnagar.jpg', // Update with actual image path
     // },
     {
       id: 3,
@@ -42,7 +42,7 @@ export default function Specialists() {
       specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
       experience: '7+ Years',
       location: 'Malviya Nagar, New Delhi',
-      image: '/assets/image/Dr. Lisha Singh.jpg', // Update with actual image path
+      image: '/gads/assets/image/Dr. Lisha Singh.jpg', // Update with actual image path
     },
     // {
     //     id: 4,
@@ -51,7 +51,7 @@ export default function Specialists() {
     //     specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',
     //     experience: '8+ Years',
     //     location: 'Pitampura, Delhi',
-    //     image: '/assets/image/Monika.png', // Update with actual image path
+    //     image: '/gads/assets/image/Monika.png', // Update with actual image path
     //   },
   ];
 

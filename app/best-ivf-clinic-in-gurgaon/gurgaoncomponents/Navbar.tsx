@@ -14,7 +14,7 @@ export default function Navbar() {
                     {/* Logo Section */}
                     <div className="flex items-center gap-2">
                         <Image
-                            src="/assets/image/Header Logo.svg"
+                            src="/gads/assets/image/Header Logo.svg"
                             alt="Seeds Of Innocens Fertility & IVF Logo"
                             width={200}
                             height={60}

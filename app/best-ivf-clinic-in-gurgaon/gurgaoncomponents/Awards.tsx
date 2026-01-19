@@ -9,23 +9,23 @@ export default function Awards() {
   const awards = [
     {
       id: 1,
-      image: '/assets/image/Times-Healthcare-Achievers.png',
+      image: '/gads/assets/image/Times-Healthcare-Achievers.png',
     },
     {
       id: 2,
-      image: '/assets/image/National-Fertility-Awards-2022.png',
+      image: '/gads/assets/image/National-Fertility-Awards-2022.png',
     },
     {
       id: 3,
-      image: '/assets/image/Indian-Fertility-Society.png',
+      image: '/gads/assets/image/Indian-Fertility-Society.png',
     },
     {
       id: 4,
-      image: '/assets/image/Association-of-Obstetricians-And-Gynaecologists-of-Delhi.png',
+      image: '/gads/assets/image/Association-of-Obstetricians-And-Gynaecologists-of-Delhi.png',
     },
     {
       id: 5,
-      image: '/assets/image/Screenshot_2025-05-02_155258-removebg-preview.png',
+      image: '/gads/assets/image/Screenshot_2025-05-02_155258-removebg-preview.png',
     },
   ];
 
