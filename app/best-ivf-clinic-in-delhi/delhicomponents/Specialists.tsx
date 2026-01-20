@@ -26,15 +26,15 @@ export default function Specialists() {
       location: 'Delhi/NCR',
       image: '/gads/assets/image/gaurimam.jpg', // Update with actual image path
     },
-    // {
-    //   id: 2,
-    //   name: 'Dr. Aditi Bhatnagar',
-    //   qualifications: 'MBBS, MD (Obstetrics & Gynecology), Fellowship in IVF',
-    //   specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
-    //   experience: '12+ Years',
-    //   location: 'Gurugram, Haryana',
-    //   image: '/gads/assets/image/Dr. Aditi Bhatnagar.jpg', // Update with actual image path
-    // },
+    {
+      id: 2,
+      name: 'Dr. Alpana Razdan',
+      qualifications: 'MBBS, MD (Obstetrics & Gynecology), Fellowship in IVF',
+      specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
+      experience: '13+ Years',
+      location: 'Malviya Nagar, New Delhi',
+      image: '/gads/assets/image/Dr. alpana razdan.jpg', // Update with actual image path
+    },
     {
       id: 3,
       name: 'Dr. Lisha Singh',
@@ -44,15 +44,15 @@ export default function Specialists() {
       location: 'Malviya Nagar, New Delhi',
       image: '/gads/assets/image/Dr. Lisha Singh.jpg', // Update with actual image path
     },
-    // {
-    //     id: 4,
-    //     name: 'Dr. Manju Gupta',
-    //     qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in ART',
-    //     specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',
-    //     experience: '8+ Years',
-    //     location: 'Pitampura, Delhi',
-    //     image: '/gads/assets/image/Monika.png', // Update with actual image path
-    //   },
+    {
+        id: 4,
+        name: 'Dr. Monika Maan',
+        qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in ART',
+        specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',
+        experience: '12+ Years',
+        location: 'Pitampura, New Delhi',
+        image: '/gads/assets/image/Monika.png', // Update with actual image path
+      },
   ];
 
   return (

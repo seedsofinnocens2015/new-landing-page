@@ -12,8 +12,8 @@ import type { Metadata } from 'next';
 import Navbar from './delhicomponents/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Best IVF Clinic in Malviya Nagar - Seeds Of Innocens Fertility & IVF',
-  description: 'Best IVF Clinic in Malviya Nagar - Seeds Of Innocens Fertility & IVF offers world-class fertility treatments and IVF services. Book your appointment today.',
+  title: 'Best IVF Clinic in Delhi - Seeds Of Innocens Fertility & IVF',
+  description: 'Best IVF Clinic in Delhi - Seeds Of Innocens Fertility & IVF offers world-class fertility treatments and IVF services. Book your appointment today.',
 };
 
 export default function MalviyaNagarPage() {
