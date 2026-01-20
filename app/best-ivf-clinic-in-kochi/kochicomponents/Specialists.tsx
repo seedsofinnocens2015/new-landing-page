@@ -20,17 +20,17 @@ export default function Specialists() {
     {
       id: 1,
       name: 'Dr. Sonia Raju',
-      qualifications: 'MD, DNB, MBBS',
-      specialization: 'IVF, Reproductive Endocrinology, Advanced Fertility Techniques',
-      experience: '10+ Years',
+      qualifications: 'MS, DNB, MRCOG(UK)',
+      specialization: 'Fellowship in reproductive medicine, Diploma in reproductive medicine',
+      experience: '7+ Years',
       location: 'Kochi, Kerala',
       image: '/gads/assets/image/Dr. Sonia Raju.png', // Update with actual image path
     },
     {
       id: 2,
       name: 'Dr. Vinod Kumar B',
-      qualifications: 'MBBS, MD (Obstetrics & Gynecology), Fellowship in IVF',
-      specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
+      qualifications: 'MBBS, DGO, DNB',
+      specialization: 'IVF, Infertility Management, Advanced Reproductive Techniques',
       experience: '7+ Years',
       location: 'Kochi, Kerala',
       image: '/gads/assets/image/DR. VINOD KUMAR B.png', // Update with actual image path
