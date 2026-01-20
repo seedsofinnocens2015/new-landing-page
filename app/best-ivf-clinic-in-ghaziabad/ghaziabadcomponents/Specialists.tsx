@@ -26,23 +26,23 @@ export default function Specialists() {
       location: 'Delhi/NCR',
       image: '/gads/assets/image/gaurimam.jpg', // Update with actual image path
     },
-    // {
-    //   id: 2,
-    //   name: 'Dr. Aditi Bhatnagar',
-    //   qualifications: 'MBBS, MD (Obstetrics & Gynecology), Fellowship in IVF',
-    //   specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
-    //   experience: '12+ Years',
-    //   location: 'Gurugram, Haryana',
-    //   image: '/gads/assets/image/Dr. Aditi Bhatnagar.jpg', // Update with actual image path
-    // },
+    {
+      id: 2,
+      name: 'Dr. Ranjana Mishra',
+      qualifications: 'MBBS, MD (Obstetrics & Gynecology), Fellowship in IVF',
+      specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
+      experience: '14+ Years',
+      location: 'Gurugram, Haryana',
+      image: '/gads/assets/image/Dr. Ranjana Mishra.jpg', // Update with actual image path
+    },
     {
       id: 3,
-      name: 'Dr. Lisha Singh',
+      name: 'Dr. Prateek Kakani',
       qualifications: 'MBBS, DGO, DNB, Fellowship in IVF',
       specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
-      experience: '7+ Years',
+      experience: '8+ Years',
       location: 'Malviya Nagar, New Delhi',
-      image: '/gads/assets/image/Dr. Lisha Singh.jpg', // Update with actual image path
+      image: '/gads/assets/image/Dr Prateek.png', // Update with actual image path
     },
     // {
     //     id: 4,

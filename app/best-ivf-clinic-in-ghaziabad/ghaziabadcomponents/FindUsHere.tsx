@@ -22,7 +22,7 @@ export default function FindUsHere() {
             <div className="w-full md:w-1/2 flex justify-center">
               <div className="relative w-full max-w-md h-auto">
                 <Image
-                  src="/gads/assets/image/malviyanagar.webp"
+                  src="/gads/assets/image/Yashoda1.webp"
                   alt="Seeds Of Innocens Women & Children's Hospital"
                   width={500}
                   height={600}
@@ -57,7 +57,7 @@ export default function FindUsHere() {
                 </div>
                 {/* Address Text */}
                 <p className="text-gray-800 text-base md:text-lg leading-relaxed">
-                3, opposite Aurbindo College, MMTC Colony, Malviya Nagar, New Delhi, Delhi 110017
+                opp. Nehru Stadium Jogging Track, Ram Nagar, Pocket L, Nehru Nagar III, Nehru Nagar, Ghaziabad, Uttar Pradesh 201001
                 </p>
               </div>
 
