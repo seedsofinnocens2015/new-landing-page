@@ -86,7 +86,7 @@ export default function FindUsHere() {
                 {/* Phone Number in Rounded Box */}
                 <div className="flex-1 px-4 py-3 bg-white">
                   <p className="text-gray-800 text-base md:text-lg font-medium">
-                  98103 50512
+                  92402 92799
                   </p>
                 </div>
               </div>

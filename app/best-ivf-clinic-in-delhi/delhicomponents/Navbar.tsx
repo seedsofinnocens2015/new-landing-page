@@ -27,8 +27,9 @@ export default function Navbar() {
                     <div className="flex items-center gap-3">
                         {/* Phone Button */}
                         <a 
-                            href="tel:+919810350512" 
-                            className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-black bg-white text-black hover:bg-gray-50 transition-colors"
+                            href="tel:+919240292796" 
+                            className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-black bg-white text-black hover:bg-gray-50 transition-colors whitespace-nowrap"
+                            style={{ whiteSpace: 'nowrap' }}
                         >
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -43,7 +44,7 @@ export default function Navbar() {
                                     </path>
                                 </g>
                             </svg>
-                            <span className="text-sm font-medium">98103 50512</span>
+                            <span className="text-sm font-medium">92402 92796</span>
                         </a>
 
                         {/* Book Appointment Button */}
