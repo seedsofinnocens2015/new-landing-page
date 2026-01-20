@@ -26,7 +26,7 @@ export default function FindUsHere() {
                   alt="Seeds Of Innocens Women & Children's Hospital"
                   width={500}
                   height={600}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain rounded-4xl"
                 />
               </div>
             </div>

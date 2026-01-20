@@ -26,7 +26,7 @@ export default function FindUsHere() {
                   alt="Seeds Of Innocens Women & Children's Hospital"
                   width={500}
                   height={600}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain rounded-4xl"
                 />
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function FindUsHere() {
                 {/* Phone Number in Rounded Box */}
                 <div className="flex-1 px-4 py-3 bg-white">
                   <p className="text-gray-800 text-base md:text-lg font-medium">
-                    96203 96203
+                  98103 50512
                   </p>
                 </div>
               </div>

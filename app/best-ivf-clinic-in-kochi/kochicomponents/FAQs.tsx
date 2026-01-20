@@ -9,7 +9,7 @@ export default function FAQs() {
     {
       id: 1,
       question: 'How do I choose the best IVF doctor near me?',
-      answer: 'If you are looking for an experience, personalized treatment, and patient reviews. At Seeds of Innocens, our IVF specialists in Gurgaon will follow evidence-based protocols and will provide individualized fertility care.',
+      answer: 'If you are looking for an experience, personalized treatment, and patient reviews. At Seeds of Innocens, our IVF specialists in Kochi will follow evidence-based protocols and will provide individualized fertility care.',
     },
     {
       id: 2,

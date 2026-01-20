@@ -9,6 +9,7 @@ import FAQs from './delhicomponents/FAQs';
 import Awards from './delhicomponents/Awards';
 import FindUsHere from './delhicomponents/FindUsHere';
 import type { Metadata } from 'next';
+import Navbar from './delhicomponents/Navbar';
 
 export const metadata: Metadata = {
   title: 'Best IVF Clinic in Malviya Nagar - Seeds Of Innocens Fertility & IVF',
@@ -19,6 +20,7 @@ export default function MalviyaNagarPage() {
   return (
     <div className="min-h-screen bg-white">
       <main className="w-full">
+        <Navbar />
         <Banner />
         <PackageIncludes />
         <Specialists />

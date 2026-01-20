@@ -148,8 +148,8 @@ export default function OurCentres() {
   ];
 
   const filteredCentres = centres.filter((centre) => centre.city === selectedCity);
-  const itemsToShow = isMobile ? 1 : 3;
-  const visibleCentres = filteredCentres.slice(currentIndex, currentIndex + itemsToShow);
+  const centresCount = filteredCentres.length;
+  const shouldCenter = !isMobile && centresCount <= 2;
 
   return (
     <section className="w-full py-16 px-6 bg-white">
@@ -188,21 +188,32 @@ export default function OurCentres() {
         </div>
 
         {/* Centres Cards Container */}
-        <div className="relative max-w-6xl mx-auto">
-          {/* Centres Grid */}
-          <div className={`grid gap-6 mb-8 ${
-            isMobile
-              ? 'grid-cols-1'
-              : visibleCentres.length === 1
-              ? 'grid-cols-1 md:max-w-md md:mx-auto'
-              : visibleCentres.length === 2
-              ? 'grid-cols-2 md:max-w-2xl md:mx-auto'
-              : 'grid-cols-3'
-          }`}>
-            {visibleCentres.map((centre) => (
+        <div className="relative max-w-6xl mx-auto overflow-hidden">
+          {/* Centres Slider */}
+          <div 
+            className={`flex mb-8 transition-transform duration-700 ease-in-out ${
+              isMobile ? 'gap-0' : 'gap-6'
+            } ${shouldCenter ? 'justify-center' : ''}`}
+            style={{
+              transform: isMobile 
+                ? `translateX(-${currentIndex * 100}%)`
+                : shouldCenter
+                ? 'translateX(0)'
+                : `translateX(calc(-${currentIndex} * (calc((100% - 3rem) / 3) + 1.5rem)))`,
+            }}
+          >
+            {filteredCentres.map((centre) => (
               <div
                 key={centre.id}
-                className="relative rounded-2xl overflow-hidden shadow-lg group"
+                className={`relative rounded-2xl overflow-hidden shadow-lg group flex-shrink-0 ${
+                  isMobile 
+                    ? 'w-full min-w-full max-w-full' 
+                    : shouldCenter
+                    ? centresCount === 1 
+                      ? 'w-full max-w-md' 
+                      : 'w-[calc((100%-1.5rem)/2)]'
+                    : 'w-[calc((100%-3rem)/3)]'
+                }`}
               >
                 {/* Centre Image */}
                 <div className="relative w-full h-64 md:h-80">
@@ -210,7 +221,7 @@ export default function OurCentres() {
                     src={centre.image}
                     alt={centre.location}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   {/* Location Overlay */}
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
@@ -242,12 +253,16 @@ export default function OurCentres() {
           {((isMobile && filteredCentres.length > 1) || (!isMobile && filteredCentres.length > 3)) && (
             <div className="flex justify-center items-center gap-4 md:relative md:mt-0 mt-4">
               <button
-                onClick={() => setCurrentIndex(Math.max(0, currentIndex - 1))}
+                onClick={() => {
+                  if (currentIndex > 0) {
+                    setCurrentIndex(Math.max(0, currentIndex - 1));
+                  }
+                }}
                 disabled={currentIndex === 0}
-                className={`w-12 h-12 rounded-full flex items-center justify-center shadow-md transition-colors ${
+                className={`w-12 h-12 rounded-full flex items-center justify-center shadow-md transition-all duration-300 ${
                   currentIndex === 0
                     ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                    : 'bg-gray-200 hover:bg-gray-300 text-gray-800'
+                    : 'bg-gray-200 hover:bg-gray-300 text-gray-800 hover:scale-110 active:scale-95'
                 }`}
               >
                 <svg
@@ -272,16 +287,18 @@ export default function OurCentres() {
                   const maxIndex = isMobile 
                     ? filteredCentres.length - 1 
                     : filteredCentres.length - 3;
-                  setCurrentIndex(Math.min(maxIndex, currentIndex + 1));
+                  if (currentIndex < maxIndex) {
+                    setCurrentIndex(Math.min(maxIndex, currentIndex + 1));
+                  }
                 }}
                 disabled={isMobile 
                   ? currentIndex >= filteredCentres.length - 1 
                   : currentIndex >= filteredCentres.length - 3}
-                className={`w-12 h-12 rounded-full flex items-center justify-center shadow-md transition-colors ${
+                className={`w-12 h-12 rounded-full flex items-center justify-center shadow-md transition-all duration-300 ${
                   (isMobile && currentIndex >= filteredCentres.length - 1) ||
                   (!isMobile && currentIndex >= filteredCentres.length - 3)
                     ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                    : 'bg-gray-200 hover:bg-gray-300 text-gray-800'
+                    : 'bg-gray-200 hover:bg-gray-300 text-gray-800 hover:scale-110 active:scale-95'
                 }`}
               >
                 <svg

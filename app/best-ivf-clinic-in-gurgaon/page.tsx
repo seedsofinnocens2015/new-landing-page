@@ -9,6 +9,7 @@ import FAQs from './gurgaoncomponents/FAQs';
 import Awards from './gurgaoncomponents/Awards';
 import FindUsHere from './gurgaoncomponents/FindUsHere';
 import type { Metadata } from 'next';
+import Navbar from './gurgaoncomponents/Navbar';
 
 export const metadata: Metadata = {
   title: 'Best IVF Clinic in Gurgaon - Seeds Of Innocens Fertility & IVF',
@@ -19,6 +20,7 @@ export default function GurgaonPage() {
   return (
     <div className="min-h-screen bg-white">
       <main className="w-full">
+        <Navbar />
         <Banner />
         <PackageIncludes />
         <Specialists />

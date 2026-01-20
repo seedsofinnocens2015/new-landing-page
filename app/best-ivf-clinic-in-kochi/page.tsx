@@ -9,6 +9,7 @@ import FAQs from './kochicomponents/FAQs';
 import Awards from './kochicomponents/Awards';
 import FindUsHere from './kochicomponents/FindUsHere';
 import type { Metadata } from 'next';
+import Navbar from './kochicomponents/Navbar';
 
 export const metadata: Metadata = {
   title: 'Best IVF Clinic in Kochi - Seeds Of Innocens Fertility & IVF',
@@ -19,6 +20,7 @@ export default function KochiPage() {
   return (
     <div className="min-h-screen bg-white">
       <main className="w-full">
+        <Navbar />
         <Banner />
         <PackageIncludes />
         <Specialists />
