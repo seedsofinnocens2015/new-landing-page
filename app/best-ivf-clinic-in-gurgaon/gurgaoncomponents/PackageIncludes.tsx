@@ -75,19 +75,19 @@ export default function PackageIncludes() {
                   </span>
                 </div>
 
-                {/* Free Semen Analysi */}
+                {/* Free Semen Analysis */}
                 <div className="flex items-center gap-4">
                   <div className="flex-shrink-0">
                     <Image
                       src="/gads/assets/image/icons/Tick 1.svg"
-                      alt="Free Semen Analysi"
+                      alt="Free Semen Analysis"
                       width={48}
                       height={48}
                       className="w-12 h-12"
                     />
                   </div>
                   <span className="text-lg text-gray-700 font-medium">
-                    Free Semen Analysi
+                    Free Semen Analysis
                   </span>
                 </div>
               </div>
@@ -159,19 +159,19 @@ export default function PackageIncludes() {
                 </span>
               </div>
 
-              {/* Free Semen Analysi */}
+              {/* Free Semen Analysis */}
               <div className="flex flex-col items-center gap-3">
                 <div className="flex-shrink-0">
                   <Image
                     src="/gads/assets/image/icons/Tick 1.svg"
-                    alt="Free Semen Analysi"
+                    alt="Free Semen Analysis"
                     width={80}
                     height={80}
                     className="w-30 h-30"
                   />
                 </div>
                 <span className="text-lg text-gray-700 font-medium">
-                  Free Semen Analysi
+                  Free Semen Analysis
                 </span>
               </div>
             </div>
