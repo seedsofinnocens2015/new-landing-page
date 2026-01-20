@@ -76,7 +76,7 @@ export default function PackageIncludes() {
                 </div>
 
                 {/* Free Semen Analysis */}
-                <div className="flex items-center gap-4">
+                {/* <div className="flex items-center gap-4">
                   <div className="flex-shrink-0">
                     <Image
                       src="/gads/assets/image/icons/Tick 1.svg"
@@ -89,7 +89,7 @@ export default function PackageIncludes() {
                   <span className="text-lg text-gray-700 font-medium">
                     Free Semen Analysis
                   </span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function PackageIncludes() {
           </div>
 
           {/* Right Card - Special Benefits */}
-          <div className="bg-white rounded-2xl shadow-md p-8">
+          <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center justify-center">
             <h3 className="text-xl text-center font-semibold text-gray-900 mb-6">
               Special Benefits
             </h3>
@@ -160,7 +160,7 @@ export default function PackageIncludes() {
               </div>
 
               {/* Free Semen Analysis */}
-              <div className="flex flex-col items-center gap-3">
+              {/* <div className="flex flex-col items-center gap-3">
                 <div className="flex-shrink-0">
                   <Image
                     src="/gads/assets/image/icons/Tick 1.svg"
@@ -173,7 +173,7 @@ export default function PackageIncludes() {
                 <span className="text-lg text-gray-700 font-medium">
                   Free Semen Analysis
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
