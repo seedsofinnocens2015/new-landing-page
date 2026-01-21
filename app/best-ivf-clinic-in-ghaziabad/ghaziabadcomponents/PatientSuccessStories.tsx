@@ -182,23 +182,23 @@ export default function PatientSuccessStories() {
               {[
                 {
                   id: 1,
-                  quote: 'Great experience, hygienic place, helpful staff, Excellent service.',
-                  name: 'Mrunali Sonawane',
+                  quote: 'Very excellent experience here ..all staff doctors are very cooperative',
+                  name: 'Anuradha Rai',
                 },
                 {
                   id: 2,
-                  quote: 'Great experience, hygienic place, helpful staff, Excellent service.',
-                  name: 'Mrunali Sonawane',
+                  quote: 'Super facility best doctors..you can trust',
+                  name: 'Nitin Srivastav',
                 },
                 {
                   id: 3,
-                  quote: 'Great experience, hygienic place, helpful staff, Excellent service.',
-                  name: 'Mrunali Sonawane',
+                  quote: 'Nice experience my treatment successfully done Good staff',
+                  name: 'Pinki dasi Pinki',
                 },
                 {
                   id: 4,
-                  quote: 'Great experience, hygienic place, helpful staff, Excellent service.',
-                  name: 'Mrunali Sonawane',
+                  quote: 'Nice environment, highly recommend to you all !',
+                  name: 'Priya Vyas',
                 },
               ].map((testimonial) => (
                 <div key={testimonial.id} className="bg-white p-6 rounded-lg flex-shrink-0 w-[280px] md:w-[320px]">
@@ -226,23 +226,23 @@ export default function PatientSuccessStories() {
               {[
                 {
                   id: 5,
-                  quote: 'Great experience, hygienic place, helpful staff, Excellent service.',
-                  name: 'Mrunali Sonawane',
+                  quote: 'My patience and Dr Gauri Agarwal treatment finally gave fruits M expecting my twins now. thanks to SEEDS OF INNOCENCE and Her team',
+                  name: 'Shweta Sapra',
                 },
                 {
                   id: 6,
-                  quote: 'Great experience, hygienic place, helpful staff, Excellent service.',
-                  name: 'Mrunali Sonawane',
+                  quote: 'I have received pregnancy after ten years through Seeds of Innocence Faridabad.',
+                  name: 'Hemant Garg',
                 },
                 {
                   id: 7,
-                  quote: 'Great experience, hygienic place, helpful staff, Excellent service.',
-                  name: 'Mrunali Sonawane',
+                  quote: 'Very satisfied with the support and care provided throughout the process.',
+                  name: 'Amit Khatri',
                 },
                 {
                   id: 8,
-                  quote: 'Great experience, hygienic place, helpful staff, Excellent service.',
-                  name: 'Mrunali Sonawane',
+                  quote: 'Doctors and staff are really helpful, great experience overall!',
+                  name: 'Sapna Bhatt',
                 },
               ].map((testimonial) => (
                 <div key={`duplicate-${testimonial.id}`} className="bg-white p-6 rounded-lg flex-shrink-0 w-[280px] md:w-[320px]">
