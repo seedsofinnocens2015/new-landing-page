@@ -24,7 +24,7 @@ export default function Specialists() {
       specialization: 'IVF, Reproductive Endocrinology, Advanced Fertility Techniques',
       experience: '15+ Years',
       location: 'Delhi/NCR',
-      image: '/gads/assets/image/gaurimam.jpg', // Update with actual image path
+      image: '/gads/assets/image/Dr Gauri maam.jpg', // Update with actual image path
     },
     {
       id: 2,
