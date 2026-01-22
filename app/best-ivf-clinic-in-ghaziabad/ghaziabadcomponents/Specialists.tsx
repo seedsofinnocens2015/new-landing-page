@@ -103,12 +103,12 @@ export default function Specialists() {
                   className="bg-white rounded-2xl shadow-md overflow-hidden flex-shrink-0 w-full md:w-[calc((100%-3rem)/3)]"
                 >
                 {/* Doctor Image */}
-                <div className="w-full h-64 relative bg-[#f2f6ff]">
+                <div className="w-full h-84 relative">
                   <Image
                     src={specialist.image}
                     alt={specialist.name}
                     fill
-                    className="object-contain"
+                    className="object-cover object-top"
                   />
                 </div>
 
