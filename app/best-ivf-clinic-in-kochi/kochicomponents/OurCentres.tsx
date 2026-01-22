@@ -52,7 +52,7 @@ export default function OurCentres() {
     {
       id: 4,
       location: 'Ghaziabad',
-      image: '/gads/assets/image/center/Yashoda1.webp',
+      image: '/gads/assets/image/center/yashoda1.webp',
       city: 'Uttar Pradesh',
     },
     {
