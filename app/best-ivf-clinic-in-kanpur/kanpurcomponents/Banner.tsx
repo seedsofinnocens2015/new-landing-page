@@ -24,7 +24,7 @@ export default function Banner() {
       const payload = {
         fullName: formData.fullName,
         phoneNumber: formData.phoneNumber,
-        source: 'Gorakhpur Google Ads',
+        source: 'Kanpur Google Ads',
         message: `Language preference: ${formData.language || 'Not specified'}`,
       };
 

@@ -22,7 +22,7 @@ export default function FindUsHere() {
             <div className="w-full md:w-1/2 flex justify-center">
               <div className="relative w-full max-w-md h-auto">
                 <Image
-                  src="/gads/assets/image/gurugram.webp"
+                  src="/gads/assets/image/center/gurugram.webp"
                   alt="Seeds Of Innocens Women & Children's Hospital"
                   width={500}
                   height={600}
