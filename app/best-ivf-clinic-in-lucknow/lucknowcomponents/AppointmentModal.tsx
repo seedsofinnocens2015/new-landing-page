@@ -163,7 +163,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleChange}
-                placeholder="पूरा नाम"
+                placeholder="Full Name"
                 className="w-full px-4 py-3 rounded-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 placeholder-gray-400"
                 required
                 disabled={isLoading}
@@ -180,9 +180,9 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                 required
                 disabled={isLoading}
               >
-                <option value="" disabled>भाषा चुने</option>
+                <option value="" disabled>Select Language</option>
                 <option value="english">English</option>
-                <option value="hindi">हिंदी</option>
+                <option value="hindi">Hindi</option>
                 <option value="tamil">Tamil</option>
                 <option value="telugu">Telugu</option>
                 <option value="kannada">Kannada</option>
@@ -218,7 +218,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                 name="phoneNumber"
                 value={formData.phoneNumber}
                 onChange={handleChange}
-                placeholder="फ़ोन नंबर"
+                placeholder="Phone Number"
                 className="flex-1 px-4 py-3 rounded-r-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 placeholder-gray-400"
                 required
                 disabled={isLoading}
@@ -241,7 +241,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                 htmlFor="consent"
                 className="text-sm text-gray-600 leading-relaxed cursor-pointer"
               >
-                मैं सेड्स ऑफ इनॉक्सेन्स IVF प्रतिनिधियों से संपर्क प्राप्त करने के लिए सहमत हूं
+                I consent to get contacted by Seeds Of Innocens IVF representatives
               </label>
             </div>
 
@@ -286,7 +286,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                   <span>Submitting...</span>
                 </>
               ) : (
-                'एक कॉल बैक प्राप्त करें'
+                'Get a Call Back'
               )}
             </button>
           </form>

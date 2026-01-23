@@ -24,19 +24,18 @@ export default function PatientSuccessStories() {
     },
     {
       id: 2,
-      title: 'गर्भधारण सफलता के कथाएं | पहली कोशिश में गर्भधारण',
+      title: 'IVF Success Stories | Patient Conceived in 1st attempt',
       videoId: 'SY-C12ansPo', // Replace with actual YouTube video ID
     },
     {
       id: 3,
-      title: 'गर्भधारण सफलता के कथाएं | पहली कोशिश में गर्भधारण',
+      title: 'Watch the video to witness their beautiful journey of parenthood.',
       videoId: 'wpnZA90hG40', // Replace with actual YouTube video ID
     },
     {
       id: 4,
       title: '10 साल बाद पहली IVF असफलता के बावजूद उम्मीद नहीं छोड़ी, डॉ. निवेदिता नेहल से मिली खुशी!',
       videoId: 't83B5YaAzGo', // Replace with actual YouTube video ID
-     
     },
   ];
 
@@ -45,7 +44,7 @@ export default function PatientSuccessStories() {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-        गर्भधारण सफलता की कथाएं
+          Patient Success Stories
         </h2>
 
         {/* Videos Carousel Container */}
@@ -146,7 +145,7 @@ export default function PatientSuccessStories() {
             {/* Google Reviews */}
             <div className="text-center md:mx-auto md:w-auto">
               <div className="text-7xl font-bold text-black mb-2">4.8</div>
-              <div className="text-xs text-gray-600">1,956 रेव्यू</div>
+              <div className="text-xs text-gray-600">1,956 reviews</div>
               <div className="flex flex-col items-center">
                 <Image
                   src="/gads/assets/image/icons/googlereview.svg"
@@ -161,7 +160,7 @@ export default function PatientSuccessStories() {
             {/* Practo Reviews */}
             <div className="text-center md:mx-auto md:w-auto">
               <div className="text-7xl font-bold text-black mb-2">4.9</div>
-              <div className="text-xs text-gray-600 mb-4">1,956 रेव्यू</div>
+              <div className="text-xs text-gray-600 mb-4">1,956 reviews</div>
               <div className="flex items-center justify-center">
                 <Image
                   src="/gads/assets/image/icons/practo.svg"
@@ -183,23 +182,23 @@ export default function PatientSuccessStories() {
               {[
                 {
                   id: 1,
-                  quote: 'बहुत अच्छा अनुभव यहां ..सभी स्टाफ डॉक्टर बहुत सहयोगी हैं',
-                  name: 'अनुराधा रै',
+                  quote: 'Very excellent experience here ..all staff doctors are very cooperative',
+                  name: 'Anuradha Rai',
                 },
                 {
                   id: 2,
-                  quote: 'सुपर फैक्ट्री सबसे अच्छे डॉक्टर..आप भरोसा कर सकते हैं',
-                  name: 'नितिन स्रिवास्तव',
+                  quote: 'Super facility best doctors..you can trust',
+                  name: 'Nitin Srivastav',
                 },
                 {
                   id: 3,
-                  quote: 'अच्छा अनुभव मेरा इलाज सफलतापूर्वक हो गया अच्छा स्टाफ',
-                  name: 'पिंकी दासी पिंकी',
+                  quote: 'Nice experience my treatment successfully done Good staff',
+                  name: 'Pinki dasi Pinki',
                 },
                 {
                   id: 4,
-                  quote: 'अच्छा वातावरण, आप सभी के लिए अत्यधिक सुझाव दिया जाता है!',
-                  name: 'प्रिया व्यास',
+                  quote: 'Nice environment, highly recommend to you all !',
+                  name: 'Priya Vyas',
                 },
               ].map((testimonial) => (
                 <div key={testimonial.id} className="bg-white p-6 rounded-lg flex-shrink-0 w-[280px] md:w-[320px]">
@@ -227,23 +226,23 @@ export default function PatientSuccessStories() {
               {[
                 {
                   id: 5,
-                  quote: 'मेरी धूप और डॉ. गौरी अग्रवाल के इलाज के बाद फल मिला मैं अब दोहरा उम्मीद कर रहा हूं। एसेड्स ऑफ इनॉवेंस और उसकी टीम के लिए धन्यवाद',
-                  name: 'श्वेता सप्रा',
+                  quote: 'My patience and Dr Gauri Agarwal treatment finally gave fruits M expecting my twins now. thanks to SEEDS OF INNOCENCE and Her team',
+                  name: 'Shweta Sapra',
                 },
                 {
                   id: 6,
-                  quote: 'मैंने दस साल बाद फरीदाबाद के एसेड्स ऑफ इनॉवेंस के माध्यम से गर्भधारण प्राप्त की है।',
-                  name: 'हेमंत गर्ग',
+                  quote: 'I have received pregnancy after ten years through Seeds of Innocence Faridabad.',
+                  name: 'Hemant Garg',
                 },
                 {
                   id: 7,
-                  quote: 'बहुत संतुष्ट हूं प्रक्रिया के दौरान प्रदान किए गए समर्थन और देखभाल के लिए।',
-                  name: 'अमित खत्री',
+                  quote: 'Very satisfied with the support and care provided throughout the process.',
+                  name: 'Amit Khatri',
                 },
                 {
                   id: 8,
-                  quote: 'डॉक्टर और स्टाफ बहुत सहयोगी हैं, बहुत अच्छा अनुभव सार्वजनिक रूप से!',
-                  name: 'सपना भाट्ट',
+                  quote: 'Doctors and staff are really helpful, great experience overall!',
+                  name: 'Sapna Bhatt',
                 },
               ].map((testimonial) => (
                 <div key={`duplicate-${testimonial.id}`} className="bg-white p-6 rounded-lg flex-shrink-0 w-[280px] md:w-[320px]">

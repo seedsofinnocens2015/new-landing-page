@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function OurCentres() {
-  const [selectedCity, setSelectedCity] = useState('उत्तर प्रदेश');
+  const [selectedCity, setSelectedCity] = useState('Uttar Pradesh');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -18,132 +18,132 @@ export default function OurCentres() {
   }, []);
 
   const cities = [
-    { id: 1, name: 'दिल्ली', icon: '/gads/assets/image/icons/bangalore-icon.svg' },
-    { id: 2, name: 'उत्तर प्रदेश', icon: '/gads/assets/image/icons/chandigarh-icon.svg' },
-    { id: 3, name: 'बिहार', icon: '/gads/assets/image/icons/chennai-icon.svg' },
-    { id: 4, name: 'हरियाणा', icon: '/gads/assets/image/icons/coimbatore-icon.svg' },
-    { id: 5, name: 'झारखंड', icon: '/gads/assets/image/icons/gurgaon-icon.svg' },
-    { id: 6, name: 'उत्तराखंड', icon: '/gads/assets/image/icons/indore-icon.svg' },
-    { id: 7, name: 'असम', icon: '/gads/assets/image/icons/mohali-icon.svg' },
-    { id: 8, name: 'केरला', icon: '/gads/assets/image/icons/mumbai-icon.svg' },
+    { id: 1, name: 'Delhi', icon: '/gads/assets/image/icons/bangalore-icon.svg' },
+    { id: 2, name: 'Uttar Pradesh', icon: '/gads/assets/image/icons/chandigarh-icon.svg' },
+    { id: 3, name: 'Bihar', icon: '/gads/assets/image/icons/chennai-icon.svg' },
+    { id: 4, name: 'Haryana', icon: '/gads/assets/image/icons/coimbatore-icon.svg' },
+    { id: 5, name: 'Jharkhand', icon: '/gads/assets/image/icons/gurgaon-icon.svg' },
+    { id: 6, name: 'Uttarakhand', icon: '/gads/assets/image/icons/indore-icon.svg' },
+    { id: 7, name: 'Assam', icon: '/gads/assets/image/icons/mohali-icon.svg' },
+    { id: 8, name: 'Kerala', icon: '/gads/assets/image/icons/mumbai-icon.svg' },
     // { id: 9, name: 'Jammu & Kashmir', icon: '/gads/assets/image/icons/mumbai-icon.svg' },
-    { id: 10, name: 'पश्चिम बंगाल', icon: '/gads/assets/image/icons/mumbai-icon.svg' },
+    { id: 10, name: 'West Bengal', icon: '/gads/assets/image/icons/mumbai-icon.svg' },
   ];
 
   const centres = [
     {
       id: 1,
-      location: 'मल्वियानगर',
+      location: 'Malviya Nagar',
       image: '/gads/assets/image/center/malviyanagar.webp',
-      city: 'दिल्ली',
+      city: 'Delhi',
     },
     {
       id: 2,
-      location: 'पीतमपुरा',
+      location: 'Pitampura',
       image: '/gads/assets/image/center/pitampura.webp',
-      city: 'दिल्ली',
+      city: 'Delhi',
     },
     {
       id: 3,
-      location: 'जनकपुरी',
+      location: 'Janakpuri',
       image: '/gads/assets/image/center/janakpuri.webp',
-      city: 'दिल्ली',
+      city: 'Delhi',
     },
     {
       id: 4,
-      location: 'गजियाबाद',
+      location: 'Ghaziabad',
       image: '/gads/assets/image/center/yashoda1.webp',
-      city: 'उत्तर प्रदेश',
+      city: 'Uttar Pradesh',
     },
     {
       id: 5,
-      location: 'लखनऊ',
+      location: 'Lucknow',
       image: '/gads/assets/image/center/lucknow.webp',
-      city: 'उत्तर प्रदेश',
+      city: 'Uttar Pradesh',
     },
     {
       id: 6,
-      location: 'आगरा',
+      location: 'Agra',
       image: '/gads/assets/image/center/agra1.webp',
-      city: 'उत्तर प्रदेश',
+      city: 'Uttar Pradesh',
     },
     {
       id: 7,
-      location: 'गोरखपुर',
+      location: 'Gorakhpur',
       image: '/gads/assets/image/center/gorakhpur1.webp',
-      city: 'उत्तर प्रदेश',
+      city: 'Uttar Pradesh',
     },
     {
       id: 8,
-      location: 'कानपुर',
+      location: 'Kanpur',
       image: '/gads/assets/image/center/kanpur1.webp',
-      city: 'उत्तर प्रदेश',
+      city: 'Uttar Pradesh',
     },
     {
       id: 9,
-      location: 'मेरठ',
+      location: 'Meerut',
       image: '/gads/assets/image/center/meerut1.webp',
-      city: 'उत्तर प्रदेश',
+      city: 'Uttar Pradesh',
     },
     {
       id: 10,
-      location: 'पटना',
+      location: 'Patna',
       image: '/gads/assets/image/center/patna1.webp',
-      city: 'बिहार',
+      city: 'Bihar',
     },
     {
       id: 11,
-      location: 'मुजफ्फरपुर',
+      location: 'Muzaffarpur',
       image: '/gads/assets/image/center/muzaffarpur.webp',
-      city: 'बिहार',
+      city: 'Bihar',
     },
     {
       id: 12,
-      location: 'फरीदाबाद',
+      location: 'Faridabad',
       image: '/gads/assets/image/center/faridabad.webp',
-      city: 'हरियाणा',
+      city: 'Haryana',
     },
     {
       id: 13,
-      location: 'गुरुग्राम',
+      location: 'Gurugram',
       image: '/gads/assets/image/center/gurugram.webp',
-      city: 'हरियाणा',
+      city: 'Haryana',
     },
     {
       id: 14,
-      location: 'राँची',
+      location: 'Ranchi',
       image: '/gads/assets/image/center/ranchi1.webp',
-      city: 'झारखंड',
+      city: 'Jharkhand',
     },
     {
       id: 15,
-      location: 'हल्दवानी',
+      location: 'Haldwani',
       image: '/gads/assets/image/center/haldwani.webp',
-      city: 'उत्तराखंड',
+      city: 'Uttarakhand',
     },
     {
       id: 16,
-      location: 'गुवाहाटी',
+      location: 'Guwahati',
       image: '/gads/assets/image/center/guwahati.webp',
-      city: 'असम',
+      city: 'Assam',
     },
     {
       id: 17,
-      location: 'कोची',
+      location: 'kochi',
       image: '/gads/assets/image/center/kochi.webp',
-      city: 'केरला',
+      city: 'Kerala',
     },
     {
       id: 18,
-      location: 'कासरगोद',
+      location: 'Kasaragod',
       image: '/gads/assets/image/center/kasaragod.webp',
-      city: 'केरला',
+      city: 'Kerala',
     },
     {
       id: 19,
-      location: 'कोलकाता',
+      location: 'Kolkata',
       image: '/gads/assets/image/center/kolkata.webp',
-      city: 'पश्चिम बंगाल',
+      city: 'West Bengal',
     },
   ];
 
@@ -156,7 +156,7 @@ export default function OurCentres() {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
-        हमारे सेंटर इंडिया में
+          Our Centres across India
         </h2>
 
         {/* City Selection Buttons */}

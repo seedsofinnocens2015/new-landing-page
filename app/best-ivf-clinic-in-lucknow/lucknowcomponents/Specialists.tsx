@@ -19,29 +19,29 @@ export default function Specialists() {
   const specialists = [
     {
       id: 1,
-      name: 'डॉ. गौरी अग्रवाल',
+      name: 'Dr. Gauri Agarwal',
       qualifications: 'MD, DNB, MBBS',
-      specialization: 'इवीएफ, रिप्रोडक्टिव एंडोक्रिनोलॉजी, एडवांस्ड फर्टिलिटी टेक्निक्स',
-      experience: '15+ वर्ष',
-      location: 'दिल्ली/NCR',
+      specialization: 'IVF, Reproductive Endocrinology, Advanced Fertility Techniques',
+      experience: '15+ Years',
+      location: 'Delhi/NCR',
       image: '/gads/assets/image/doctor/Dr Gauri maam.jpg', // Update with actual image path
     },
     {
       id: 2,
-      name: 'डॉ. दिशा दत्ता',
+      name: 'Dr. Disha Datta',
       qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in Reproductive Medicine',
-      specialization: 'इवीएफ, आईसीएसआई, एडवांस्ड रिप्रोडक्टिव टेक्निक्स',
-      experience: '7+ वर्ष',
-      location: 'लखनऊ, उत्तर प्रदेश',
+      specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
+      experience: '7+ Years',
+      location: 'Lucknow, Uttar Pradesh',
       image: '/gads/assets/image/doctor/Dr. Disha Datta.jpg', // Update with actual image path
     },
     {
       id: 3,
-      name: 'डॉ. दिव्या शिवानंद',
+      name: 'Dr. Divya Shivanand',
       qualifications: 'MBBS, DGO, Fellowship in minimal access surgery (FMAS) at AMASI',
-      specialization: 'इवीएफ, अनुभवहीन फर्टिलिटी, रिकररेंट इम्प्लांटेशन फेलर',
-      experience: '4+ वर्ष',
-      location: 'लखनऊ, उत्तर प्रदेश',
+      specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
+      experience: '4+ Years',
+      location: 'Lucknow, Uttar Pradesh',
       image: '/gads/assets/image/doctor/Dr. Divya Shivanand.jpg', // Update with actual image path
     },
     // {

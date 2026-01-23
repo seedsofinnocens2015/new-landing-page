@@ -13,7 +13,7 @@ export default function FindUsHere() {
         <div className="max-w-7xl mx-auto">
           {/* Title */}
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-24">
-          हमारे बारे में जानें
+          Find Us Here
           </h2>
 
           {/* Content Container */}
@@ -57,13 +57,12 @@ export default function FindUsHere() {
                 </div>
                 {/* Address Text */}
                 <p className="text-gray-800 text-base md:text-lg leading-relaxed">
-                ड्रोसिया टॉवर, 5/5, पार्क रोड, राज भवन कोलोनी, हज़रतगंज, लखनऊ, उत्तर प्रदेश 226001
+                Droxia Tower, 5/5, Park Road, Raj Bhawan Colony, Hazratganj, Lucknow, Uttar Pradesh 226001
                 </p>
               </div>
 
               {/* Phone Number Block */}
-              <div className="flex items-center gap-4">
-                {/* Phone Icon */}
+              {/* <div className="flex items-center gap-4">
                 <div className="flex-shrink-0">
                   <svg
                     width="24"
@@ -83,13 +82,12 @@ export default function FindUsHere() {
                     />
                   </svg>
                 </div>
-                {/* Phone Number in Rounded Box */}
                 <div className="flex-1 px-4 py-3 bg-white">
                   <p className="text-gray-800 text-base md:text-lg font-medium">
                   92402 92794
                   </p>
                 </div>
-              </div>
+              </div> */}
 
               {/* Book Appointment Button */}
               <div className="mt-8">
@@ -97,7 +95,7 @@ export default function FindUsHere() {
                   onClick={() => setIsModalOpen(true)}
                   className="w-full md:w-auto px-8 py-4 bg-gray-800 hover:bg-gray-900 text-white font-semibold rounded-xl transition-colors duration-200"
                 >
-                  अपॉइंटमेंट बुक करें
+                  Book Appointment
                 </button>
               </div>
             </div>

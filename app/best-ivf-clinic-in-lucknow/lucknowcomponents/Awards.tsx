@@ -48,8 +48,7 @@ export default function Awards() {
 
         {/* Description Text */}
         <p className="text-gray-800 text-center max-w-4xl mx-auto mb-24 leading-relaxed">
-        हमारे ग्राहकों के बाद, हमारे पुरस्कार ही हमारी कहानी बयां करते हैं। एक दशक से अधिक समय से हम आपको सर्वोत्तम सेवाएं प्रदान करने के लिए समर्पित हैं, क्योंकि आप स्त्री रोग, प्रसूति और बाल रोग के सर्वोत्तम मानकों के हकदार हैं। इसी तरह, हमने स्वास्थ्य सेवा के क्षेत्र में जो पुरस्कार जीते हैं, उन्हें देखते हुए यह स्पष्ट है कि सेवा करना भी बेहद संतोषजनक हो सकता है।
-          {/* After our customers, our awards speak for us. We have devoted ourselves to you for over a decade to make sure that you receive nothing less than the best, because you deserve the finest standards of gynaecology, maternity, and paediatrics. Likewise, if we go by all the healthcare trophies we have won, it looks like caring can be pretty rewarding too. */}
+          After our customers, our awards speak for us. We have devoted ourselves to you for over a decade to make sure that you receive nothing less than the best, because you deserve the finest standards of gynaecology, maternity, and paediatrics. Likewise, if we go by all the healthcare trophies we have won, it looks like caring can be pretty rewarding too.
         </p>
 
         {/* Awards Grid - Desktop: All visible, Mobile: Carousel */}

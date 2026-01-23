@@ -8,23 +8,23 @@ export default function FAQs() {
   const faqs = [
     {
       id: 1,
-      question: 'मैं अपने आस-पास सबसे अच्छा IVF डॉक्टर कैसे चुनूँ?',
-      answer: 'अगर आप अनुभव, पर्सनलाइज़्ड इलाज और मरीज़ों के रिव्यू देख रहे हैं। सीड्स ऑफ़ इनोसेंस लखनऊ में हमारे IVF स्पेशलिस्ट हुमारे आइव्फ स्पेशलिस्ट लेटेस्ट प्रोटकोल्स फॉलो करते हैं और व्यक्तिगत फर्टिलिटी केयर देंगे।',
+      question: 'How do I choose the best IVF doctor near me?',
+      answer: 'If you are looking for an experience, personalized treatment, and patient reviews. At Seeds of Innocens, our IVF specialists in Kanpur will follow evidence-based protocols and will provide individualized fertility care.',
     },
     {
       id: 2,
-      question: 'मुझे फर्टिलिटी डॉक्टर से कब सलाह लेनी चाहिए?',
-      answer: 'अगर आप 12 महीने से ज़्यादा समय से (या अगर आपकी उम्र 35 से ज़्यादा है तो 6 महीने से) गर्भधारण करने की कोशिश कर रहे हैं, तो सही जांच और गाइडेंस के लिए आप सीड्स ऑफ इंनोसेंस लखनऊ मे आके हमारे फर्टिलिटी एक्सपर्ट से मिल सकते हैं',
+      question: 'When should I consult a fertility doctor?',
+      answer: 'If you’ve been trying to conceive for over 12 months (or 6 months if you’re above 35), it’s advisable to consult a fertility doctor near me for proper evaluation and guidance.',
     },
     {
       id: 3,
-      question: 'क्या आप फेल हुए IVF मामलों का इलाज करते हैं?',
-      answer: 'हाँ, हम ज़रूरत पड़ने पर डिटेल में डायग्नोस्टिक्स, यूटेराइन असेसमेंट और एम्ब्रियो एनालिसिस के ज़रिए बार-बार होने वाली IVF फेलियर का मूल्यांकन और इलाज करने में स्पेशलाइज़्ड हैं।',
+      question: 'Do you offer treatment for failed IVF cases?',
+      answer: 'Yes, We specialize in evaluating and treating recurrent IVF failures through detailed diagnostics, uterine assessment, and embryo analysis when required',
     },
     {
       id: 4,
-      question: 'क्या IVF दर्दनाक या मुश्किल होता है?',
-      answer: 'IVF एक स्ट्रक्चर्ड मेडिकल प्रोसेस है। हालांकि कुछ स्टेप्स से हल्का डिस्कम्फर्ट हो सकता है, हमारी टीम आपके पूरे आराम का ध्यान रखती है और आगे बढ़ने से पहले हर स्टेज को साफ़ तौर पर समझाती है।',
+      question: 'Is IVF painful or complicated?',
+      answer: 'IVF is a structured medical process. While certain steps may cause mild discomfort, our team ensures your comfort and explains every stage clearly before proceeding.',
     },
   ];
 
@@ -39,7 +39,7 @@ export default function FAQs() {
           {/* Title Section */}
           <div className="flex items-start">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
-            पूछे जाने वाले सवाल
+              FAQs
             </h2>
           </div>
 
