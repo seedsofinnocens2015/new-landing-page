@@ -20,7 +20,7 @@ export default function WhyChoose() {
     {
       id: 3,
       number: '35+',
-      description: 'इवीएफ सेंटर',
+      description: 'आइव्फ सेंटर',
       icon: '/gads/assets/image/icons/ivfcentres.svg',
       bgColor: '#F6BDDE', // Light pink
     },

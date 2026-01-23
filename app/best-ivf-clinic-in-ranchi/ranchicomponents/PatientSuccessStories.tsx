@@ -19,7 +19,7 @@ export default function PatientSuccessStories() {
   const videos = [
     {
       id: 1,
-      title: 'रांची जोड़े का फ़ीडबैक रांची में इवीएफ सफलता के बारे में सीड्स ऑफ इनोसेंस फर्टिलिटी सेंटर के बारे में',
+      title: 'रांची जोड़े का फ़ीडबैक रांची में आइव्फ सफलता के बारे में सीड्स ऑफ इनोसेंस फर्टिलिटी सेंटर के बारे में',
       videoId: 'CL3uqBMK1Cc', // Replace with actual YouTube video ID
     },
     {
@@ -45,7 +45,7 @@ export default function PatientSuccessStories() {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-        गर्भधारण सफलता के कथाएं
+        गर्भधारण सफलता की कथाएं
         </h2>
 
         {/* Videos Carousel Container */}

@@ -24,7 +24,7 @@ export default function Specialists() {
       specialization: 'इवीएफ, रिप्रोडक्टिव एंडोक्रिनोलॉजी, एडवांस्ड फर्टिलिटी टेक्निक्स',
       experience: '15+ वर्ष',
       location: 'दिल्ली/NCR',
-      image: '/gads/assets/image/Dr Gauri maam.jpg', // Update with actual image path
+      image: '/gads/assets/image/doctor/Dr Gauri maam.jpg', // Update with actual image path
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export default function Specialists() {
       specialization: 'इवीएफ, एडवांस्ड रिप्रोडक्टिव टेक्निक्स',
       experience: '9+ वर्ष',
       location: 'रांची, झारखंड',
-      image: '/gads/assets/image/Dr. Kriti Prasad.jpg', // Update with actual image path
+      image: '/gads/assets/image/doctor/Dr. Kriti Prasad.jpg', // Update with actual image path
     },
     // {
     //   id: 3,

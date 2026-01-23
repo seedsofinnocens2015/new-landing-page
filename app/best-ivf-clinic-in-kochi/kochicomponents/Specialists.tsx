@@ -19,33 +19,42 @@ export default function Specialists() {
   const specialists = [
     {
       id: 1,
+      name: 'Dr. Gauri Agarwal',
+      qualifications: 'MD, DNB, MBBS',
+      specialization: 'IVF, Reproductive Endocrinology, Advanced Fertility Techniques',
+      experience: '15+ Years',
+      location: 'Delhi/NCR',
+      image: '/gads/assets/image/doctor/Dr Gauri maam.jpg', // Update with actual image path
+    },
+    {
+      id: 2,
       name: 'Dr. Sonia Raju',
       qualifications: 'MS, DNB, MRCOG(UK)',
       specialization: 'Fellowship in reproductive medicine, Diploma in reproductive medicine',
       experience: '7+ Years',
       location: 'Kochi, Kerala',
-      image: '/gads/assets/image/Dr. Sonia Raju.png', // Update with actual image path
+      image: '/gads/assets/image/doctor/Dr. Sonia Raju.png', // Update with actual image path
     },
     {
-      id: 2,
+      id: 3,
       name: 'Dr. Vinod Kumar B',
       qualifications: 'MBBS, DGO, DNB',
       specialization: 'IVF, Infertility Management, Advanced Reproductive Techniques',
       experience: '7+ Years',
       location: 'Kochi, Kerala',
-      image: '/gads/assets/image/DR. VINOD KUMAR B.png', // Update with actual image path
+      image: '/gads/assets/image/doctor/DR. VINOD KUMAR B.jpg', // Update with actual image path
     },
     {
-      id: 3,
+      id: 4,
       name: 'Dr. Jasna Mohammed',
       qualifications: 'MBBS, DGO, DNB, Fellowship in IVF',
       specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
       experience: '7+ Years',
       location: 'Kochi, Kerala',
-      image: '/gads/assets/image/Dr.-jASNA.png', // Update with actual image path
+      image: '/gads/assets/image/doctor/Dr.-jASNA.png', // Update with actual image path
     },
     // {
-    //     id: 4,
+    //     id: 5,
     //     name: 'Dr. Manju Gupta',
     //     qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in ART',
     //     specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',

@@ -24,7 +24,7 @@ export default function Specialists() {
       specialization: 'IVF, Reproductive Endocrinology, Advanced Fertility Techniques',
       experience: '15+ Years',
       location: 'Delhi/NCR',
-      image: '/gads/assets/image/Dr Gauri maam.jpg', // Update with actual image path
+      image: '/gads/assets/image/doctor/Dr Gauri maam.jpg', // Update with actual image path
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export default function Specialists() {
       specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
       experience: '7+ Years',
       location: 'Gorakhpur, Uttar Pradesh',
-      image: '/gads/assets/image/Dr. Nivedita Nehal.jpg', // Update with actual image path
+      image: '/gads/assets/image/doctor/Dr. Nivedita Nehal.jpg', // Update with actual image path
     },
     // {
     //   id: 3,
@@ -42,7 +42,7 @@ export default function Specialists() {
     //   specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
     //   experience: '7+ Years',
     //   location: 'Malviya Nagar, New Delhi',
-    //   image: '/gads/assets/image/Dr. Lisha Singh.jpg', // Update with actual image path
+    //   image: '/gads/assets/image/doctor/Dr. Lisha Singh.jpg', // Update with actual image path
     // },
     // {
     //     id: 4,
@@ -51,7 +51,7 @@ export default function Specialists() {
     //     specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',
     //     experience: '12+ Years',
     //     location: 'Pitampura, New Delhi',
-    //     image: '/gads/assets/image/Monika.png', // Update with actual image path
+    //     image: '/gads/assets/image/doctor/Monika.png', // Update with actual image path
     // },
   ];
 

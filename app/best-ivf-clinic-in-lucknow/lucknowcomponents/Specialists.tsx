@@ -24,7 +24,7 @@ export default function Specialists() {
       specialization: 'इवीएफ, रिप्रोडक्टिव एंडोक्रिनोलॉजी, एडवांस्ड फर्टिलिटी टेक्निक्स',
       experience: '15+ वर्ष',
       location: 'दिल्ली/NCR',
-      image: '/gads/assets/image/Dr Gauri maam.jpg', // Update with actual image path
+      image: '/gads/assets/image/doctor/Dr Gauri maam.jpg', // Update with actual image path
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export default function Specialists() {
       specialization: 'इवीएफ, आईसीएसआई, एडवांस्ड रिप्रोडक्टिव टेक्निक्स',
       experience: '7+ वर्ष',
       location: 'लखनऊ, उत्तर प्रदेश',
-      image: '/gads/assets/image/Dr. Disha Datta.jpg', // Update with actual image path
+      image: '/gads/assets/image/doctor/Dr. Disha Datta.jpg', // Update with actual image path
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ export default function Specialists() {
       specialization: 'इवीएफ, अनुभवहीन फर्टिलिटी, रिकररेंट इम्प्लांटेशन फेलर',
       experience: '4+ वर्ष',
       location: 'लखनऊ, उत्तर प्रदेश',
-      image: '/gads/assets/image/Dr. Divya Shivanand.jpg', // Update with actual image path
+      image: '/gads/assets/image/doctor/Dr. Divya Shivanand.jpg', // Update with actual image path
     },
     // {
     //     id: 4,
@@ -51,7 +51,7 @@ export default function Specialists() {
     //     specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',
     //     experience: '12+ Years',
     //     location: 'Pitampura, New Delhi',
-    //     image: '/gads/assets/image/Monika.png', // Update with actual image path
+    //     image: '/gads/assets/image/doctor/Monika.png', // Update with actual image path
     //   },
   ];
 

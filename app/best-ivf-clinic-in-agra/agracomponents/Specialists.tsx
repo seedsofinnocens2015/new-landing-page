@@ -24,7 +24,7 @@ export default function Specialists() {
       specialization: 'IVF, Reproductive Endocrinology, Advanced Fertility Techniques',
       experience: '15+ Years',
       location: 'Delhi/NCR',
-      image: '/gads/assets/image/Dr Gauri maam.jpg', // Update with actual image path
+      image: '/gads/assets/image/doctor/Dr Gauri maam.jpg', // Update with actual image path
     },
     // {
     //   id: 2,
@@ -42,7 +42,7 @@ export default function Specialists() {
       specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
       experience: '5+ Years',
       location: 'Agra, Uttar Pradesh',
-      image: '/gads/assets/image/Dr Aiman.png', // Update with actual image path
+      image: '/gads/assets/image/doctor/Dr Aiman.png', // Update with actual image path
     },
     // {
     //     id: 4,
