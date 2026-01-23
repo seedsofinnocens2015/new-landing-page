@@ -182,23 +182,23 @@ export default function PatientSuccessStories() {
               {[
                 {
                   id: 1,
-                  quote: 'Very excellent experience here ..all staff doctors are very cooperative',
-                  name: 'Anuradha Rai',
+                  quote: 'ഇവിടെ വളരെ മികച്ച അനുഭവം.. എല്ലാ സ്റ്റാഫ് ഡോക്ടർമാരും വളരെ സഹകരണപരമാണ്.',
+                  name: 'അനുരാധ റായ്',
                 },
                 {
                   id: 2,
-                  quote: 'Super facility best doctors..you can trust',
-                  name: 'Nitin Srivastav',
+                  quote: 'സുപ്പർ ഫാക്ട്രി സബ്സ്റ്റിംഗ് ബെസ്റ്റ് ഡോക്ടർ..നിങ്ങൾ വിശ്വസിക്കാം',
+                  name: 'നിതിന് സ്രിവാസ്തവ്',
                 },
                 {
                   id: 3,
-                  quote: 'Nice experience my treatment successfully done Good staff',
-                  name: 'Pinki dasi Pinki',
+                  quote: 'നല്ല അനുഭവം എന്റെ ട്രമ്മിനെ വിജയപ്പെടുത്തി നല്ല സ്റ്റാഫ്',
+                  name: 'പിങ്കി ഡാസി പിങ്കി',
                 },
                 {
                   id: 4,
-                  quote: 'Nice environment, highly recommend to you all !',
-                  name: 'Priya Vyas',
+                  quote: 'നല്ല വാതാവരണം, നിങ്ങൾ എല്ലാവരെയും അതിനായി അഭിനയിക്കുന്നു!',
+                  name: 'പ്രിയ വ്യാസ്',
                 },
               ].map((testimonial) => (
                 <div key={testimonial.id} className="bg-white p-6 rounded-lg flex-shrink-0 w-[280px] md:w-[320px]">
@@ -226,23 +226,23 @@ export default function PatientSuccessStories() {
               {[
                 {
                   id: 5,
-                  quote: 'My patience and Dr Gauri Agarwal treatment finally gave fruits M expecting my twins now. thanks to SEEDS OF INNOCENCE and Her team',
-                  name: 'Shweta Sapra',
+                  quote: 'എന്റെ കാത്തിരിപ്പ് മറ്റും ഡർ ഗൌരി അഗ്രവാല്ക്ക് ട്രമ്മിനെ വിജയപ്പെടുത്തി എന്റെ ട്വിന്സ് തന്നെ വിജയപ്പെടുത്തി. നിഷ്കളങ്കരുടെ സീഡ്സ് ഓഫ് ഇന്നസെൻസ് മറ്റും അവരുടെ ടീം എന്നതിന് നന്ദി.',
+                  name: 'ശ്വേത സപ്രാ',
                 },
                 {
                   id: 6,
-                  quote: 'I have received pregnancy after ten years through Seeds of Innocence Faridabad.',
-                  name: 'Hemant Garg',
+                  quote: 'എന്റെ ഗർഭിണിയായി നിരവധി വർഷങ്ങൾ ശേഷം നിഷ്കളങ്കരുടെ വിത്തുകളുമായി.',
+                  name: 'ഹെമന്റ് ഗര്ഗ്',
                 },
                 {
                   id: 7,
-                  quote: 'Very satisfied with the support and care provided throughout the process.',
-                  name: 'Amit Khatri',
+                  quote: 'എല്ലാവരെയും അഭിനയിക്കുന്ന ആശയം മറ്റും ദേഖരിക്കുന്ന ആശയം എന്നതിന് വളരെ സംതര്ക്കുന്നു.',
+                  name: 'അമിത് ഖത്രി',
                 },
                 {
                   id: 8,
-                  quote: 'Doctors and staff are really helpful, great experience overall!',
-                  name: 'Sapna Bhatt',
+                  quote: 'ഡോക്ടർമാരും സ്റ്റാഫ്മാരും വളരെ സഹകരണപരമാണ്, എല്ലാവരെയും അഭിനയിക്കുന്നു!',
+                  name: 'സപ്ന ഭാട്ട',
                 },
               ].map((testimonial) => (
                 <div key={`duplicate-${testimonial.id}`} className="bg-white p-6 rounded-lg flex-shrink-0 w-[280px] md:w-[320px]">

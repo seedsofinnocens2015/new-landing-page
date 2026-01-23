@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function OurCentres() {
-  const [selectedCity, setSelectedCity] = useState('Kerala');
+  const [selectedCity, setSelectedCity] = useState('കേരളം');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -18,132 +18,132 @@ export default function OurCentres() {
   }, []);
 
   const cities = [
-    { id: 1, name: 'Delhi', icon: '/gads/assets/image/icons/bangalore-icon.svg' },
-    { id: 2, name: 'Uttar Pradesh', icon: '/gads/assets/image/icons/chandigarh-icon.svg' },
-    { id: 3, name: 'Bihar', icon: '/gads/assets/image/icons/chennai-icon.svg' },
-    { id: 4, name: 'Haryana', icon: '/gads/assets/image/icons/coimbatore-icon.svg' },
-    { id: 5, name: 'Jharkhand', icon: '/gads/assets/image/icons/gurgaon-icon.svg' },
-    { id: 6, name: 'Uttarakhand', icon: '/gads/assets/image/icons/indore-icon.svg' },
-    { id: 7, name: 'Assam', icon: '/gads/assets/image/icons/mohali-icon.svg' },
-    { id: 8, name: 'Kerala', icon: '/gads/assets/image/icons/mumbai-icon.svg' },
+    { id: 1, name: 'ഡൽഹി', icon: '/gads/assets/image/icons/bangalore-icon.svg' },
+    { id: 2, name: 'ഉത്തർപ്രദേശ്', icon: '/gads/assets/image/icons/chandigarh-icon.svg' },
+    { id: 3, name: 'ബീഹാർ', icon: '/gads/assets/image/icons/chennai-icon.svg' },
+    { id: 4, name: 'ഹരിയാണ', icon: '/gads/assets/image/icons/coimbatore-icon.svg' },
+    { id: 5, name: 'ജാറ്കംഡ്', icon: '/gads/assets/image/icons/gurgaon-icon.svg' },
+    { id: 6, name: 'ഉത്തരാഖംഡ', icon: '/gads/assets/image/icons/indore-icon.svg' },
+    { id: 7, name: 'അസം', icon: '/gads/assets/image/icons/mohali-icon.svg' },
+    { id: 8, name: 'കേരളം', icon: '/gads/assets/image/icons/mumbai-icon.svg' },
     // { id: 9, name: 'Jammu & Kashmir', icon: '/gads/assets/image/icons/mumbai-icon.svg' },
-    { id: 10, name: 'West Bengal', icon: '/gads/assets/image/icons/mumbai-icon.svg' },
+    { id: 10, name: 'പശ്ചിമ ബംഗാള്', icon: '/gads/assets/image/icons/mumbai-icon.svg' },
   ];
 
   const centres = [
     {
       id: 1,
-      location: 'Malviya Nagar',
+      location: 'മലവിയ നഗര്',
       image: '/gads/assets/image/center/malviyanagar.webp',
-      city: 'Delhi',
+      city: 'ഡൽഹി',
     },
     {
       id: 2,
-      location: 'Pitampura',
+      location: 'പിറ്റംപുര',
       image: '/gads/assets/image/center/pitampura.webp',
-      city: 'Delhi',
+      city: 'ഡൽഹി',
     },
     {
       id: 3,
-      location: 'Janakpuri',
+      location: 'ജനകപുരി',
       image: '/gads/assets/image/center/janakpuri.webp',
-      city: 'Delhi',
+      city: 'ഡൽഹി',
     },
     {
       id: 4,
-      location: 'Ghaziabad',
+      location: 'ഗാസ്വദബാദ്',
       image: '/gads/assets/image/center/yashoda1.webp',
-      city: 'Uttar Pradesh',
+      city: 'ഉത്തർപ്രദേശ്',
     },
     {
       id: 5,
-      location: 'Lucknow',
+      location: 'ലക്നൂസ്',
       image: '/gads/assets/image/center/lucknow.webp',
-      city: 'Uttar Pradesh',
+      city: 'ഉത്തർപ്രദേശ്',
     },
     {
       id: 6,
-      location: 'Agra',
+      location: 'അഗ്ര',
       image: '/gads/assets/image/center/agra1.webp',
-      city: 'Uttar Pradesh',
+      city: 'ഉത്തർപ്രദേശ്',
     },
     {
       id: 7,
-      location: 'Gorakhpur',
+      location: 'ഗോരക്കുപുര്',
       image: '/gads/assets/image/center/gorakhpur1.webp',
-      city: 'Uttar Pradesh',
+      city: 'ഉത്തർപ്രദേശ്',
     },
     {
       id: 8,
-      location: 'Kanpur',
+      location: 'കണ്പൂർ',
       image: '/gads/assets/image/center/kanpur1.webp',
-      city: 'Uttar Pradesh',
+      city: 'ഉത്തർപ്രദേശ്',
     },
     {
       id: 9,
-      location: 'Meerut',
+      location: 'മീറൂർ',
       image: '/gads/assets/image/center/meerut1.webp',
-      city: 'Uttar Pradesh',
+      city: 'ഉത്തർപ്രദേശ്',
     },
     {
       id: 10,
-      location: 'Patna',
+      location: 'പത്തന',
       image: '/gads/assets/image/center/patna1.webp',
-      city: 'Bihar',
+      city: 'ബീഹാർ',
     },
     {
       id: 11,
-      location: 'Muzaffarpur',
+      location: 'മുസാഫ്ഫാർപുർ',
       image: '/gads/assets/image/center/muzaffarpur.webp',
-      city: 'Bihar',
+      city: 'ബീഹാർ',
     },
     {
       id: 12,
-      location: 'Faridabad',
+      location: 'ഫരിദബാദ്',
       image: '/gads/assets/image/center/faridabad.webp',
-      city: 'Haryana',
+      city: 'ഹരിയാണ',
     },
     {
       id: 13,
-      location: 'Gurugram',
+      location: 'ഗുരുഗ്രാമ്',
       image: '/gads/assets/image/center/gurugram.webp',
-      city: 'Haryana',
+      city: 'ഹരിയാണ',
     },
     {
       id: 14,
       location: 'Ranchi',
       image: '/gads/assets/image/center/ranchi1.webp',
-      city: 'Jharkhand',
+      city: 'ജാറ്കംഡ്',
     },
     {
       id: 15,
-      location: 'Haldwani',
+      location: 'ഹല്ദ്വാനി',
       image: '/gads/assets/image/center/haldwani.webp',
-      city: 'Uttarakhand',
+      city: 'ഉത്തരാഖംഡ',
     },
     {
       id: 16,
-      location: 'Guwahati',
+      location: 'ഗുവാഹാട്ടി',
       image: '/gads/assets/image/center/guwahati.webp',
-      city: 'Assam',
+      city: 'അസം',
     },
     {
       id: 17,
-      location: 'kochi',
+      location: 'കോച്ചി',
       image: '/gads/assets/image/center/kochi.webp',
-      city: 'Kerala',
+      city: 'കേരളം',
     },
     {
       id: 18,
-      location: 'Kasaragod',
+      location: 'കാസരഗോദ്',
       image: '/gads/assets/image/center/kasaragod.webp',
-      city: 'Kerala',
+      city: 'കേരളം',
     },
     {
       id: 19,
-      location: 'Kolkata',
+      location: 'കൊലകത്ത',
       image: '/gads/assets/image/center/kolkata.webp',
-      city: 'West Bengal',
+      city: 'പശ്ചിമ ബംഗാള്',
     },
   ];
 
