@@ -19,23 +19,23 @@ export default function PatientSuccessStories() {
   const videos = [
     {
       id: 1,
-      title: 'Got Successfully Pregnant in the First IVF Attempt',
-      videoId: '0XD9OrkunWI', // Replace with actual YouTube video ID
+      title: 'Successful IVF Journey at Seeds of Innocence Guwahati | Real IVF Success Story, IVF Treatment Result',
+      videoId: '2tHF8osCj58', // Replace with actual YouTube video ID
     },
     {
       id: 2,
-      title: 'काफी बार IVF Fail होने के बाद हुआ गर्भधारण।',
-      videoId: '5o6SdAfQvWk', // Replace with actual YouTube video ID
+      title: 'IVF Process Step by Step in Assamese | Dr. Julie Chhawchharia| Test Tube Baby',
+      videoId: '0JPaFr1NOYw', // Replace with actual YouTube video ID
     },
     {
       id: 3,
-      title: 'बैलेंस्ड ट्रांसलोकेशन होने के बाद भी हुआ IVF द्वारा गर्भधारण',
-      videoId: '0p-Z6YRXOSU', // Replace with actual YouTube video ID
+      title: 'BigIVF - Doctor Julie Chhawchharia IVF Specialist in Guwahati | Seeds of Innocence Guwahati Centre',
+      videoId: 'hcCq3RkWdmw', // Replace with actual YouTube video ID
     },
     {
       id: 4,
-      title: '12 Years of Waiting Ends with Seeds of Innocence: A Success Story',
-      videoId: 'cfbgezUuDlo', // Replace with actual YouTube video ID
+      title: 'Best IVF Centre in Guwahati | IVF Specialist in Guwahati - Dr.Julie Chhawchharia Seeds Of Innocence',
+      videoId: '7JMtEmZz2k4', // Replace with actual YouTube video ID
     },
   ];
 

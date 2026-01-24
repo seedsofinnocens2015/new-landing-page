@@ -26,33 +26,33 @@ export default function Specialists() {
       location: 'Delhi/NCR',
       image: '/gads/assets/image/doctor/Dr Gauri maam.jpg', // Update with actual image path
     },
-    // {
-    //   id: 2,
-    //   name: 'Dr. Alpana Razdan',
-    //   qualifications: 'MBBS, MD (Obstetrics & Gynecology), Fellowship in IVF',
-    //   specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
-    //   experience: '13+ Years',
-    //   location: 'Malviya Nagar, New Delhi',
-    //   image: '/gads/assets/image/doctor/Dr. alpana razdan.jpg', // Update with actual image path
-    // },
     {
-      id: 3,
-      name: 'Dr. Lisha Singh',
-      qualifications: 'MBBS, DGO, DNB, Fellowship in IVF',
-      specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
-      experience: '7+ Years',
-      location: 'Malviya Nagar, New Delhi',
-      image: '/gads/assets/image/doctor/Dr. Lisha Singh.jpg', // Update with actual image path
+      id: 2,
+      name: 'Dr. Sneha Narayan',
+      qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in IVF',
+      specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
+      experience: '12+ Years',
+      location: 'Kolkata, West Bengal',
+      image: '/gads/assets/image/doctor/Dr Sneha Narayan.jpg', // Update with actual image path
     },
     {
-        id: 4,
-        name: 'Dr. Monika Maan',
-        qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in ART',
-        specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',
-        experience: '12+ Years',
-        location: 'Pitampura, New Delhi',
-        image: '/gads/assets/image/doctor/Monika.png', // Update with actual image path
-      },
+      id: 3,
+      name: 'Dr. Adrija Ghosal',
+      qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in IVF',
+      specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
+      experience: '5+ Years',
+      location: 'Kolkata, West Bengal',
+      image: '/gads/assets/image/doctor/Dr. Adrija Ghosal.png', // Update with actual image path
+    },
+    // {
+    //     id: 4,
+    //     name: 'Dr. Monika Maan',
+    //     qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in ART',
+    //     specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',
+    //     experience: '12+ Years',
+    //     location: 'Pitampura, New Delhi',
+    //     image: '/gads/assets/image/doctor/Monika.png', // Update with actual image path
+    // },
   ];
 
   return (
@@ -71,7 +71,6 @@ export default function Specialists() {
               className="flex gap-6 transition-transform duration-300 ease-in-out"
               style={{ 
                 transform: (() => {
-
                   const visibleCards = isMobile ? 1 : 3;
                   const hasFewerCards = specialists.length < visibleCards;
                   

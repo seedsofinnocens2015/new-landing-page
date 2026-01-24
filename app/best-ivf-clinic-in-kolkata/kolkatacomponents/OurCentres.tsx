@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function OurCentres() {
-  const [selectedCity, setSelectedCity] = useState('Delhi');
+  const [selectedCity, setSelectedCity] = useState('West Bengal');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -188,7 +188,7 @@ export default function OurCentres() {
         </div>
 
         {/* Centres Cards Container */}
-        <div className="relative max-w-6xl mx-auto overflow-hidden pb-10">
+        <div className="relative max-w-6xl mx-auto overflow-hidden">
           {/* Centres Slider */}
           <div 
             className={`flex mb-8 transition-transform duration-700 ease-in-out ${
