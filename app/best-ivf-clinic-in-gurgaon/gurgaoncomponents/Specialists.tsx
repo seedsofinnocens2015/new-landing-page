@@ -66,7 +66,7 @@ export default function Specialists() {
         {/* Specialists Cards Container */}
         <div className="relative max-w-6xl mx-auto mt-10">
           {/* Cards Container with Overflow */}
-          <div className="overflow-hidden mb-12 md:mb-0">
+          <div className="overflow-hidden mb-12 md:mb-0 pb-10">
             <div 
               className="flex gap-6 transition-transform duration-300 ease-in-out"
               style={{ 

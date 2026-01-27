@@ -50,7 +50,7 @@ export default function PatientSuccessStories() {
         {/* Videos Carousel Container */}
         <div className="relative max-w-6xl mx-auto">
           {/* Videos Container with Overflow */}
-          <div className="overflow-hidden mb-12 md:mb-0">
+          <div className="overflow-hidden mb-12 md:mb-0 pb-10">
             <div
               className="flex gap-6 transition-transform duration-300 ease-in-out"
               style={{

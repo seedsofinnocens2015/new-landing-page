@@ -8,21 +8,26 @@ export default function FAQs() {
   const faqs = [
     {
       id: 1,
-      question: 'How do I choose the best IVF doctor near me?',
+      question: 'How do I choose the best IVF doctor near me ?',
       answer: 'If you are looking for an experience, personalized treatment, and patient reviews. At Seeds of Innocens, our IVF specialists in Gurgaon will follow evidence-based protocols and will provide individualized fertility care.',
     },
     {
       id: 2,
+      question: 'How do I choose the best IVF doctor near me?',
+      answer: 'If you are looking for an experience, personalized treatment, and patient reviews. At Seeds of Innocens, our IVF specialists in Gurgaon will follow evidence-based protocols and will provide individualized fertility care.',
+    },
+    {
+      id: 3,
       question: 'When should I consult a fertility doctor?',
       answer: 'If you’ve been trying to conceive for over 12 months (or 6 months if you’re above 35), it’s advisable to consult a fertility doctor near me for proper evaluation and guidance.',
     },
     {
-      id: 3,
+      id: 4,
       question: 'Do you offer treatment for failed IVF cases?',
       answer: 'Yes, We specialize in evaluating and treating recurrent IVF failures through detailed diagnostics, uterine assessment, and embryo analysis when required',
     },
     {
-      id: 4,
+      id: 5,
       question: 'Is IVF painful or complicated?',
       answer: 'IVF is a structured medical process. While certain steps may cause mild discomfort, our team ensures your comfort and explains every stage clearly before proceeding.',
     },

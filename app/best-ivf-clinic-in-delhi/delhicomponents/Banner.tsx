@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import ThankYouModal from './ThankYouModal';
+import { useRouter } from 'next/navigation';
 
 export default function Banner() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     fullName: '',
     language: '',
@@ -11,7 +12,6 @@ export default function Banner() {
     consent: false,
   });
   const [isLoading, setIsLoading] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -59,7 +59,7 @@ export default function Banner() {
       }
       
       console.log('Form submitted successfully:', data);
-      setIsSuccess(true);
+      router.push('/thankyou?location=delhi');
     } catch (error: any) {
       console.error('Error submitting form:', error);
       // Check if it's a duplicate error from response data
@@ -240,16 +240,6 @@ export default function Banner() {
             </form>
         </div>
       </div>
-      <ThankYouModal isOpen={isSuccess} onClose={() => {
-        setIsSuccess(false);
-        // Reset form after closing thank you modal
-        setFormData({
-          fullName: '',
-          language: '',
-          phoneNumber: '',
-          consent: false,
-        });
-      }} />
     </section>
   );
 }

@@ -49,6 +49,11 @@ export default function OurServices() {
           Our Services
         </h2>
 
+         {/* Description Text */}
+        <p className="text-gray-800 text-center max-w-4xl mx-auto mb-24 leading-relaxed">
+         Our services include the whole fertility solutions at a trusted IVF clinic near me option for the couples across Delhi. Seeds of Innocens IVF is a leading IVF centre in Delhi, we offer expert care from the best fertility specialist along with several treatments which includes IVF, ICSI, IUI, Egg freezing, Embryo Freezing, Oocyte vitrification, Laser Assisted Hatching, Ovulation Induction and reproductive surgery.
+        </p>
+
         {/* Services Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 max-w-5xl mx-auto">
           {services.map((service) => (

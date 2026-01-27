@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import ThankYouModal from './ThankYouModal';
+import { useRouter } from 'next/navigation';
 
 interface AppointmentModalProps {
   isOpen: boolean;
@@ -9,6 +9,7 @@ interface AppointmentModalProps {
 }
 
 export default function AppointmentModal({ isOpen, onClose }: AppointmentModalProps) {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     fullName: '',
     language: '',
@@ -16,7 +17,6 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
     consent: false,
   });
   const [isLoading, setIsLoading] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -65,7 +65,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
       }
       
       console.log('Form submitted successfully:', data);
-      setIsSuccess(true);
+      router.push('/thankyou?location=delhi');
     } catch (error: any) {
       console.error('Error submitting form:', error);
       // Check if it's a duplicate error from response data
@@ -92,8 +92,8 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
   if (!isOpen) return null;
 
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    // Never close modal if loading or success
-    if (isLoading || isSuccess) {
+    // Never close modal if loading
+    if (isLoading) {
       e.preventDefault();
       e.stopPropagation();
       return;
@@ -109,8 +109,8 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
       className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/50 bg-opacity-50" 
       onClick={handleBackdropClick}
       onMouseDown={(e) => {
-        // Prevent backdrop interaction during loading or success
-        if (isLoading || isSuccess) {
+        // Prevent backdrop interaction during loading
+        if (isLoading) {
           e.preventDefault();
           e.stopPropagation();
         }
@@ -125,11 +125,11 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
         <button
           onClick={(e) => {
             e.stopPropagation();
-            if (!isLoading && !isSuccess) {
+            if (!isLoading) {
               onClose();
             }
           }}
-          disabled={isLoading || isSuccess}
+          disabled={isLoading}
           className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           aria-label="Close modal"
         >
@@ -291,17 +291,6 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
             </button>
           </form>
       </div>
-      <ThankYouModal isOpen={isSuccess} onClose={() => {
-        setIsSuccess(false);
-        onClose();
-        // Reset form after closing thank you modal
-        setFormData({
-          fullName: '',
-          language: '',
-          phoneNumber: '',
-          consent: false,
-        });
-      }} />
     </div>
   );
 }
