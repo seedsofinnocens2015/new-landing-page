@@ -46,12 +46,12 @@ export default function OurServices() {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-        ഞങ്ങളുടെ സേവനങ്ങൾ
+          ഞങ്ങളുടെ സേവനങ്ങൾ
         </h2>
 
-         {/* Description Text */}
+        {/* Description Text */}
         <p className="text-gray-800 text-center max-w-4xl mx-auto mb-24 leading-relaxed">
-         Our services include the whole fertility solutions at a best IVF clinic near me option for the couples across Delhi. Seeds of Innocens IVF is a leading IVF centre in Delhi, we offer expert care from the best fertility specialist along with several treatments which includes IVF, ICSI, IUI, Egg freezing, Embryo Freezing, Oocyte vitrification, Laser Assisted Hatching, Ovulation Induction and reproductive surgery.
+          കൊച്ചിയിൽ എനിക്ക് സമീപമുള്ള ഒരു IVF ക്ലിനിക്ക് തിരയുകയാണോ? സീഡ്സ് ഓഫ് ഇന്നോസെൻസ് IVF കൊച്ചി മികച്ച IVF സ്പെഷ്യലിസ്റ്റിൽ നിന്ന് നൂതന ഫെർട്ടിലിറ്റി സൊല്യൂഷനുകൾ ഉപയോഗിച്ച് പരിചരണം നൽകുന്നു. ഓരോ ദമ്പതികൾക്കും വേണ്ടി രൂപകൽപ്പന ചെയ്തിട്ടുള്ള ഞങ്ങളുടെ IVF പാക്കേജുകൾ ഉപയോഗിച്ച് നിങ്ങൾക്ക് ഇന്ന് തന്നെ IVF കൺസൾട്ടേഷൻ എളുപ്പത്തിൽ ബുക്ക് ചെയ്യാനും ഇന്ത്യയിലെ IVF ചികിത്സാ ചെലവ് മനസ്സിലാക്കാനും കഴിയും. കൂടാതെ, ഉയർന്ന IVF വിജയ നിരക്കുകളിൽ ഞങ്ങൾ ശ്രദ്ധ കേന്ദ്രീകരിക്കുകയും ഓരോ ഘട്ടത്തിലും IVF പ്രക്രിയയിലൂടെ സമഗ്രമായ മാർഗ്ഗനിർദ്ദേശം നൽകുകയും ചെയ്യും. വിശ്വസനീയമായ IVF ക്ലിനിക്ക് അവലോകനങ്ങൾ പിന്തുണയ്ക്കുന്ന ഒരു നൂതന ICSI ഫെർട്ടിലിറ്റി ചികിത്സ നൽകുന്ന മികച്ച IVF കേന്ദ്രങ്ങളിൽ ഒന്നാണ് കൊച്ചിയിലെ ഞങ്ങളുടെ IVF കേന്ദ്രം.
         </p>
 
         {/* Services Grid */}

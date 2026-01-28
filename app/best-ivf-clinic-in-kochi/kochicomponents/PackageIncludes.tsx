@@ -114,7 +114,7 @@ export default function PackageIncludes() {
                   Free Consultation
                 </span>
                 <p className="text-gray-600 text-center">
-                  You can visit an IVF doctor and specialist at our trusted Seeds of Innocens best  IVF centre in Kochi. You can also get expert guidance to start your fertility journey with confidence.
+                  You can visit an IVF doctor at Seeds of Innocens best  IVF centre in Kochi. You can also get expert guidance to start your fertility journey with confidence.
                 </p>
               </div>
 
