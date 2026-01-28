@@ -188,7 +188,7 @@ export default function OurCentres() {
         </div>
 
         {/* Centres Cards Container */}
-        <div className="relative max-w-6xl mx-auto overflow-hidden">
+        <div className="relative max-w-6xl mx-auto overflow-hidden pb-10">
           {/* Centres Slider */}
           <div 
             className={`flex mb-8 transition-transform duration-700 ease-in-out ${

@@ -109,14 +109,17 @@ export default function PackageIncludes() {
                   <Image
                     src="/gads/assets/image/icons/Tick 1.svg"
                     alt="Free Consultation"
-                    width={80}
-                    height={80}
-                    className="w-30 h-30"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12"
                   />
                 </div>
                 <span className="text-lg text-gray-700 font-medium">
                 സൗജന്യ കൺസൾട്ടേഷൻ
                 </span>
+                <p className="text-gray-600 text-center">
+                  If you are looking for an IVF treatment near me then you can meet the best IVF specialist at our trusted IVF centre in Delhi, Seeds of Innocens IVF is here to guide you.
+                </p>
               </div>
 
               {/* Free Scan */}
@@ -125,14 +128,17 @@ export default function PackageIncludes() {
                   <Image
                     src="/gads/assets/image/icons/Tick 1.svg"
                     alt="Free Scan"
-                    width={80}
-                    height={80}
-                    className="w-30 h-30"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12"
                   />
                 </div>
                 <span className="text-lg text-gray-700 font-medium">
                 സൗജന്യ സ്കാൻ
                 </span>
+                 <p className="text-gray-600 text-center">
+                 Get a comprehensive transparency on IVF treatment cost in India, high IVF success rates and support you through verified IVF clinic reviews.
+                </p>
               </div>
             </div>
           </div>
@@ -160,20 +166,11 @@ export default function PackageIncludes() {
               </div>
 
               {/* Free Semen Analysis */}
-              {/* <div className="flex flex-col items-center gap-3">
-                <div className="flex-shrink-0">
-                  <Image
-                    src="/gads/assets/image/icons/Tick 1.svg"
-                    alt="Free Semen Analysis"
-                    width={80}
-                    height={80}
-                    className="w-30 h-30"
-                  />
+              <div className="flex flex-col items-center gap-3">
+                <div className="flex-shrink-0 text-center text-gray-700">
+                  Our IVF packages are designed to support each couple’s journey with complete transparency in IVF treatment cost in India. At Seeds of Innocens IVF, an advanced IVF centre in Delhi, you can meet the best IVF doctor and book IVF consultation easily. We guide you through the IVF process step by step which includes advanced options such ICSI fertility treatment and egg freezing.
                 </div>
-                <span className="text-lg text-gray-700 font-medium">
-                  Free Semen Analysis
-                </span>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

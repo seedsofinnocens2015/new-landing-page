@@ -20,7 +20,7 @@ export default function PackageIncludes() {
               </h3>
               <div className="space-y-4">
                 {/* Free Consultation */}
-                <div className="flex items-center gap-4">
+                <div className="gap-4">
                   <div className="flex-shrink-0">
                     <Image
                       src="/gads/assets/image/icons/Tick 1.svg"
@@ -33,10 +33,13 @@ export default function PackageIncludes() {
                   <span className="text-lg text-gray-700 font-medium">
                     Free Consultation
                   </span>
+                  <p className="text-gray-600">
+                    You can visit an IVF doctor and specialist at our trusted Seeds of Innocens best  IVF centre in Kochi. You can also get expert guidance to start your fertility journey with confidence.
+                  </p>
                 </div>
 
                 {/* Free Scan */}
-                <div className="flex items-center gap-4">
+                <div className=" items-center gap-4">
                   <div className="flex-shrink-0">
                     <Image
                       src="/gads/assets/image/icons/Tick 1.svg"
@@ -49,6 +52,9 @@ export default function PackageIncludes() {
                   <span className="text-lg text-gray-700 font-medium">
                     Free Scan
                   </span>
+                  <p className="text-gray-600">
+                    Receive a comprehensive fertility evaluation and understand the IVF process with customized care from our team.
+                  </p>
                 </div>
               </div>
             </div>
@@ -76,20 +82,10 @@ export default function PackageIncludes() {
                 </div>
 
                 {/* Free Semen Analysis */}
-                {/* <div className="flex items-center gap-4">
-                  <div className="flex-shrink-0">
-                    <Image
-                      src="/gads/assets/image/icons/Tick 1.svg"
-                      alt="Free Semen Analysis"
-                      width={48}
-                      height={48}
-                      className="w-12 h-12"
-                    />
-                  </div>
-                  <span className="text-lg text-gray-700 font-medium">
-                    Free Semen Analysis
-                  </span>
-                </div> */}
+                <div className="flex items-center gap-4 text-gray-700">
+                  Looking for an IVF clinic near me in Kochi? Now you can book IVF consultation easily and explore the IVF treatment cost in Kochi through our best IVF packages with flexible EMI options.
+                  We offer advanced ICSI fertility treatment, high IVF success rates that are backed by genuine IVF clinic reviews. However, our IVF specialists will guide you completely for several fertility treatments.
+                </div>
               </div>
             </div>
           </div>
@@ -109,14 +105,17 @@ export default function PackageIncludes() {
                   <Image
                     src="/gads/assets/image/icons/Tick 1.svg"
                     alt="Free Consultation"
-                    width={80}
-                    height={80}
-                    className="w-30 h-30"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12"
                   />
                 </div>
-                <span className="text-lg text-gray-700 font-medium">
+                <span className="text-gray-700 font-medium">
                   Free Consultation
                 </span>
+                <p className="text-gray-600 text-center">
+                  You can visit an IVF doctor and specialist at our trusted Seeds of Innocens best  IVF centre in Kochi. You can also get expert guidance to start your fertility journey with confidence.
+                </p>
               </div>
 
               {/* Free Scan */}
@@ -125,14 +124,17 @@ export default function PackageIncludes() {
                   <Image
                     src="/gads/assets/image/icons/Tick 1.svg"
                     alt="Free Scan"
-                    width={80}
-                    height={80}
-                    className="w-30 h-30"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12"
                   />
                 </div>
-                <span className="text-lg text-gray-700 font-medium">
+                <span className="text-gray-700 font-medium">
                   Free Scan
                 </span>
+                <p className="text-gray-600 text-center">
+                  Receive a comprehensive fertility evaluation and understand the IVF process with customized care from our team.
+                </p>
               </div>
             </div>
           </div>
@@ -160,20 +162,12 @@ export default function PackageIncludes() {
               </div>
 
               {/* Free Semen Analysis */}
-              {/* <div className="flex flex-col items-center gap-3">
-                <div className="flex-shrink-0">
-                  <Image
-                    src="/gads/assets/image/icons/Tick 1.svg"
-                    alt="Free Semen Analysis"
-                    width={80}
-                    height={80}
-                    className="w-30 h-30"
-                  />
+              <div className="flex flex-col items-center gap-3">
+                <div className="flex-shrink-0 text-center text-gray-700">
+                  Looking for an IVF clinic near me in Kochi? Now you can book IVF consultation easily and explore the IVF treatment cost in Kochi through our best IVF packages with flexible EMI options.
+                  We offer advanced ICSI fertility treatment, high IVF success rates that are backed by genuine IVF clinic reviews. However, our IVF specialists will guide you completely for several fertility treatments.
                 </div>
-                <span className="text-lg text-gray-700 font-medium">
-                  Free Semen Analysis
-                </span>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

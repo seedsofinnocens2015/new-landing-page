@@ -49,6 +49,11 @@ export default function OurServices() {
           Our Services
         </h2>
 
+         {/* Description Text */}
+        <p className="text-gray-800 text-center max-w-4xl mx-auto mb-24 leading-relaxed">
+         Searching for an IVF clinic near me in Kochi? Seeds of Innocens IVF Kochi provides care from the best IVF specialist with advanced fertility solutions. You can easily book IVF consultation today and understand the IVF treatment cost in India with our IVF packages that are designed for each couple. Also, we focus on high IVF success rates and will provide comprehensive guidance through the IVF process with each step. Our IVF centre in Kochi is one of the best IVF clinic which provides an advanced ICSI fertility treatment that is supported by the trusted IVF clinic reviews. 
+        </p>
+
         {/* Services Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 max-w-5xl mx-auto">
           {services.map((service) => (
