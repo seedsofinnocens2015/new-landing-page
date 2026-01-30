@@ -34,7 +34,7 @@ export default function PackageIncludes() {
                     Free Consultation
                   </span>
                   <p className="text-gray-600">
-                    If you are looking for an IVF treatment near me then you can meet the best IVF specialist at our trusted IVF centre in Delhi, Seeds of Innocens IVF is here to guide you.
+                    If you are searching for an IVF treatment, then you can meet the best IVF doctor at Seeds of Innocens IVF is here to guide you.
                   </p>
                 </div>
 
@@ -113,7 +113,7 @@ export default function PackageIncludes() {
                   Free Consultation
                 </span>
                 <p className="text-gray-600 text-center">
-                  If you are looking for an IVF treatment near me then you can meet the best IVF specialist at our trusted IVF centre in Delhi, Seeds of Innocens IVF is here to guide you.
+                  If you are searching for an IVF treatment, then you can meet the best IVF doctor at Seeds of Innocens IVF is here to guide you.
                 </p>
               </div>
 

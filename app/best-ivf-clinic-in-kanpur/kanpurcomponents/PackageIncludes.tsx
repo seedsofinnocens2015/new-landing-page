@@ -34,7 +34,7 @@ export default function PackageIncludes() {
                     Free Consultation
                   </span>
                   <p className="text-gray-600">
-                    If you are looking for an IVF treatment near me then you can meet the best IVF specialist at our trusted IVF centre in Delhi, Seeds of Innocens IVF is here to guide you.
+                    If you are searching for an IVF treatment near me, then you can meet the best IVF doctor at Seeds of Innocens IVF Kanpur, where we will guide you and turn your parenthood journey with compassion and care.
                   </p>
                 </div>
 
@@ -53,7 +53,7 @@ export default function PackageIncludes() {
                     Free Scan
                   </span>
                   <p className="text-gray-600">
-                    Get a comprehensive transparency on IVF treatment cost in India, high IVF success rates and support you through verified IVF clinic reviews.
+                    Get whole transparency on IVF treatment cost in India, high IVF success rates, and support you through a verified IVF clinic
                   </p>
                 </div>
               </div>
@@ -83,7 +83,7 @@ export default function PackageIncludes() {
 
                 {/* Free Semen Analysis */}
                 <div className="flex items-center gap-4 text-gray-700">
-                 Our IVF packages are designed to support each couple’s journey with complete transparency in IVF treatment cost in India. At Seeds of Innocens IVF, an advanced IVF centre in Delhi, you can meet the best IVF doctor and book IVF consultation easily. We guide you through the IVF process step by step which includes advanced options such ICSI fertility treatment and egg freezing.
+                 Our IVF packages are carefully made to support each couple’s journey with complete transparency regarding IVF treatment costs in India. At Seeds of Innocens IVF, an advanced IVF centre in Kanpur, you can meet the best IVF doctor and book an IVF consultation easily. We will guide you through the IVF process step by step, which includes advanced options like ICSI fertility treatment and egg freezing.
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function PackageIncludes() {
                   Free Consultation
                 </span>
                 <p className="text-gray-600 text-center">
-                  If you are looking for an IVF treatment near me then you can meet the best IVF specialist at our trusted IVF centre in Delhi, Seeds of Innocens IVF is here to guide you.
+                  If you are searching for an IVF treatment near me, then you can meet the best IVF doctor at Seeds of Innocens IVF Kanpur, where we will guide you and turn your parenthood journey with compassion and care.
                 </p>
               </div>
 
@@ -132,7 +132,7 @@ export default function PackageIncludes() {
                   Free Scan
                 </span>
                 <p className="text-gray-600 text-center">
-                 Get a comprehensive transparency on IVF treatment cost in India, high IVF success rates and support you through verified IVF clinic reviews.
+                 Get whole transparency on IVF treatment cost in India, high IVF success rates, and support you through a verified IVF clinic
                 </p>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function PackageIncludes() {
               {/* Free Semen Analysis */}
               <div className="flex flex-col items-center gap-3">
                 <div className="flex-shrink-0 text-center text-gray-700">
-                  Our IVF packages are designed to support each couple’s journey with complete transparency in IVF treatment cost in India. At Seeds of Innocens IVF, an advanced IVF centre in Delhi, you can meet the best IVF doctor and book IVF consultation easily. We guide you through the IVF process step by step which includes advanced options such ICSI fertility treatment and egg freezing.
+                  Our IVF packages are carefully made to support each couple’s journey with complete transparency regarding IVF treatment costs in India. At Seeds of Innocens IVF, an advanced IVF centre in Kanpur, you can meet the best IVF doctor and book an IVF consultation easily. We will guide you through the IVF process step by step, which includes advanced options like ICSI fertility treatment and egg freezing.
                 </div>
                 {/* <span className="text-lg text-gray-700 font-medium">
                   Free Semen Analysis
