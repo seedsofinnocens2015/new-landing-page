@@ -77,7 +77,7 @@ export default function PackageIncludes() {
                     />
                   </div>
                   <span className="text-lg text-gray-700 font-medium">
-                    ചെലവില്ലാത്ത EMI
+                    ചെലവില്ലാതെ EMI
                   </span>
                 </div>
 
@@ -158,7 +158,7 @@ export default function PackageIncludes() {
                   />
                 </div>
                 <span className="text-lg text-gray-700 font-medium">
-                  ചെലവില്ലാത്ത EMI
+                  ചെലവില്ലാതെ EMI
                 </span>
               </div>
 
