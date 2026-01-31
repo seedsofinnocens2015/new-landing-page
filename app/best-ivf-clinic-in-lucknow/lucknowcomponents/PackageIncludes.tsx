@@ -20,7 +20,7 @@ export default function PackageIncludes() {
               </h3>
               <div className="space-y-4">
                 {/* Free Consultation */}
-                <div className="flex items-center gap-4">
+                <div className="gap-4">
                   <div className="flex-shrink-0">
                     <Image
                       src="/gads/assets/image/icons/Tick 1.svg"
@@ -33,10 +33,13 @@ export default function PackageIncludes() {
                   <span className="text-lg text-gray-700 font-medium">
                     Free Consultation
                   </span>
+                  <p className="text-gray-600">
+                    If you are searching out for the best IVF treatment then you can meet the best IVF specialist at Seeds of Innocens IVF.
+                  </p>
                 </div>
 
                 {/* Free Scan */}
-                <div className="flex items-center gap-4">
+                <div className=" items-center gap-4">
                   <div className="flex-shrink-0">
                     <Image
                       src="/gads/assets/image/icons/Tick 1.svg"
@@ -49,6 +52,9 @@ export default function PackageIncludes() {
                   <span className="text-lg text-gray-700 font-medium">
                     Free Scan
                   </span>
+                  <p className="text-gray-600">
+                    Get comprehensive transparency on IVF treatment costs in India, benefit from the high success rates with trusted support through verified IVF clinic reviews.
+                  </p>
                 </div>
               </div>
             </div>
@@ -76,20 +82,9 @@ export default function PackageIncludes() {
                 </div>
 
                 {/* Free Semen Analysis */}
-                {/* <div className="flex items-center gap-4">
-                  <div className="flex-shrink-0">
-                    <Image
-                      src="/gads/assets/image/icons/Tick 1.svg"
-                      alt="Free Semen Analysis"
-                      width={48}
-                      height={48}
-                      className="w-12 h-12"
-                    />
-                  </div>
-                  <span className="text-lg text-gray-700 font-medium">
-                    Free Semen Analysis
-                  </span>
-                </div> */}
+                <div className="flex items-center gap-4 text-gray-700">
+                 Our IVF packages are formed to support countless couple’s journeys with complete transparency in IVF treatment cost in India. With an advanced IVF centre in Lucknow, you can meet the best IVF doctor and book an IVF consultation easily. We will guide you through each step by step which will include advanced options like egg freezing and ICSI fertility treatment.
+                </div>
               </div>
             </div>
           </div>
@@ -109,14 +104,17 @@ export default function PackageIncludes() {
                   <Image
                     src="/gads/assets/image/icons/Tick 1.svg"
                     alt="Free Consultation"
-                    width={80}
-                    height={80}
-                    className="w-30 h-30"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12"
                   />
                 </div>
-                <span className="text-lg text-gray-700 font-medium">
+                <span className="text-gray-700 font-medium">
                   Free Consultation
                 </span>
+                <p className="text-gray-600 text-center">
+                  If you are searching out for the best IVF treatment then you can meet the best IVF specialist at Seeds of Innocens IVF.
+                </p>
               </div>
 
               {/* Free Scan */}
@@ -125,14 +123,17 @@ export default function PackageIncludes() {
                   <Image
                     src="/gads/assets/image/icons/Tick 1.svg"
                     alt="Free Scan"
-                    width={80}
-                    height={80}
-                    className="w-30 h-30"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12"
                   />
                 </div>
-                <span className="text-lg text-gray-700 font-medium">
+                <span className="text-gray-700 font-medium">
                   Free Scan
                 </span>
+                <p className="text-gray-600 text-center">
+                 Get comprehensive transparency on IVF treatment costs in India, benefit from the high success rates with trusted support through verified IVF clinic reviews.
+                </p>
               </div>
             </div>
           </div>
@@ -160,20 +161,14 @@ export default function PackageIncludes() {
               </div>
 
               {/* Free Semen Analysis */}
-              {/* <div className="flex flex-col items-center gap-3">
-                <div className="flex-shrink-0">
-                  <Image
-                    src="/gads/assets/image/icons/Tick 1.svg"
-                    alt="Free Semen Analysis"
-                    width={80}
-                    height={80}
-                    className="w-30 h-30"
-                  />
+              <div className="flex flex-col items-center gap-3">
+                <div className="flex-shrink-0 text-center text-gray-700">
+                  Our IVF packages are formed to support countless couple’s journeys with complete transparency in IVF treatment cost in India. With an advanced IVF centre in Lucknow, you can meet the best IVF doctor and book an IVF consultation easily. We will guide you through each step by step which will include advanced options like egg freezing and ICSI fertility treatment.
                 </div>
-                <span className="text-lg text-gray-700 font-medium">
+                {/* <span className="text-lg text-gray-700 font-medium">
                   Free Semen Analysis
-                </span>
-              </div> */}
+                </span> */}
+              </div>
             </div>
           </div>
         </div>

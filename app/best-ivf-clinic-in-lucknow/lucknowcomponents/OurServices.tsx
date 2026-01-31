@@ -48,6 +48,10 @@ export default function OurServices() {
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
           Our Services
         </h2>
+        {/* Description Text */}
+        <p className="text-gray-800 text-center max-w-4xl mx-auto mb-24 leading-relaxed">
+         We at Seeds of Innocens IVF Lucknow  provide a wide range of fertility solutions such as IVF, ICSI,IUI, Egg Freezing, Embryo Freezing, Oocyte Vitrification, Laser Assisted Hatching and reproductive surgery. However, if you are looking for the best IVF clinic near me then Seeds of Innocens IVF Lucknow is just round the corner.
+        </p>
 
         {/* Services Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 max-w-5xl mx-auto">

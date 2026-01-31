@@ -46,8 +46,13 @@ export default function OurServices() {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-          Our Services
+          हमारी सेवाएं
         </h2>
+
+         {/* Description Text */}
+        <p className="text-gray-800 text-center max-w-4xl mx-auto mb-24 leading-relaxed">
+         हम सीड्स ऑफ़ इनोसेंस IVF लखनऊ में IVF, ICSI, IUI, एग फ्रीजिंग, एम्ब्रियो फ्रीजिंग, ऊसाइट विट्रिफिकेशन, लेजर असिस्टेड हैचिंग और रिप्रोडक्टिव सर्जरी जैसे फर्टिलिटी सॉल्यूशंस की एक विस्तृत श्रृंखला प्रदान करते हैं। हालाँकि, अगर आप  अपने आस-पास सबसे अच्छे IVF सेंटर की तलाश कर रहे हैं तो सीड्स ऑफ़ इनोसेंस IVF लखनऊ से बेस्ट और कुछ नही है|
+        </p>
 
         {/* Services Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 max-w-5xl mx-auto">
