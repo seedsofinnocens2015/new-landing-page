@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import ThankYouModal from './ThankYouModal';
+import { useRouter } from 'next/navigation';
 
 export default function Banner() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     fullName: '',
     language: '',
@@ -11,7 +12,6 @@ export default function Banner() {
     consent: false,
   });
   const [isLoading, setIsLoading] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -24,7 +24,7 @@ export default function Banner() {
       const payload = {
         fullName: formData.fullName,
         phoneNumber: formData.phoneNumber,
-        source: 'Delhi Google Ads',
+        source: 'Guwahati Google Ads',
         message: `Language preference: ${formData.language || 'Not specified'}`,
       };
 
@@ -59,7 +59,7 @@ export default function Banner() {
       }
       
       console.log('Form submitted successfully:', data);
-      setIsSuccess(true);
+      router.push('/thankyou?location=guwahati');
     } catch (error: any) {
       console.error('Error submitting form:', error);
       // Check if it's a duplicate error from response data
@@ -88,7 +88,7 @@ export default function Banner() {
       {/* Desktop Banner Image */}
       <div className="relative w-full hidden md:block">
         <img 
-          src="/gads/assets/image/banner/delhi.jpg"
+          src="/gads/assets/image/banner/guwahati.jpeg"
           alt="Banner"
           className="w-full h-auto"
         />
@@ -97,7 +97,7 @@ export default function Banner() {
       {/* Mobile Banner Image */}
       <div className="relative w-full block md:hidden">
         <img 
-          src="/gads/assets/image/banner/delhi1.jpg"
+          src="/gads/assets/image/banner/guwahati1.jpeg"
           alt="Banner Mobile"
           className="w-full h-auto"
         />
@@ -240,16 +240,6 @@ export default function Banner() {
             </form>
         </div>
       </div>
-      <ThankYouModal isOpen={isSuccess} onClose={() => {
-        setIsSuccess(false);
-        // Reset form after closing thank you modal
-        setFormData({
-          fullName: '',
-          language: '',
-          phoneNumber: '',
-          consent: false,
-        });
-      }} />
     </section>
   );
 }

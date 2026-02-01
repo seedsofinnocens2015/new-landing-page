@@ -65,7 +65,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
       }
 
       console.log('Form submitted successfully:', data);
-      router.push('/thankyou?location=Kasaragod');
+      router.push('/thankyou?location=kasaragod');
     } catch (error: any) {
       console.error('Error submitting form:', error);
       // Check if it's a duplicate error from response data

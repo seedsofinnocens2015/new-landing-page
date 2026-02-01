@@ -13,42 +13,48 @@ export default function PackageIncludes() {
         {/* Mobile: Single Card with both sections */}
         <div className="block md:hidden max-w-5xl mx-auto">
           <div className="bg-white rounded-2xl shadow-md p-8">
-            {/* Expert Fertility Screening Camp Section */}
+            {/* Free Fertility Screening Camp Section */}
             <div className="mb-8">
               <h3 className="text-xl font-semibold text-gray-900 mb-6">
-                Expert Fertility Screening Camp
+                Free Fertility Screening Camp
               </h3>
               <div className="space-y-4">
-                {/* Expert Consultation */}
-                <div className="flex items-center gap-4">
+                {/* Free Consultation */}
+                <div className="gap-4">
                   <div className="flex-shrink-0">
                     <Image
                       src="/gads/assets/image/icons/Tick 1.svg"
-                      alt="Expert Consultation"
+                      alt="Free Consultation"
                       width={48}
                       height={48}
                       className="w-12 h-12"
                     />
                   </div>
                   <span className="text-lg text-gray-700 font-medium">
-                    Expert Consultation
+                    Free Consultation
                   </span>
+                  <p className="text-gray-600">
+                    If you are searching for an IVF treatment, then you can meet the best IVF doctor at Seeds of Innocens IVF is here to guide you.
+                  </p>
                 </div>
 
-                {/* Expert Scan */}
-                <div className="flex items-center gap-4">
+                {/* Free Scan */}
+                <div className=" items-center gap-4">
                   <div className="flex-shrink-0">
                     <Image
                       src="/gads/assets/image/icons/Tick 1.svg"
-                      alt="Expert Scan"
+                      alt="Free Scan"
                       width={48}
                       height={48}
                       className="w-12 h-12"
                     />
                   </div>
                   <span className="text-lg text-gray-700 font-medium">
-                    Expert Scan
+                    Free Scan
                   </span>
+                  <p className="text-gray-600">
+                    Get a comprehensive transparency on IVF treatment cost in India, high IVF success rates and support you through verified IVF clinic reviews.
+                  </p>
                 </div>
               </div>
             </div>
@@ -75,21 +81,10 @@ export default function PackageIncludes() {
                   </span>
                 </div>
 
-                {/* Expert Semen Analysis */}
-                {/* <div className="flex items-center gap-4">
-                  <div className="flex-shrink-0">
-                    <Image
-                      src="/gads/assets/image/icons/Tick 1.svg"
-                      alt="Expert Semen Analysis"
-                      width={48}
-                      height={48}
-                      className="w-12 h-12"
-                    />
-                  </div>
-                  <span className="text-lg text-gray-700 font-medium">
-                    Expert Semen Analysis
-                  </span>
-                </div> */}
+                {/* Free Semen Analysis */}
+                <div className="flex items-center gap-4 text-gray-700">
+                 Our IVF packages are designed to support each couple’s journey with complete transparency in IVF treatment cost in India. At Seeds of Innocens IVF, an advanced IVF centre in Kolkata, you can meet the best IVF doctor and book IVF consultation easily. We guide you through the IVF process step by step which includes advanced options such ICSI fertility treatment and egg freezing.
+                </div>
               </div>
             </div>
           </div>
@@ -97,42 +92,48 @@ export default function PackageIncludes() {
 
         {/* Desktop: Two Separate Cards */}
         <div className="hidden md:grid grid-cols-2 gap-24 max-w-5xl mx-auto">
-          {/* Left Card - Expert Fertility Screening Camp */}
+          {/* Left Card - Free Fertility Screening Camp */}
           <div className="bg-white rounded-2xl shadow-md p-8">
             <h3 className="text-xl text-center font-semibold text-gray-900 mb-6">
-              Expert Fertility Screening Camp
+              Free Fertility Screening Camp
             </h3>
             <div className="space-y-6">
-              {/* Expert Consultation */}
+              {/* Free Consultation */}
               <div className="flex flex-col items-center gap-3">
                 <div className="flex-shrink-0">
                   <Image
                     src="/gads/assets/image/icons/Tick 1.svg"
-                    alt="Expert Consultation"
-                    width={80}
-                    height={80}
-                    className="w-30 h-30"
+                    alt="Free Consultation"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12"
                   />
                 </div>
-                <span className="text-lg text-gray-700 font-medium">
-                  Expert Consultation
+                <span className="text-gray-700 font-medium">
+                  Free Consultation
                 </span>
+                <p className="text-gray-600 text-center">
+                  If you are searching for an IVF treatment, then you can meet the best IVF doctor at Seeds of Innocens IVF is here to guide you.
+                </p>
               </div>
 
-              {/* Expert Scan */}
+              {/* Free Scan */}
               <div className="flex flex-col items-center gap-3">
                 <div className="flex-shrink-0">
                   <Image
                     src="/gads/assets/image/icons/Tick 1.svg"
-                    alt="Expert Scan"
-                    width={80}
-                    height={80}
-                    className="w-30 h-30"
+                    alt="Free Scan"
+                    width={48}
+                    height={48}
+                    className="w-12 h-12"
                   />
                 </div>
-                <span className="text-lg text-gray-700 font-medium">
-                  Expert Scan
+                <span className="text-gray-700 font-medium">
+                  Free Scan
                 </span>
+                <p className="text-gray-600 text-center">
+                 Get a comprehensive transparency on IVF treatment cost in India, high IVF success rates and support you through verified IVF clinic reviews.
+                </p>
               </div>
             </div>
           </div>
@@ -159,21 +160,15 @@ export default function PackageIncludes() {
                 </span>
               </div>
 
-              {/* Expert Semen Analysis */}
-              {/* <div className="flex flex-col items-center gap-3">
-                <div className="flex-shrink-0">
-                  <Image
-                    src="/gads/assets/image/icons/Tick 1.svg"
-                    alt="Expert Semen Analysis"
-                    width={80}
-                    height={80}
-                    className="w-30 h-30"
-                  />
+              {/* Free Semen Analysis */}
+              <div className="flex flex-col items-center gap-3">
+                <div className="flex-shrink-0 text-center text-gray-700">
+                  Our IVF packages are designed to support each couple’s journey with complete transparency in IVF treatment cost in India. At Seeds of Innocens IVF, an advanced IVF centre in Kolkata, you can meet the best IVF doctor and book IVF consultation easily. We guide you through the IVF process step by step which includes advanced options such ICSI fertility treatment and egg freezing.
                 </div>
-                <span className="text-lg text-gray-700 font-medium">
-                  Expert Semen Analysis
-                </span>
-              </div> */}
+                {/* <span className="text-lg text-gray-700 font-medium">
+                  Free Semen Analysis
+                </span> */}
+              </div>
             </div>
           </div>
         </div>

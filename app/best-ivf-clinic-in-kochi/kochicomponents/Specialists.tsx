@@ -41,7 +41,7 @@ export default function Specialists() {
       qualifications: 'MBBS, DGO, DNB',
       specialization: 'IVF, Infertility Management, Advanced Reproductive Techniques',
       experience: '7+ Years',
-      location: 'Kochi, Kerala',
+      location: 'Kasargod, Kerala',
       image: '/gads/assets/image/doctor/DR. VINOD KUMAR B.jpg', // Update with actual image path
     },
     {
@@ -50,7 +50,7 @@ export default function Specialists() {
       qualifications: 'MBBS, DGO, DNB, Fellowship in IVF',
       specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
       experience: '7+ Years',
-      location: 'Kochi, Kerala',
+      location: 'Kasargod, Kerala',
       image: '/gads/assets/image/doctor/Dr.-jASNA.png', // Update with actual image path
     },
     // {
