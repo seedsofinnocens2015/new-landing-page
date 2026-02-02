@@ -57,7 +57,7 @@ export default function FindUsHere() {
                 </div>
                 {/* Address Text */}
                 <p className="text-gray-800 text-base md:text-lg leading-relaxed">
-                opp. Nehru Stadium Jogging Track, Ram Nagar, Pocket L, Nehru Nagar III, Nehru Nagar, Ghaziabad, Uttar Pradesh 201001
+                  opp. Nehru Stadium Jogging Track, Ram Nagar, Pocket L, Nehru Nagar III, Nehru Nagar, Ghaziabad, Uttar Pradesh 201001
                 </p>
               </div>
 
@@ -86,14 +86,14 @@ export default function FindUsHere() {
                 {/* Phone Number in Rounded Box */}
                 <div className="flex-1 px-4 py-3 bg-white">
                   <p className="text-gray-800 text-base md:text-lg font-medium">
-                  98103 50512
+                    92402 29325
                   </p>
                 </div>
               </div>
 
               {/* Book Appointment Button */}
               <div className="mt-8">
-                <button 
+                <button
                   onClick={() => setIsModalOpen(true)}
                   className="w-full md:w-auto px-8 py-4 bg-gray-800 hover:bg-gray-900 text-white font-semibold rounded-xl transition-colors duration-200"
                 >

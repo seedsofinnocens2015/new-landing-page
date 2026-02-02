@@ -62,7 +62,7 @@ export default function FindUsHere() {
               </div>
 
               {/* Phone Number Block */}
-              {/* <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4">
                 <div className="flex-shrink-0">
                   <svg
                     width="24"
@@ -84,10 +84,10 @@ export default function FindUsHere() {
                 </div>
                 <div className="flex-1 px-4 py-3 bg-white">
                   <p className="text-gray-800 text-base md:text-lg font-medium">
-                  92402 92794
+                  92402 29331
                   </p>
                 </div>
-              </div> */}
+              </div>
 
               {/* Book Appointment Button */}
               <div className="mt-8">

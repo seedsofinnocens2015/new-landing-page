@@ -26,7 +26,7 @@ export default function Navbar() {
                     {/* Right Side Buttons */}
                     <div className="flex items-center gap-3">
                         {/* Phone Button */}
-                        {/* <a 
+                        <a 
                             href="tel:+919240292794" 
                             className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-black bg-white text-black hover:bg-gray-50 transition-colors whitespace-nowrap"
                             style={{ whiteSpace: 'nowrap' }}
@@ -44,8 +44,8 @@ export default function Navbar() {
                                     </path>
                                 </g>
                             </svg>
-                            <span className="text-sm font-medium">92402 92794</span>
-                        </a> */}
+                            <span className="text-sm font-medium">92402 29331</span>
+                        </a>
 
                         {/* Book Appointment Button */}
                         <button 
