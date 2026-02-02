@@ -34,7 +34,7 @@ export default function PackageIncludes() {
                     Free Consultation
                   </span>
                   <p className="text-gray-600">
-                    If you are searching for an IVF treatment, then you can meet the best IVF doctor at Seeds of Innocens IVF is here to guide you.
+                    If you are looking for the best IVF doctor in Guwahati, then meet the best IVF specialist in Guwahati, who will guide you and take you through each step of the IVF journey with compassion and care.
                   </p>
                 </div>
 
@@ -53,7 +53,7 @@ export default function PackageIncludes() {
                     Free Scan
                   </span>
                   <p className="text-gray-600">
-                    Get a comprehensive transparency on IVF treatment cost in India, high IVF success rates and support you through verified IVF clinic reviews.
+                    Get a comprehensive transparency about the IVF treatment and other fertility treatments at a minimal cost with Seeds of Innocens IVF Guwahati, where you can start your parenthood journey.
                   </p>
                 </div>
               </div>
@@ -113,7 +113,7 @@ export default function PackageIncludes() {
                   Free Consultation
                 </span>
                 <p className="text-gray-600 text-center">
-                  If you are searching for an IVF treatment, then you can meet the best IVF doctor at Seeds of Innocens IVF is here to guide you.
+                  If you are looking for the best IVF doctor in Guwahati, then meet the best IVF specialist in Guwahati, who will guide you and take you through each step of the IVF journey with compassion and care.
                 </p>
               </div>
 
@@ -132,7 +132,7 @@ export default function PackageIncludes() {
                   Free Scan
                 </span>
                 <p className="text-gray-600 text-center">
-                 Get a comprehensive transparency on IVF treatment cost in India, high IVF success rates and support you through verified IVF clinic reviews.
+                 Get a comprehensive transparency about the IVF treatment and other fertility treatments at a minimal cost with Seeds of Innocens IVF Guwahati, where you can start your parenthood journey.
                 </p>
               </div>
             </div>

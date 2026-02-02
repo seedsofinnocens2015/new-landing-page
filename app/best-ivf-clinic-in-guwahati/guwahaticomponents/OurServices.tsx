@@ -51,7 +51,7 @@ export default function OurServices() {
 
          {/* Description Text */}
         <p className="text-gray-800 text-center max-w-4xl mx-auto mb-24 leading-relaxed">
-         Our services include the whole fertility solutions at a best IVF clinic near me option for the couples across Guwahati. Seeds of Innocens IVF is a leading IVF centre in Guwahati, we offer expert care from the best fertility specialist along with several treatments which includes IVF, ICSI, IUI, Egg freezing, Embryo Freezing, Oocyte vitrification, Laser Assisted Hatching, Ovulation Induction and reproductive surgery.
+         Seeds of Innocens IVF is one of the best IVF centres in India. It is well known for providing several fertility treatments such as IVF, IUI, ICSI, Egg Freezing, and many others. From turning the dream of parenthood into reality, we believe in fulfilling it. Furthermore, if you are looking for the best IVF specialist near Guwahati, then visit Seeds of Innocens IVF, Guwahati.
         </p>
 
         {/* Services Grid */}
