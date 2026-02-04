@@ -12,8 +12,8 @@ import type { Metadata } from 'next';
 import Navbar from './muzaffarpurcomponents/Navbar';
 
 export const metadata: Metadata = {
-  title: 'Best IVF Clinic in Muzaffarpur - Seeds Of Innocens Fertility & IVF',
-  description: 'Best IVF Clinic in Muzaffarpur - Seeds Of Innocens Fertility & IVF offers world-class fertility treatments and IVF services. Book your appointment today.',
+  title: 'Advance Fertility Clinic in Muzaffarpur - Seeds Of Innocens Fertility & IVF',
+  description: 'Advance Fertility Clinic in Muzaffarpur - Seeds Of Innocens Fertility & IVF offers world-class fertility treatments and IVF services. Book your appointment today.',
 };
 
 export default function MuzaffarpurPage() {

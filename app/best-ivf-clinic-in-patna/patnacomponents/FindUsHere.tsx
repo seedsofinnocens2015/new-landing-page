@@ -22,7 +22,7 @@ export default function FindUsHere() {
             <div className="w-full md:w-1/2 flex justify-center">
               <div className="relative w-full max-w-md h-auto">
                 <Image
-                  src="/gads/assets/image/center/kolkata.webp"
+                  src="/gads/assets/image/center/patna1.webp"
                   alt="Seeds Of Innocens Women & Children's Hospital"
                   width={500}
                   height={600}
@@ -57,13 +57,13 @@ export default function FindUsHere() {
                 </div>
                 {/* Address Text */}
                 <p className="text-gray-800 text-base md:text-lg leading-relaxed">
-                  Plot Number 03-702, Plot-IID/41/1, Major Arterial Road (North Extension), Street No-0702, AA-IID, J.L No-12, Raigachi, Mouza, Kolkata, West Bengal 700161
+                Pillar no: 38, Jagmano Shree Complex, Bailey Rd, Samanpura, Khajpura, Patna, Bihar 800014
                 </p>
               </div>
 
               {/* Phone Number Block */}
               <div className="flex items-center gap-4">
-
+                {/* Phone Icon */}
                 <div className="flex-shrink-0">
                   <svg
                     width="24"
@@ -83,17 +83,17 @@ export default function FindUsHere() {
                     />
                   </svg>
                 </div>
-
+                {/* Phone Number in Rounded Box */}
                 <div className="flex-1 px-4 py-3 bg-white">
                   <p className="text-gray-800 text-base md:text-lg font-medium">
-                    92402 92795
+                  92402 29335
                   </p>
                 </div>
               </div>
 
               {/* Book Appointment Button */}
               <div className="mt-8">
-                <button
+                <button 
                   onClick={() => setIsModalOpen(true)}
                   className="w-full md:w-auto px-8 py-4 bg-gray-800 hover:bg-gray-900 text-white font-semibold rounded-xl transition-colors duration-200"
                 >

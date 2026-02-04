@@ -24,7 +24,7 @@ export default function Banner() {
       const payload = {
         fullName: formData.fullName,
         phoneNumber: formData.phoneNumber,
-        source: 'Muzaffarpur Google Ads',
+        source: 'Patna Google Ads',
         message: `Language preference: ${formData.language || 'Not specified'}`,
       };
 
@@ -59,7 +59,7 @@ export default function Banner() {
       }
       
       console.log('Form submitted successfully:', data);
-      router.push('/thankyou?location=muzaffarpur');
+      router.push('/thankyou?location=patna');
     } catch (error: any) {
       console.error('Error submitting form:', error);
       // Check if it's a duplicate error from response data
@@ -88,7 +88,7 @@ export default function Banner() {
       {/* Desktop Banner Image */}
       <div className="relative w-full hidden md:block">
         <img 
-          src="/gads/assets/image/banner/muzaffarpur.jpeg"
+          src="/gads/assets/image/banner/patna.jpeg"
           alt="Banner"
           className="w-full h-auto"
         />
@@ -97,7 +97,7 @@ export default function Banner() {
       {/* Mobile Banner Image */}
       <div className="relative w-full block md:hidden">
         <img 
-          src="/gads/assets/image/banner/muzaffarpur1.jpeg"
+          src="/gads/assets/image/banner/patna1.jpeg"
           alt="Banner Mobile"
           className="w-full h-auto"
         />

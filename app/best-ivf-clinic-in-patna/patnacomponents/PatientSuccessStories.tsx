@@ -19,23 +19,23 @@ export default function PatientSuccessStories() {
   const videos = [
     {
       id: 1,
-      title: 'Real IVF Success Story, IVF Treatment Result',
-      videoId: '-Z1SXqVbt40', // Replace with actual YouTube video ID
+      title: 'Patient Conceived in 1st Attempt',
+      videoId: 'xFzDcMwkqTA', // Replace with actual YouTube video ID
     },
     {
       id: 2,
+      title: 'Happy Patient Review',
+      videoId: '-Z1SXqVbt40', // Replace with actual YouTube video ID
+    },
+    {
+      id: 3,
       title: 'After 13 Years, Patient Conceived in 1st Attempt.',
       videoId: 'MemQgDHNsNQ', // Replace with actual YouTube video ID
     },
     {
-      id: 3,
-      title: 'Patient Conceived in 1st Attempt',
-      videoId: 'g7LifHVjOYE', // Replace with actual YouTube video ID
-    },
-    {
       id: 4,
-      title: 'Patient Conceived in 1st Attempt| Seeds of Innocence - IVF',
-      videoId: 'xFzDcMwkqTA', // Replace with actual YouTube video ID
+      title: 'Patient Conceived in 1st Attempt | Seeds of Innocence: A Success Story',
+      videoId: 'g7LifHVjOYE', // Replace with actual YouTube video ID
     },
   ];
 

@@ -16,26 +16,26 @@ export default function PatientSuccessStories() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  const videos = [
+   const videos = [
     {
       id: 1,
-      title: 'Real IVF Success Story, IVF Treatment Result',
-      videoId: '-Z1SXqVbt40', // Replace with actual YouTube video ID
+      title: 'मरीज पहले ही प्रयास में गर्भवती हो गई',
+      videoId: 'xFzDcMwkqTA', // Replace with actual YouTube video ID
     },
     {
       id: 2,
-      title: 'After 13 Years, Patient Conceived in 1st Attempt.',
-      videoId: 'MemQgDHNsNQ', // Replace with actual YouTube video ID
+      title: 'खुशी की गाथा',
+      videoId: '-Z1SXqVbt40', // Replace with actual YouTube video ID
     },
     {
       id: 3,
-      title: 'Patient Conceived in 1st Attempt',
-      videoId: 'g7LifHVjOYE', // Replace with actual YouTube video ID
+      title: '13 साल के बाद पहली बार गर्भवती हो गई',
+      videoId: 'MemQgDHNsNQ', // Replace with actual YouTube video ID
     },
     {
       id: 4,
-      title: 'Patient Conceived in 1st Attempt| Seeds of Innocence - IVF',
-      videoId: 'xFzDcMwkqTA', // Replace with actual YouTube video ID
+      title: 'पहले ही प्रयास में गर्भवती हो गई | बीज और बच्चे की उम्मीद',
+      videoId: 'g7LifHVjOYE', // Replace with actual YouTube video ID
     },
   ];
 
@@ -44,15 +44,15 @@ export default function PatientSuccessStories() {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-          Patient Success Stories
+        गर्भधारण सफलता की कथाएं
         </h2>
 
         {/* Videos Carousel Container */}
         <div className="relative max-w-6xl mx-auto">
           {/* Videos Container with Overflow */}
-          <div className="overflow-hidden mb-12 md:mb-0 pb-10">
+          <div className="overflow-hidden mb-12 md:mb-0">
             <div
-              className="flex gap-6 transition-transform duration-300 ease-in-out"
+              className="flex gap-6 transition-transform duration-300 ease-in-out pb-10"
               style={{
                 transform: isMobile
                   ? `translateX(calc(-${currentIndex} * (100% + 1.5rem)))`
@@ -145,7 +145,7 @@ export default function PatientSuccessStories() {
             {/* Google Reviews */}
             <div className="text-center md:mx-auto md:w-auto">
               <div className="text-7xl font-bold text-black mb-2">4.8</div>
-              <div className="text-xs text-gray-600">1,956 reviews</div>
+              <div className="text-xs text-gray-600">1,956 रेव्यू</div>
               <div className="flex flex-col items-center">
                 <Image
                   src="/gads/assets/image/icons/googlereview.svg"
@@ -160,7 +160,7 @@ export default function PatientSuccessStories() {
             {/* Practo Reviews */}
             <div className="text-center md:mx-auto md:w-auto">
               <div className="text-7xl font-bold text-black mb-2">4.9</div>
-              <div className="text-xs text-gray-600 mb-4">1,956 reviews</div>
+              <div className="text-xs text-gray-600 mb-4">1,956 रेव्यू</div>
               <div className="flex items-center justify-center">
                 <Image
                   src="/gads/assets/image/icons/practo.svg"
@@ -182,23 +182,23 @@ export default function PatientSuccessStories() {
               {[
                 {
                   id: 1,
-                  quote: 'Very excellent experience here ..all staff doctors are very cooperative',
-                  name: 'Anuradha Rai',
+                  quote: 'बहुत अच्छा अनुभव यहां ..सभी स्टाफ डॉक्टर बहुत सहयोगी हैं',
+                  name: 'अनुराधा रै',
                 },
                 {
                   id: 2,
-                  quote: 'Super facility best doctors..you can trust',
-                  name: 'Nitin Srivastav',
+                  quote: 'सुपर फैक्ट्री सबसे अच्छे डॉक्टर..आप भरोसा कर सकते हैं',
+                  name: 'नितिन स्रिवास्तव',
                 },
                 {
                   id: 3,
-                  quote: 'Nice experience my treatment successfully done Good staff',
-                  name: 'Pinki dasi Pinki',
+                  quote: 'अच्छा अनुभव मेरा इलाज सफलतापूर्वक हो गया अच्छा स्टाफ',
+                  name: 'पिंकी दासी पिंकी',
                 },
                 {
                   id: 4,
-                  quote: 'Nice environment, highly recommend to you all !',
-                  name: 'Priya Vyas',
+                  quote: 'अच्छा वातावरण, आप सभी के लिए अत्यधिक सुझाव दिया जाता है!',
+                  name: 'प्रिया व्यास',
                 },
               ].map((testimonial) => (
                 <div key={testimonial.id} className="bg-white p-6 rounded-lg flex-shrink-0 w-[280px] md:w-[320px]">
@@ -226,23 +226,23 @@ export default function PatientSuccessStories() {
               {[
                 {
                   id: 5,
-                  quote: 'My patience and Dr Gauri Agarwal treatment finally gave fruits M expecting my twins now. thanks to SEEDS OF INNOCENCE and Her team',
-                  name: 'Shweta Sapra',
+                  quote: 'मेरी धूप और डॉ. गौरी अग्रवाल के इलाज के बाद फल मिला मैं अब दोहरा उम्मीद कर रहा हूं। एसेड्स ऑफ इनॉवेंस और उसकी टीम के लिए धन्यवाद',
+                  name: 'श्वेता सप्रा',
                 },
                 {
                   id: 6,
-                  quote: 'I have received pregnancy after ten years through Seeds of Innocence Faridabad.',
-                  name: 'Hemant Garg',
+                  quote: 'मैंने दस साल बाद फरीदाबाद के एसेड्स ऑफ इनॉवेंस के माध्यम से गर्भधारण प्राप्त की है।',
+                  name: 'हेमंत गर्ग',
                 },
                 {
                   id: 7,
-                  quote: 'Very satisfied with the support and care provided throughout the process.',
-                  name: 'Amit Khatri',
+                  quote: 'बहुत संतुष्ट हूं प्रक्रिया के दौरान प्रदान किए गए समर्थन और देखभाल के लिए।',
+                  name: 'अमित खत्री',
                 },
                 {
                   id: 8,
-                  quote: 'Doctors and staff are really helpful, great experience overall!',
-                  name: 'Sapna Bhatt',
+                  quote: 'डॉक्टर और स्टाफ बहुत सहयोगी हैं, बहुत अच्छा अनुभव सार्वजनिक रूप से!',
+                  name: 'सपना भाट्ट',
                 },
               ].map((testimonial) => (
                 <div key={`duplicate-${testimonial.id}`} className="bg-white p-6 rounded-lg flex-shrink-0 w-[280px] md:w-[320px]">
