@@ -5,90 +5,90 @@ import { useRouter } from 'next/navigation';
 
 export default function Banner() {
   const router = useRouter();
-   const [formData, setFormData] = useState({
-     fullName: '',
-     language: '',
-     phoneNumber: '',
-     consent: false,
-   });
-   const [isLoading, setIsLoading] = useState(false);
-   const [errorMessage, setErrorMessage] = useState('');
- 
-   const handleSubmit = async (e: React.FormEvent) => {
-     e.preventDefault();
-     setIsLoading(true);
-     setErrorMessage('');
-     
-     try {
-       // Prepare data for backend
-       const payload = {
-         fullName: formData.fullName,
-         phoneNumber: formData.phoneNumber,
-         source: 'Ghaziabad Google Ads',
-         message: `Language preference: ${formData.language || 'Not specified'}`,
-       };
- 
-       // Get backend URL from environment or use relative path
-       const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || '';
-       const apiEndpoint = `${backendUrl}/api/landing-pages`;
- 
-       const response = await fetch(apiEndpoint, {
-         method: 'POST',
-         headers: {
-           'Content-Type': 'application/json',
-         },
-         body: JSON.stringify(payload),
-       });
- 
-       const data = await response.json();
-       
-       // Check for duplicate phone number error FIRST, before checking response.ok
-       if (
-         data.ExceptionType === 'MXDuplicateEntryException' ||
-         data.ExceptionMessage?.includes('same Phone Number already exists') ||
-         data.ExceptionMessage?.includes('Phone Number already exists') ||
-         (data.Status === 'Error' && data.ExceptionMessage?.toLowerCase().includes('phone number'))
-       ) {
-         setErrorMessage('Already booked for this number');
-         setIsLoading(false);
-         return;
-       }
-       
-       if (!response.ok || !data.ok) {
-         throw new Error(data.message || data.ExceptionMessage || 'Failed to submit form');
-       }
-       
-       console.log('Form submitted successfully:', data);
-       router.push('/thankyou?location=ghaziabad');
-     } catch (error: any) {
-       console.error('Error submitting form:', error);
-       // Check if it's a duplicate error from response data
-       if (error.message?.includes('Phone Number') || error.message?.includes('already exists')) {
-         setErrorMessage('Already booked for this number');
-       }
-     } finally {
-       setIsLoading(false);
-     }
-   };
- 
-   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-     const { name, value, type } = e.target;
-     setFormData((prev) => ({
-       ...prev,
-       [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value,
-     }));
-     // Clear error message when user starts typing
-     if (errorMessage) {
-       setErrorMessage('');
-     }
-   };
+  const [formData, setFormData] = useState({
+    fullName: '',
+    language: '',
+    phoneNumber: '',
+    consent: false,
+  });
+  const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setErrorMessage('');
+    
+    try {
+      // Prepare data for backend
+      const payload = {
+        fullName: formData.fullName,
+        phoneNumber: formData.phoneNumber,
+        source: 'Gorakhpur Google Ads',
+        message: `Language preference: ${formData.language || 'Not specified'}`,
+      };
+
+      // Get backend URL from environment or use relative path
+      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || '';
+      const apiEndpoint = `${backendUrl}/api/landing-pages`;
+
+      const response = await fetch(apiEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await response.json();
+      
+      // Check for duplicate phone number error FIRST, before checking response.ok
+      if (
+        data.ExceptionType === 'MXDuplicateEntryException' ||
+        data.ExceptionMessage?.includes('same Phone Number already exists') ||
+        data.ExceptionMessage?.includes('Phone Number already exists') ||
+        (data.Status === 'Error' && data.ExceptionMessage?.toLowerCase().includes('phone number'))
+      ) {
+        setErrorMessage('Already booked for this number');
+        setIsLoading(false);
+        return;
+      }
+      
+      if (!response.ok || !data.ok) {
+        throw new Error(data.message || data.ExceptionMessage || 'Failed to submit form');
+      }
+      
+      console.log('Form submitted successfully:', data);
+      router.push('/thankyou?location=gorakhpur');
+    } catch (error: any) {
+      console.error('Error submitting form:', error);
+      // Check if it's a duplicate error from response data
+      if (error.message?.includes('Phone Number') || error.message?.includes('already exists')) {
+        setErrorMessage('Already booked for this number');
+      }
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value, type } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value,
+    }));
+    // Clear error message when user starts typing
+    if (errorMessage) {
+      setErrorMessage('');
+    }
+  };
 
   return (
     <section className="relative w-full mt-15">
       {/* Desktop Banner Image */}
       <div className="relative w-full hidden md:block">
         <img 
-          src="/gads/assets/image/banner/ghaziabad.jpeg"
+          src="/gads/assets/image/banner/gorakhpur H.jpg"
           alt="Banner"
           className="w-full h-auto"
         />
@@ -97,7 +97,7 @@ export default function Banner() {
       {/* Mobile Banner Image */}
       <div className="relative w-full block md:hidden">
         <img 
-          src="/gads/assets/image/banner/ghaziabad1.jpeg"
+          src="/gads/assets/image/banner/gorakhpur H1.jpg"
           alt="Banner Mobile"
           className="w-full h-auto"
         />
@@ -114,7 +114,7 @@ export default function Banner() {
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleChange}
-                  placeholder="Full Name"
+                  placeholder="पूरा नाम"
                   className="w-full px-4 py-3 rounded-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 placeholder-gray-400"
                   required
                   disabled={isLoading}
@@ -131,9 +131,9 @@ export default function Banner() {
                   required
                   disabled={isLoading}
                 >
-                  <option value="" disabled>Select Language</option>
+                  <option value="" disabled>भाषा चुने</option>
                   <option value="english">English</option>
-                  <option value="hindi">Hindi</option>
+                  <option value="hindi">हिंदी</option>
                   <option value="tamil">Tamil</option>
                   <option value="telugu">Telugu</option>
                   <option value="kannada">Kannada</option>
@@ -169,7 +169,7 @@ export default function Banner() {
                   name="phoneNumber"
                   value={formData.phoneNumber}
                   onChange={handleChange}
-                  placeholder="Phone Number"
+                  placeholder="फ़ोन नंबर"
                   className="flex-1 px-4 py-3 rounded-r-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 placeholder-gray-400"
                   required
                   disabled={isLoading}
@@ -192,7 +192,7 @@ export default function Banner() {
                   htmlFor="consent"
                   className="text-sm text-gray-600 leading-relaxed cursor-pointer"
                 >
-                  I consent to get contacted by Seeds Of Innocens IVF representatives
+                मैं सेड्स ऑफ इनॉक्सेन्स IVF प्रतिनिधियों से संपर्क प्राप्त करने के लिए सहमत हूं
                 </label>
               </div>
 
@@ -234,7 +234,7 @@ export default function Banner() {
                     <span>Submitting...</span>
                   </>
                 ) : (
-                  'Get a Call Back'
+                  'एक कॉल बैक प्राप्त करें'
                 )}
               </button>
             </form>

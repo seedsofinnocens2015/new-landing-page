@@ -19,38 +19,38 @@ export default function Specialists() {
   const specialists = [
     {
       id: 1,
-      name: 'Dr. Gauri Agarwal',
+      name: 'डॉ. गौरी अग्रवाल',
       qualifications: 'MD, DNB, MBBS',
-      specialization: 'IVF, Reproductive Endocrinology, Advanced Fertility Techniques',
-      experience: '15+ Years',
-      location: 'Delhi/NCR',
+      specialization: 'इवीएफ, रिप्रोडक्टिव एंडोक्रिनोलॉजी, एडवांस्ड फर्टिलिटी टेक्निक्स',
+      experience: '15+ वर्ष',
+      location: 'दिल्ली/NCR',
       image: '/gads/assets/image/doctor/Dr Gauri maam.jpg', // Update with actual image path
     },
     {
       id: 2,
-      name: 'Dr. Ranjana Mishra',
-      qualifications: 'MBBS, MD (Obstetrics & Gynecology), Fellowship in IVF',
-      specialization: 'Genetic Expert',
-      experience: '14+ Years',
-      location: 'Ghaziabad, Uttar Pradesh',
-      image: '/gads/assets/image/doctor/Dr. Ranjana Mishra.jpg', // Update with actual image path
-    },
-    {
-      id: 3,
-      name: 'Dr. Prateek Kakani',
-      qualifications: 'MBBS, DGO, DNB, Fellowship in IVF',
-      specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
-      experience: '8+ Years',
-      location: 'Ghaziabad, Uttar Pradesh',
-      image: '/gads/assets/image/doctor/Dr Prateek.png', // Update with actual image path
+      name: 'डॉ. निवेदिता नेहल',
+      qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in Reproductive Medicine',
+      specialization: 'आईवीएफ, आईसीएसआई, उन्नत प्रजनन तकनीकें',
+      experience: '7+ वर्ष',
+      location: 'गोरखपुर, उत्तर प्रदेश',
+      image: '/gads/assets/image/doctor/Dr. Nivedita Nehal.jpg', // Update with actual image path
     },
     // {
+    //   id: 3,
+    //   name: 'डॉ. दिव्या शिवानंद',
+    //   qualifications: 'MBBS, DGO, Fellowship in minimal access surgery (FMAS) at AMASI',
+    //   specialization: 'इवीएफ, अनुभवहीन फर्टिलिटी, रिकररेंट इम्प्लांटेशन फेलर',
+    //   experience: '4+ वर्ष',
+    //   location: 'गोरखपुर, उत्तर प्रदेश',
+    //   image: '/gads/assets/image/doctor/Dr. Divya Shivanand.jpg', // Update with actual image path
+    // },
+    // {
     //     id: 4,
-    //     name: 'Dr. Manju Gupta',
+    //     name: 'Dr. Monika Maan',
     //     qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in ART',
     //     specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',
-    //     experience: '8+ Years',
-    //     location: 'Pitampura, Delhi',
+    //     experience: '12+ Years',
+    //     location: 'Pitampura, New Delhi',
     //     image: '/gads/assets/image/doctor/Monika.png', // Update with actual image path
     //   },
   ];
@@ -60,13 +60,13 @@ export default function Specialists() {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-          Meet Our Specialists
+        हमारे एक्सपर्ट डॉक्टर्स
         </h2>
 
         {/* Specialists Cards Container */}
         <div className="relative max-w-6xl mx-auto mt-10">
           {/* Cards Container with Overflow */}
-          <div className="overflow-hidden mb-12 md:mb-0">
+          <div className="overflow-hidden mb-12 md:mb-0 pb-10">
             <div 
               className="flex gap-6 transition-transform duration-300 ease-in-out"
               style={{ 
