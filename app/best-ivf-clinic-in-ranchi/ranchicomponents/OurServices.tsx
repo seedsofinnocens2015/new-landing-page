@@ -5,38 +5,38 @@ export default function OurServices() {
   const services = [
     {
       id: 1,
-      title: 'एग फ्रीजिंग',
-      description: 'भविष्य में प्रेग्नेंसी की प्लॅनिंग के लिए अब सुरक्षित रूप से स्पर्म या अंडे फ्रीज करके अपनी फर्टिलिटी को सुरक्षित रखें।',
+      title: 'Egg Freezing',
+      description: 'Preserve your fertility by safely freezing semen or eggs now for future pregnancy plans.',
       icon: '/gads/assets/image/icons/eggfreezing.svg',
     },
     {
       id: 2,
-      title: 'एम्ब्रियो फ्रीजिंग',
-      description: 'आज आपके अंडे और स्पर्म से बनाए गए एम्ब्रियो को सुरक्षित रूप से फ्रीज करके भविष्य में प्रेग्नेंसी के विकल्पों को सुरक्षित रखें।',
+      title: 'Embryo Freezing',
+      description: 'Preserve future pregnancy options by safely freezing embryos created with your eggs and sperm today.',
       icon: '/gads/assets/image/icons/embryofreezing.svg',
     },
     {
       id: 3,
-      title: 'ऊसाइट विट्रिफिकेशन',
-      description: 'भविष्य में प्रेग्नेंसी की प्लॅनिंग के लिए एडवांस्ड विट्रिफिकेशन के साथ अपने अंडों को तेजी से फ्रीज करके अपनी फर्टिलिटी की शूरक्षित करें।',
+      title: 'Oocyte Vitrification',
+      description: 'Protect your fertility by rapidly freezing your eggs with advanced vitrification for future pregnancy plans.',
       icon: '/gads/assets/image/icons/oocyte.svg',
     },
     {
       id: 4,
-      title: 'लेजर असिस्टेड हैचिंग',
-      description: 'भ्रूण के बाहरी खोल को पतला करने के लिए एक हल्के लेजर का यूज़ किया जाता है, जिससे उसे हैच होने और गर्भाशय से बेहतर ढंग से जुड़ने में मदद मिलती है।',
+      title: 'Laser Assisted Hatching',
+      description: 'A gentle laser is used to thin the embryo\'s outer shell, helping it hatch and attach better to the uterus.',
       icon: '/gads/assets/image/icons/laser.svg',
     },
     {
       id: 5,
-      title: 'रिप्रोडक्टिव सर्जरी',
-      description: 'प्रजनन संबंधी समस्याओं को ठीक करने और प्राकृतिक या असिस्टेड प्रेग्नेंसी की संभावनाओं को बेहतर बनाने के लिए विशेष सर्जरी।',
+      title: 'Reproductive Surgery',
+      description: 'Specialized surgeries to correct reproductive problems and improve your chances of natural or assisted pregnancy.',
       icon: '/gads/assets/image/icons/reproductive.svg',
     },
     {
       id: 6,
-      title: 'ओव्यूलेशन इंडक्शन',
-      description: 'आपकी ओवरी को धीरे-धीरे उत्तेजित करने के लिए दवाओं का यूज़ किया जाता है ताकि वे नियमित रूप से अंडे रिलीज करें और प्रेग्नेंसी की संभावनाओं को बेहतर बनाएं।',
+      title: 'Ovulation Induction',
+      description: 'Medicines are used to gently stimulate your ovaries so they release eggs regularly and improve your chances of pregnancy.',
       icon: '/gads/assets/image/icons/ovulation.svg',
     },
   ];
@@ -48,6 +48,11 @@ export default function OurServices() {
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
           Our Services
         </h2>
+
+         {/* Description Text */}
+        <p className="text-gray-800 text-center max-w-4xl mx-auto mb-24 leading-relaxed">
+         Our services include the whole fertility solutions at a best IVF clinic near me option for the couples across Ranchi. Seeds of Innocens IVF is a leading IVF centre in Ranchi, we offer expert care from the best fertility specialist along with several treatments which includes IVF, ICSI, IUI, Egg freezing, Embryo Freezing, Oocyte vitrification, Laser Assisted Hatching, Ovulation Induction and reproductive surgery.
+        </p>
 
         {/* Services Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 max-w-5xl mx-auto">

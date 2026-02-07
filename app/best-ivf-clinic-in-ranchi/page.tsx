@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: 'Best IVF Clinic in Ranchi - Seeds Of Innocens Fertility & IVF offers world-class fertility treatments and IVF services. Book your appointment today.',
 };
 
-export default function RanchiPage() {
+export default function MalviyaNagarPage() {
   return (
     <div className="min-h-screen bg-white">
       <main className="w-full">

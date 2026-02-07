@@ -19,39 +19,39 @@ export default function Specialists() {
   const specialists = [
     {
       id: 1,
-      name: 'डॉ. गौरी अग्रवाल',
+      name: 'Dr. Gauri Agarwal',
       qualifications: 'MD, DNB, MBBS',
-      specialization: 'इवीएफ, रिप्रोडक्टिव एंडोक्रिनोलॉजी, एडवांस्ड फर्टिलिटी टेक्निक्स',
-      experience: '15+ वर्ष',
-      location: 'दिल्ली/NCR',
+      specialization: 'IVF, Reproductive Endocrinology, Advanced Fertility Techniques',
+      experience: '15+ Years',
+      location: 'Ranchi/NCR',
       image: '/gads/assets/image/doctor/Dr Gauri maam.jpg', // Update with actual image path
     },
+    // {
+    //   id: 2,
+    //   name: 'Dr. Alpana Razdan',
+    //   qualifications: 'MBBS, MD (Obstetrics & Gynecology), Fellowship in IVF',
+    //   specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
+    //   experience: '13+ Years',
+    //   location: 'Malviya Nagar, New Ranchi',
+    //   image: '/gads/assets/image/doctor/Dr. alpana razdan.jpg', // Update with actual image path
+    // },
     {
-      id: 2,
-      name: 'डॉ. क्रिति प्रसाद',
+      id: 3,
+      name: 'Dr. Kriti Prasad',
       qualifications: 'MBBS, DNB (Obstetrics & Gynecology)',
-      specialization: 'इवीएफ, एडवांस्ड रिप्रोडक्टिव टेक्निक्स',
-      experience: '9+ वर्ष',
-      location: 'रांची, झारखंड',
+      specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
+      experience: '9+ Years',
+      location: 'Ranchi, Jharkhand',
       image: '/gads/assets/image/doctor/Dr. Kriti Prasad.jpg', // Update with actual image path
     },
-    // {
-    //   id: 3,
-    //   name: 'Dr. Divya Shivanand',
-    //   qualifications: 'MBBS, DGO, Fellowship in minimal access surgery (FMAS) at AMASI',
-    //   specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
-    //   experience: '4+ Years',
-    //   location: 'Lucknow, Uttar Pradesh',
-    //   image: '/gads/assets/image/Dr. Divya Shivanand.jpg', // Update with actual image path
-    // },
     // {
     //     id: 4,
     //     name: 'Dr. Monika Maan',
     //     qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in ART',
     //     specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',
     //     experience: '12+ Years',
-    //     location: 'Pitampura, New Delhi',
-    //     image: '/gads/assets/image/Monika.png', // Update with actual image path
+    //     location: 'Pitampura, New Ranchi',
+    //     image: '/gads/assets/image/doctor/Monika.png', // Update with actual image path
     //   },
   ];
 
@@ -71,6 +71,7 @@ export default function Specialists() {
               className="flex gap-6 transition-transform duration-300 ease-in-out"
               style={{ 
                 transform: (() => {
+
                   const visibleCards = isMobile ? 1 : 3;
                   const hasFewerCards = specialists.length < visibleCards;
                   

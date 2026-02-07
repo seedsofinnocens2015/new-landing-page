@@ -6,28 +6,28 @@ export default function WhyChoose() {
     {
       id: 1,
       number: '20,000+',
-      description: 'स्वस्थ बच्चे',
+      description: 'Healthy Babies',
       icon: '/gads/assets/image/icons/healthybabies.svg',
       bgColor: '#CBC8F4', // Light purple
     },
     {
       id: 2,
       number: '30+',
-      description: 'डॉक्टर',
+      description: 'Doctors',
       icon: '/gads/assets/image/icons/doctors.svg',
       bgColor: '#F4B5AC', // Light orange/coral
     },
     {
       id: 3,
       number: '35+',
-      description: 'आइव्फ सेंटर',
+      description: 'IVF Centres',
       icon: '/gads/assets/image/icons/ivfcentres.svg',
       bgColor: '#F6BDDE', // Light pink
     },
     {
       id: 4,
       number: '78%+',
-      description: 'सफलता दर',
+      description: 'Success Rate',
       icon: '/gads/assets/image/icons/successrate.svg',
       bgColor: '#F4DD95', // Light yellow
     },
@@ -38,7 +38,7 @@ export default function WhyChoose() {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-        सीड्स ऑफ़ इनोसेंस IVF क्यों चुनें?
+          Why Choose Seeds Of Innocence IVF
         </h2>
 
         {/* Stats Grid */}

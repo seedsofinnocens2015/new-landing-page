@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import ThankYouModal from './ThankYouModal';
+import { useRouter } from 'next/navigation';
 
 export default function Banner() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     fullName: '',
     language: '',
@@ -11,7 +12,6 @@ export default function Banner() {
     consent: false,
   });
   const [isLoading, setIsLoading] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -59,7 +59,7 @@ export default function Banner() {
       }
       
       console.log('Form submitted successfully:', data);
-      setIsSuccess(true);
+      router.push('/thankyou?location=ranchi');
     } catch (error: any) {
       console.error('Error submitting form:', error);
       // Check if it's a duplicate error from response data
@@ -88,7 +88,7 @@ export default function Banner() {
       {/* Desktop Banner Image */}
       <div className="relative w-full hidden md:block">
         <img 
-          src="/gads/assets/image/banner/ranchi.jpeg"
+          src="/gads/assets/image/banner/ranchi.jpg"
           alt="Banner"
           className="w-full h-auto"
         />
@@ -97,7 +97,7 @@ export default function Banner() {
       {/* Mobile Banner Image */}
       <div className="relative w-full block md:hidden">
         <img 
-          src="/gads/assets/image/banner/ranchi1.jpeg"
+          src="/gads/assets/image/banner/ranchi1.jpg"
           alt="Banner Mobile"
           className="w-full h-auto"
         />
@@ -114,7 +114,7 @@ export default function Banner() {
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleChange}
-                  placeholder="पूरा नाम"
+                  placeholder="Full Name"
                   className="w-full px-4 py-3 rounded-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 placeholder-gray-400"
                   required
                   disabled={isLoading}
@@ -131,9 +131,9 @@ export default function Banner() {
                   required
                   disabled={isLoading}
                 >
-                  <option value="" disabled>भाषा चुने</option>
+                  <option value="" disabled>Select Language</option>
                   <option value="english">English</option>
-                  <option value="hindi">हिंदी</option>
+                  <option value="hindi">Hindi</option>
                   <option value="tamil">Tamil</option>
                   <option value="telugu">Telugu</option>
                   <option value="kannada">Kannada</option>
@@ -169,7 +169,7 @@ export default function Banner() {
                   name="phoneNumber"
                   value={formData.phoneNumber}
                   onChange={handleChange}
-                  placeholder="फ़ोन नंबर"
+                  placeholder="Phone Number"
                   className="flex-1 px-4 py-3 rounded-r-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 placeholder-gray-400"
                   required
                   disabled={isLoading}
@@ -192,7 +192,7 @@ export default function Banner() {
                   htmlFor="consent"
                   className="text-sm text-gray-600 leading-relaxed cursor-pointer"
                 >
-                मैं सेड्स ऑफ इनॉक्सेन्स IVF प्रतिनिधियों से संपर्क प्राप्त करने के लिए सहमत हूं
+                  I consent to get contacted by Seeds Of Innocens IVF representatives
                 </label>
               </div>
 
@@ -234,22 +234,12 @@ export default function Banner() {
                     <span>Submitting...</span>
                   </>
                 ) : (
-                  'एक कॉल बैक प्राप्त करें'
+                  'Get a Call Back'
                 )}
               </button>
             </form>
         </div>
       </div>
-      <ThankYouModal isOpen={isSuccess} onClose={() => {
-        setIsSuccess(false);
-        // Reset form after closing thank you modal
-        setFormData({
-          fullName: '',
-          language: '',
-          phoneNumber: '',
-          consent: false,
-        });
-      }} />
     </section>
   );
 }

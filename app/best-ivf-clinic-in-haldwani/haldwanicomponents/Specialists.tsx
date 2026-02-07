@@ -16,7 +16,7 @@ export default function Specialists() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
   
-  const specialists = [
+ const specialists = [
     {
       id: 1,
       name: 'Dr. Gauri Agarwal',
@@ -37,22 +37,13 @@ export default function Specialists() {
     // },
     {
       id: 3,
-      name: 'Dr. Lisha Singh',
+      name: 'Dr. Pallavi Shrivastava',
       qualifications: 'MBBS, DGO, DNB, Fellowship in IVF',
       specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
-      experience: '7+ Years',
-      location: 'Malviya Nagar, New Delhi',
-      image: '/gads/assets/image/doctor/Dr. Lisha Singh.jpg', // Update with actual image path
+      experience: '5+ Years',
+      location: 'Haldwani, Uttarakhand',
+      image: '/gads/assets/image/doctor/DR Palavi.png', // Update with actual image path
     },
-    {
-        id: 4,
-        name: 'Dr. Monika Maan',
-        qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in ART',
-        specialization: 'IVF, Personalized Treatment Protocols, Patient Empowerment',
-        experience: '12+ Years',
-        location: 'Pitampura, New Delhi',
-        image: '/gads/assets/image/doctor/Monika.png', // Update with actual image path
-      },
   ];
 
   return (

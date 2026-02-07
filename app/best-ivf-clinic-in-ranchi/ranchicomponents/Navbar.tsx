@@ -50,9 +50,9 @@ export default function Navbar() {
                         {/* Book Appointment Button */}
                         <button 
                             onClick={() => setIsModalOpen(true)}
-                            className="inline-flex px-6 py-2.5 rounded-full bg-gray-800 text-white hover:bg-gray-900 transition-colors font-medium text-sm"
+                            className="hidden md:inline-flex px-6 py-2.5 rounded-full bg-gray-800 text-white hover:bg-gray-900 transition-colors font-medium text-sm"
                         >
-                            अपॉइंटमेंट बुक करें
+                            Book Appointment
                         </button>
                     </div>
                 </div>

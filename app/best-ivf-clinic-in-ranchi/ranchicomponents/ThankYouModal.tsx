@@ -58,9 +58,9 @@ export default function ThankYouModal({ isOpen, onClose }: ThankYouModalProps) {
               />
             </svg>
           </div>
-          <h3 className="text-2xl font-bold text-gray-800">धन्यवाद!</h3>
+          <h3 className="text-2xl font-bold text-gray-800">Thank You!</h3>
           <p className="text-gray-600">
-            हमें आपकी अनुरोध स्वीकार कर लिया है। हमारी टीम जल्द समय में आपसे संपर्क करेगी।
+            We have received your request. Our team will contact you soon.
           </p>
         </div>
       </div>

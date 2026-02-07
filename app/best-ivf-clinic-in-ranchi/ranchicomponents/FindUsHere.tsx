@@ -13,7 +13,7 @@ export default function FindUsHere() {
         <div className="max-w-7xl mx-auto">
           {/* Title */}
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-24">
-          हमारे बारे में जानें
+            Find Us Here
           </h2>
 
           {/* Content Container */}
@@ -57,7 +57,7 @@ export default function FindUsHere() {
                 </div>
                 {/* Address Text */}
                 <p className="text-gray-800 text-base md:text-lg leading-relaxed">
-                4वां महल, मरु टॉवर, कंके रोड, रांची, झारखंड 834008
+                4th Floor, Maru Tower, Kanke Road, Ranchi, Jharkhand 834008
                 </p>
               </div>
 
@@ -97,7 +97,7 @@ export default function FindUsHere() {
                   onClick={() => setIsModalOpen(true)}
                   className="w-full md:w-auto px-8 py-4 bg-gray-800 hover:bg-gray-900 text-white font-semibold rounded-xl transition-colors duration-200"
                 >
-                  अपॉइंटमेंट बुक करें
+                  Book Appointment
                 </button>
               </div>
             </div>
