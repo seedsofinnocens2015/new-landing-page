@@ -38,7 +38,7 @@ export default function Specialists() {
     {
       id: 3,
       name: 'Dr. Adrija Ghosal',
-      qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in IVF',
+      qualifications: 'MBBS, DNB (Obstetrics & Gynecology), Fellowship in IVF',
       specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
       experience: '5+ Years',
       location: 'Kolkata, West Bengal',

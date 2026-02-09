@@ -44,7 +44,7 @@ export default function PatientSuccessStories() {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-          Patient Success Stories
+          ৰোগীৰ সফলতাৰ কাহিনী
         </h2>
 
         {/* Videos Carousel Container */}

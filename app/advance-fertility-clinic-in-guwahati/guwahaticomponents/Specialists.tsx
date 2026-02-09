@@ -28,22 +28,22 @@ export default function Specialists() {
     },
     {
       id: 2,
-      name: 'Dr. Sneha Narayan',
+      name: 'Dr. Juile Chhawchharia',
       qualifications: 'MBBS, MS (Obstetrics & Gynecology), Fellowship in IVF',
       specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
-      experience: '12+ Years',
-      location: 'Kolkata, West Bengal',
-      image: '/gads/assets/image/doctor/Dr Sneha Narayan.jpg', // Update with actual image path
+      experience: '10+ Years',
+      location: 'Guwahati, Assam',
+      image: '/gads/assets/image/doctor/Dr. Julie Chhawchharia.jpg', // Update with actual image path
     },
-    {
-      id: 3,
-      name: 'Dr. Adrija Ghosal',
-      qualifications: 'MBBS, DNB (Obstetrics & Gynecology), Fellowship in IVF',
-      specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
-      experience: '5+ Years',
-      location: 'Kolkata, West Bengal',
-      image: '/gads/assets/image/doctor/Dr. Adrija Ghosal.png', // Update with actual image path
-    },
+    // {
+    //   id: 3,
+    //   name: 'Dr. Lisha Singh',
+    //   qualifications: 'MBBS, DGO, DNB, Fellowship in IVF',
+    //   specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
+    //   experience: '7+ Years',
+    //   location: 'Malviya Nagar, New Delhi',
+    //   image: '/gads/assets/image/doctor/Dr. Lisha Singh.jpg', // Update with actual image path
+    // },
     // {
     //     id: 4,
     //     name: 'Dr. Monika Maan',
@@ -60,7 +60,7 @@ export default function Specialists() {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-          আমাদের বিশেষজ্ঞদের সাথে দেখা করুন
+          আমাৰ বিশেষজ্ঞসকলক লগ কৰক
         </h2>
 
         {/* Specialists Cards Container */}
