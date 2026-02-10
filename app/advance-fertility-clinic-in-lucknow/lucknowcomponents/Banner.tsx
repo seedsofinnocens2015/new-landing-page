@@ -88,7 +88,7 @@ export default function Banner() {
       {/* Desktop Banner Image */}
       <div className="relative w-full hidden md:block">
         <img 
-          src="/gads/assets/image/banner/lucknow.jpeg"
+          src="/gads/assets/image/banner/lucknow.jpg"
           alt="Banner"
           className="w-full h-auto"
         />
@@ -97,7 +97,7 @@ export default function Banner() {
       {/* Mobile Banner Image */}
       <div className="relative w-full block md:hidden">
         <img 
-          src="/gads/assets/image/banner/lucknow1.jpeg"
+          src="/gads/assets/image/banner/lucknow1.jpg"
           alt="Banner Mobile"
           className="w-full h-auto"
         />
