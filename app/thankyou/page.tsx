@@ -1,15 +1,32 @@
-import type { Metadata } from 'next';
+"use client";
 
-export const metadata: Metadata = {
-  title: 'Thank You - Seeds Of Innocens IVF',
-  description: 'Thank you for contacting Seeds Of Innocens IVF. Our team will get in touch with you soon.',
-};
+import { useSearchParams } from "next/navigation";
+import { useEffect, Suspense } from "react";
 
+declare global {
+  interface Window {
+    dataLayer: Record<string, unknown>[];
+  }
+}
 
+function ThankYouContent() {
+  const searchParams = useSearchParams();
+  const location = searchParams.get("location");
 
-export default function ThankYouPage() {
+  useEffect(() => {
+    if (!location) return;
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "lead_conversion",
+      location: location,
+    });
+
+    console.log("GTM Event Fired:", location);
+  }, [location]);
+
   return (
-    <div className="bg-gradient-to-br from-pink-50 to-white flex items-center justify-center px-4 py-12">
+    <div className="bg-gradient-to-br from-pink-50 to-white min-h-screen flex items-center justify-center px-4 py-12">
       <div className="max-w-2xl w-full">
         <div className="bg-white rounded-3xl shadow-2xl p-12 text-center space-y-8">
           {/* Success Icon */}
@@ -43,7 +60,7 @@ export default function ThankYouPage() {
 
           {/* What's Next */}
           <div className="bg-pink-50 rounded-2xl p-6 space-y-4">
-            <h2 className="text-xl font-semibold text-gray-800">What Happens Next?</h2>
+            <h2 className="text-xl font-semibold text-gray-800">What&apos;s Next?</h2>
             <div className="space-y-3 text-left">
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -55,7 +72,7 @@ export default function ThankYouPage() {
                 <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-white text-sm font-bold">2</span>
                 </div>
-                <p className="text-gray-700">We'll understand your specific fertility needs</p>
+                <p className="text-gray-700">We&apos;ll understand your specific fertility needs</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -118,5 +135,13 @@ export default function ThankYouPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ThankYouPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ThankYouContent />
+    </Suspense>
   );
 }
