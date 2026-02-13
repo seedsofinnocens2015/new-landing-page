@@ -9,11 +9,14 @@ interface AppointmentModalProps {
 }
 
 export default function AppointmentModal({ isOpen, onClose }: AppointmentModalProps) {
-  const [formData, setFormData] = useState({
+   const [formData, setFormData] = useState({
     fullName: '',
     language: '',
     phoneNumber: '',
     consent: false,
+    tryingToConceive: '',
+    consultedSpecialist: '',
+    previousTreatment: '',
   });
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -30,8 +33,11 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
       const payload = {
         fullName: formData.fullName,
         phoneNumber: formData.phoneNumber,
-        source: 'Ranchi Google Ads',
+        source: 'SOI | IVF | Google Form Fill | Ranchi',
         message: `Language preference: ${formData.language || 'Not specified'}`,
+        tryingToConceive: formData.tryingToConceive,
+        consultedSpecialist: formData.consultedSpecialist,
+        previousTreatment: formData.previousTreatment,
       };
 
       // Get backend URL from environment or use relative path
@@ -291,17 +297,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
             </button>
           </form>
       </div>
-      <ThankYouModal isOpen={isSuccess} onClose={() => {
-        setIsSuccess(false);
-        onClose();
-        // Reset form after closing thank you modal
-        setFormData({
-          fullName: '',
-          language: '',
-          phoneNumber: '',
-          consent: false,
-        });
-      }} />
+     
     </div>
   );
 }

@@ -10,11 +10,14 @@ interface AppointmentModalProps {
 
 export default function AppointmentModal({ isOpen, onClose }: AppointmentModalProps) {
   const router = useRouter();
-  const [formData, setFormData] = useState({
+   const [formData, setFormData] = useState({
     fullName: '',
     language: '',
     phoneNumber: '',
     consent: false,
+    tryingToConceive: '',
+    consultedSpecialist: '',
+    previousTreatment: '',
   });
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -30,8 +33,11 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
       const payload = {
         fullName: formData.fullName,
         phoneNumber: formData.phoneNumber,
-        source: 'Haldwani Google Ads',
+        source: 'SOI | IVF | Google Form Fill | Haldwani',
         message: `Language preference: ${formData.language || 'Not specified'}`,
+        tryingToConceive: formData.tryingToConceive,
+        consultedSpecialist: formData.consultedSpecialist,
+        previousTreatment: formData.previousTreatment,
       };
 
       // Get backend URL from environment or use relative path
@@ -150,63 +156,131 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
           </svg>
         </button>
 
-        <form 
-          onSubmit={handleSubmit}
-          className="space-y-5"
-          onClick={(e) => e.stopPropagation()}
-          onMouseDown={(e) => e.stopPropagation()}
-        >
-            {/* Full Name Input */}
-            <div>
-              <input
-                type="text"
-                name="fullName"
-                value={formData.fullName}
-                onChange={handleChange}
-                placeholder="Full Name"
-                className="w-full px-4 py-3 rounded-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 placeholder-gray-400"
-                required
-                disabled={isLoading}
-              />
-            </div>
+       <form 
+            onSubmit={handleSubmit}
+            className="space-y-5"
+            onClick={(e) => e.stopPropagation()}
+            onMouseDown={(e) => e.stopPropagation()}
+          >
+            {/* Full Name and Language in one row */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <input
+                  type="text"
+                  name="fullName"
+                  value={formData.fullName}
+                  onChange={handleChange}
+                  placeholder="Full Name"
+                  className="w-full px-4 py-3 rounded-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 placeholder-gray-400"
+                  required
+                  disabled={isLoading}
+                />
+              </div>
 
-            {/* Select Language Dropdown */}
-            <div className="relative">
-              <select
-                name="language"
-                value={formData.language}
-                onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 appearance-none bg-white cursor-pointer"
-                required
-                disabled={isLoading}
-              >
-                <option value="" disabled>Select Language</option>
-                <option value="english">English</option>
-                <option value="hindi">Hindi</option>
-                <option value="tamil">Tamil</option>
-                <option value="telugu">Telugu</option>
-                <option value="kannada">Kannada</option>
-                <option value="malayalam">Malayalam</option>
-              </select>
-              {/* Chevron Icon */}
-              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+              <div className="relative">
+                <select
+                  name="language"
+                  value={formData.language}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 appearance-none bg-white cursor-pointer"
+                  required
+                  disabled={isLoading}
                 >
-                  <path
-                    d="M4 6L8 10L12 6"
-                    stroke="#000"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                  <option value="" disabled>Select Language</option>
+                  <option value="english">English</option>
+                  <option value="hindi">Hindi</option>
+                  <option value="tamil">Tamil</option>
+                  <option value="telugu">Telugu</option>
+                  <option value="kannada">Kannada</option>
+                  <option value="malayalam">Malayalam</option>
+                </select>
+                {/* Chevron Icon */}
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 6L8 10L12 6"
+                      stroke="#000"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
+
+              {/* Trying to Conceive Dropdown */}
+              <div className="relative">
+                <select
+                  name="tryingToConceive"
+                  value={formData.tryingToConceive}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 appearance-none bg-white cursor-pointer"
+                  required
+                  disabled={isLoading}
+                >
+                  <option value="" disabled>How long have you been trying to conceive?</option>
+                  <option value="Less than 6 months">Less than 6 months</option>
+                  <option value="6–12 months">6–12 months</option>
+                  <option value="1–2 years">1–2 years</option>
+                  <option value="More than 2 years">More than 2 years</option>
+                </select>
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+
+              {/* Consulted Specialist Dropdown */}
+              <div className="relative">
+                <select
+                  name="consultedSpecialist"
+                  value={formData.consultedSpecialist}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 appearance-none bg-white cursor-pointer"
+                  required
+                  disabled={isLoading}
+                >
+                  <option value="" disabled>Have you consulted a fertility specialist before?</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+
+              {/* Previous Treatment Dropdown */}
+              <div className="relative">
+                <select
+                  name="previousTreatment"
+                  value={formData.previousTreatment}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 appearance-none bg-white cursor-pointer"
+                  required
+                  disabled={isLoading}
+                >
+                  <option value="" disabled>Have you undergone any fertility treatment earlier?</option>
+                  <option value="No treatment yet">No treatment yet</option>
+                  <option value="IUI">IUI</option>
+                  <option value="IVF">IVF</option>
+                  <option value="Other treatment">Other treatment</option>
+                </select>
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
 
             {/* Phone Number Input with +91 prefix */}
             <div className="flex">

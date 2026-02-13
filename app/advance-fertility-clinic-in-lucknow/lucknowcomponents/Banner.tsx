@@ -5,11 +5,14 @@ import { useRouter } from 'next/navigation';
 
 export default function Banner() {
   const router = useRouter();
-  const [formData, setFormData] = useState({
+   const [formData, setFormData] = useState({
     fullName: '',
     language: '',
     phoneNumber: '',
     consent: false,
+    tryingToConceive: '',
+    consultedSpecialist: '',
+    previousTreatment: '',
   });
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -24,8 +27,11 @@ export default function Banner() {
       const payload = {
         fullName: formData.fullName,
         phoneNumber: formData.phoneNumber,
-        source: 'Lucknow Google Ads',
+        source: 'SOI | IVF | Google Form Fill | Lucknow',
         message: `Language preference: ${formData.language || 'Not specified'}`,
+        tryingToConceive: formData.tryingToConceive,
+        consultedSpecialist: formData.consultedSpecialist,
+        previousTreatment: formData.previousTreatment,
       };
 
       // Get backend URL from environment or use relative path

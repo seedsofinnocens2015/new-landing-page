@@ -10,11 +10,14 @@ interface AppointmentModalProps {
 
 export default function AppointmentModal({ isOpen, onClose }: AppointmentModalProps) {
   const router = useRouter();
-  const [formData, setFormData] = useState({
+   const [formData, setFormData] = useState({
     fullName: '',
     language: '',
     phoneNumber: '',
     consent: false,
+    tryingToConceive: '',
+    consultedSpecialist: '',
+    previousTreatment: '',
   });
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -30,8 +33,11 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
       const payload = {
         fullName: formData.fullName,
         phoneNumber: formData.phoneNumber,
-        source: 'Kochi Google Ads',
+        source: 'SOI | IVF | Google Form Fill | Kochi',
         message: `Language preference: ${formData.language || 'Not specified'}`,
+        tryingToConceive: formData.tryingToConceive,
+        consultedSpecialist: formData.consultedSpecialist,
+        previousTreatment: formData.previousTreatment,
       };
 
       // Get backend URL from environment or use relative path

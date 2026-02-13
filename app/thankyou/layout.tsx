@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Thank You - Seeds Of Innocens IVF",
@@ -10,5 +11,12 @@ export default function ThankYouLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <Script id="aw-conversion" strategy="beforeInteractive">
+        {`(function(){try{if(window.gtag){window.gtag('event','conversion',{'send_to':'AW-719316761/qtVTCOyno8AaEJnO_9YC'});}}catch(e){}})();`}
+      </Script>
+      {children}
+    </>
+  );
 }
