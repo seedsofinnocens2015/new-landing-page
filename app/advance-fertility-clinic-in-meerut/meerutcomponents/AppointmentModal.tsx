@@ -12,12 +12,8 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
   const router = useRouter();
    const [formData, setFormData] = useState({
     fullName: '',
-    language: '',
     phoneNumber: '',
-    consent: false,
-    tryingToConceive: '',
-    consultedSpecialist: '',
-    previousTreatment: '',
+    center: '',
   });
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -25,6 +21,10 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     e.stopPropagation();
+    if (!/^\d{10}$/.test(formData.phoneNumber)) {
+      setErrorMessage('Please enter a valid 10-digit phone number');
+      return;
+    }
     setIsLoading(true);
     setErrorMessage('');
     
@@ -33,11 +33,9 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
       const payload = {
         fullName: formData.fullName,
         phoneNumber: formData.phoneNumber,
+        center: formData.center,
         source: 'SOI | IVF | Google Form Fill | Meerut',
-        message: `Language preference: ${formData.language || 'Not specified'}`,
-        tryingToConceive: formData.tryingToConceive,
-        consultedSpecialist: formData.consultedSpecialist,
-        previousTreatment: formData.previousTreatment,
+        message: `Preferred center: ${formData.center}`,
       };
 
       // Get backend URL from environment or use relative path
@@ -84,10 +82,12 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    const { name, value, type } = e.target;
+    const { name, value } = e.target;
+    const updatedValue =
+      name === 'phoneNumber' ? value.replace(/\D/g, '').slice(0, 10) : value;
     setFormData((prev) => ({
       ...prev,
-      [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value,
+      [name]: updatedValue,
     }));
     // Clear error message when user starts typing
     if (errorMessage) {
@@ -176,25 +176,59 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
               />
             </div>
 
-            {/* Select Language Dropdown */}
+            {/* Phone Number Input with +91 prefix */}
+            <div className="flex">
+              <div className="px-4 py-3 rounded-l-lg border border-r-0 border-pink-300 bg-gray-50 flex items-center">
+                <span className="text-gray-700 font-medium">+91</span>
+              </div>
+              <input
+                type="tel"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+                placeholder="फ़ोन नंबर"
+                className="flex-1 px-4 py-3 rounded-r-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 placeholder-gray-400"
+                inputMode="numeric"
+                pattern="[0-9]{10}"
+                minLength={10}
+                maxLength={10}
+                required
+                disabled={isLoading}
+              />
+            </div>
+
+            {/* Select Center */}
             <div className="relative">
               <select
-                name="language"
-                value={formData.language}
+                name="center"
+                value={formData.center}
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 appearance-none bg-white cursor-pointer"
                 required
                 disabled={isLoading}
               >
-                <option value="" disabled>भाषा चुने</option>
-                <option value="english">English</option>
-                <option value="hindi">हिंदी</option>
-                <option value="tamil">Tamil</option>
-                <option value="telugu">Telugu</option>
-                <option value="kannada">Kannada</option>
-                <option value="malayalam">Malayalam</option>
+                <option value="" disabled>Select Center</option>
+                <option value="Malviya Nagar, Delhi">Malviya Nagar, Delhi</option>
+                <option value="Ghaziabad, Uttar Pradesh">Ghaziabad, Uttar Pradesh</option>
+                <option value="Lucknow, Uttar Pradesh">Lucknow, Uttar Pradesh</option>
+                <option value="Agra, Uttar Pradesh">Agra, Uttar Pradesh</option>
+                <option value="Gorakhpur, Uttar Pradesh">Gorakhpur, Uttar Pradesh</option>
+                <option value="Patna, Bihar">Patna, Bihar</option>
+                <option value="Faridabad, Haryana">Faridabad, Haryana</option>
+                <option value="Gurugram, Haryana">Gurugram, Haryana</option>
+                <option value="Ranchi, Jharkhand">Ranchi, Jharkhand</option>
+                <option value="Haldwani, Uttarakhand">Haldwani, Uttarakhand</option>
+                <option value="Guwahati, Assam">Guwahati, Assam</option>
+                <option value="Kasaragod, Kerala">Kasaragod, Kerala</option>
+                <option value="Kanpur, Uttar Pradesh">Kanpur, Uttar Pradesh</option>
+                <option value="Kochi, Kerala">Kochi, Kerala</option>
+                <option value="Pitampura, New Delhi">Pitampura, New Delhi</option>
+                <option value="Meerut, Uttar Pradesh">Meerut, Uttar Pradesh</option>
+                <option value="Muzaffarpur, Bihar">Muzaffarpur, Bihar</option>
+                <option value="Srinagar, J&K">Srinagar, J&K</option>
+                <option value="Janakpuri, New Delhi">Janakpuri, New Delhi</option>
+                <option value="Kolkata">Kolkata</option>
               </select>
-              {/* Chevron Icon */}
               <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                 <svg
                   width="16"
@@ -212,43 +246,6 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                   />
                 </svg>
               </div>
-            </div>
-
-            {/* Phone Number Input with +91 prefix */}
-            <div className="flex">
-              <div className="px-4 py-3 rounded-l-lg border border-r-0 border-pink-300 bg-gray-50 flex items-center">
-                <span className="text-gray-700 font-medium">+91</span>
-              </div>
-              <input
-                type="tel"
-                name="phoneNumber"
-                value={formData.phoneNumber}
-                onChange={handleChange}
-                placeholder="फ़ोन नंबर"
-                className="flex-1 px-4 py-3 rounded-r-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 placeholder-gray-400"
-                required
-                disabled={isLoading}
-              />
-            </div>
-
-            {/* Consent Checkbox */}
-            <div className="flex items-start gap-3">
-              <input
-                type="checkbox"
-                name="consent"
-                id="consent"
-                checked={formData.consent}
-                onChange={handleChange}
-                className="mt-1 w-5 h-5 rounded border-gray-300 text-gray-800 focus:ring-pink-500 cursor-pointer"
-                required
-                disabled={isLoading}
-              />
-              <label
-                htmlFor="consent"
-                className="text-sm text-gray-600 leading-relaxed cursor-pointer"
-              >
-                मैं सेड्स ऑफ इनॉक्सेन्स IVF प्रतिनिधियों से संपर्क प्राप्त करने के लिए सहमत हूं
-              </label>
             </div>
 
             {/* Error Message */}
