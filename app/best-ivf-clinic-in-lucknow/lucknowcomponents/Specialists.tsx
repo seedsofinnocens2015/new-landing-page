@@ -35,15 +35,15 @@ export default function Specialists() {
       location: 'Lucknow, Uttar Pradesh',
       image: '/gads/assets/image/doctor/Dr. Disha Datta.jpg', // Update with actual image path
     },
-    {
-      id: 3,
-      name: 'Dr. Divya Shivanand',
-      qualifications: 'MBBS, DGO, Fellowship in minimal access surgery (FMAS) at AMASI',
-      specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
-      experience: '4+ Years',
-      location: 'Lucknow, Uttar Pradesh',
-      image: '/gads/assets/image/doctor/Dr. Divya Shivanand.jpg', // Update with actual image path
-    },
+    // {
+    //   id: 3,
+    //   name: 'Dr. Divya Shivanand',
+    //   qualifications: 'MBBS, DGO, Fellowship in minimal access surgery (FMAS) at AMASI',
+    //   specialization: 'IVF, Unexplained Infertility, Recurrent Implantation Failure',
+    //   experience: '4+ Years',
+    //   location: 'Lucknow, Uttar Pradesh',
+    //   image: '/gads/assets/image/doctor/Dr. Divya Shivanand.jpg', // Update with actual image path
+    // },
     // {
     //     id: 4,
     //     name: 'Dr. Monika Maan',

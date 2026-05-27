@@ -26,15 +26,15 @@ export default function Specialists() {
       location: 'Delhi/NCR',
       image: '/gads/assets/image/doctor/Dr Gauri maam.jpg', // Update with actual image path
     },
-    {
-      id: 2,
-      name: 'Dr. Ranjana Mishra',
-      qualifications: 'MBBS, MD (Obstetrics & Gynecology), Fellowship in IVF',
-      specialization: 'Genetic Expert',
-      experience: '14+ Years',
-      location: 'Ghaziabad, Uttar Pradesh',
-      image: '/gads/assets/image/doctor/Dr. Ranjana Mishra.jpg', // Update with actual image path
-    },
+    // {
+    //   id: 2,
+    //   name: 'Dr. Ranjana Mishra',
+    //   qualifications: 'MBBS, MD (Obstetrics & Gynecology), Fellowship in IVF',
+    //   specialization: 'Genetic Expert',
+    //   experience: '14+ Years',
+    //   location: 'Ghaziabad, Uttar Pradesh',
+    //   image: '/gads/assets/image/doctor/Dr. Ranjana Mishra.jpg', // Update with actual image path
+    // },
     {
       id: 3,
       name: 'Dr. Prateek Kakani',
