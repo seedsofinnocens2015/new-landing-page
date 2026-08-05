@@ -5,7 +5,7 @@ export default function WhyChoose() {
   const stats = [
     {
       id: 1,
-      number: '20,000+',
+      number: '21000+',
       description: 'ആരോഗ്യമുള്ള കുഞ്ഞുങ്ങൾ',
       icon: '/gads/assets/image/icons/healthybabies.svg',
       bgColor: '#CBC8F4', // Light purple

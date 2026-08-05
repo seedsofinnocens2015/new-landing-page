@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
 export default function Banner() {
@@ -11,6 +11,19 @@ export default function Banner() {
     center: '',
   });
   const [isLoading, setIsLoading] = useState(false);
+  const [utmParams, setUtmParams] = useState({ utm_source: '', utm_medium: '', utm_campaign: '' });
+  
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const source = params.get('utm_source') || '';
+    const campaign = params.get('utm_campaign') || '';
+    let medium = params.get('utm_medium') || '';
+    if (!medium) {
+      if (source.toLowerCase().includes('youtube')) medium = 'youtube';
+      else if (source.toLowerCase().includes('google')) medium = 'cpc';
+    }
+    setUtmParams({ utm_source: source, utm_medium: medium, utm_campaign: campaign });
+  }, []);
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -30,6 +43,9 @@ export default function Banner() {
         center: formData.center,
         source: 'SOI | IVF | Google Form Fill | Delhi',
         message: `Preferred center: ${formData.center}`,
+        utm_source: utmParams.utm_source,
+        utm_medium: utmParams.utm_medium,
+        utm_campaign: utmParams.utm_campaign,
       };
 
       // Get backend URL from environment or use relative path
