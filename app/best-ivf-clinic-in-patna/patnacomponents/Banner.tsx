@@ -9,6 +9,7 @@ export default function Banner() {
     fullName: '',
     phoneNumber: '',
     center: '',
+    message: '',
   });
   const [isLoading, setIsLoading] = useState(false);
   const [utmParams, setUtmParams] = useState({ utm_source: '', utm_medium: '', utm_campaign: '' });
@@ -42,7 +43,7 @@ export default function Banner() {
         phoneNumber: formData.phoneNumber,
         center: formData.center,
         source: 'SOI | IVF | Google Form Fill | Patna',
-        message: `Preferred center: ${formData.center}`,
+        message: formData.message,
         utm_source: utmParams.utm_source,
         utm_medium: utmParams.utm_medium,
         utm_campaign: utmParams.utm_campaign,
@@ -91,7 +92,7 @@ export default function Banner() {
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     const updatedValue =
       name === 'phoneNumber' ? value.replace(/\D/g, '').slice(0, 10) : value;
@@ -200,6 +201,19 @@ export default function Banner() {
                     <path d="M4 6L8 10L12 6" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </div>
+              </div>
+
+              <div>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Message (Optional)"
+                  rows={1}
+                  maxLength={1000}
+                  className="w-full px-4 py-3 rounded-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 placeholder-gray-400 resize-y"
+                  disabled={isLoading}
+                />
               </div>
 
               {/* Error Message */}

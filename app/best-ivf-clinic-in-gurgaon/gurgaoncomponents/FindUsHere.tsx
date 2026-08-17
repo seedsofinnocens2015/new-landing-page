@@ -64,7 +64,7 @@ export default function FindUsHere() {
               {/* Phone Number Block */}
               <div className="flex items-center gap-4">
                 {/* Phone Icon */}
-                <div className="flex-shrink-0">
+                {/* <div className="flex-shrink-0">
                   <svg
                     width="24"
                     height="24"
@@ -82,13 +82,13 @@ export default function FindUsHere() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </div>
+                </div> */}
                 {/* Phone Number in Rounded Box */}
-                <div className="flex-1 px-4 py-3 bg-white">
+                {/* <div className="flex-1 px-4 py-3 bg-white">
                   <p className="text-gray-800 text-base md:text-lg font-medium">
                   92402 92797
                   </p>
-                </div>
+                </div> */}
               </div>
 
               {/* Book Appointment Button */}

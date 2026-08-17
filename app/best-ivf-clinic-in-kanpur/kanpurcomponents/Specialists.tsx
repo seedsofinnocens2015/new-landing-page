@@ -28,12 +28,12 @@ export default function Specialists() {
     },
     {
       id: 2,
-      name: 'Dr. Preeti',
-      qualifications: 'MBBS, MD (Obstetrics & Gynecology), Fellowship in IVF',
-      specialization: 'IVF, ICSI, Advanced Reproductive Techniques',
-      experience: '9+ Years',
-      location: 'Kanpur, Uttar Pradesh',
-      image: '/gads/assets/image/doctor/DR Preeti.png', // Update with actual image path
+      name: 'Dr. Ayushi Agarwal',
+      qualifications: 'MBBS, AIIMS Jodhpur, MS ObGy, GMC Bhopal, DNB ObGy from NBA, FMAS, MCh Reproductive Medicine and Surgery, KMC Manipal',
+      specialization: 'Reproductive Medicine, Fertility, Laparoscopic and Hysteroscopic Surgery',
+      experience: '4+ Years',
+      location: 'Kanpur-UttarPradesh',
+      image: '/gads/assets/image/doctor/auyshi.png', // Update with actual image path
     },
     // {
     //   id: 3,

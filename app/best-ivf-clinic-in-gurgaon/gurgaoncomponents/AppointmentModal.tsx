@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 interface AppointmentModalProps {
@@ -14,21 +14,14 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
     fullName: '',
     phoneNumber: '',
     center: '',
+    message: '',
   });
   const [isLoading, setIsLoading] = useState(false);
-  const [utmParams, setUtmParams] = useState({ utm_source: '', utm_medium: '', utm_campaign: '' });
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const source = params.get('utm_source') || '';
-    const campaign = params.get('utm_campaign') || '';
-    let medium = params.get('utm_medium') || '';
-    if (!medium) {
-      if (source.toLowerCase().includes('youtube')) medium = 'youtube';
-      else if (source.toLowerCase().includes('google')) medium = 'cpc';
-    }
-    setUtmParams({ utm_source: source, utm_medium: medium, utm_campaign: campaign });
-  }, []);
+  const utmParams = {
+    utm_source: 'GoogleAds_2026',
+    utm_medium: 'cpc',
+    utm_campaign: 'Google_Booking_Gurugram',
+  };
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -48,7 +41,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
         phoneNumber: formData.phoneNumber,
         center: formData.center,
         source: 'SOI | IVF | Google Form Fill | Gurgaon',
-        message: `Preferred center: ${formData.center}`,
+        message: formData.message,
         utm_source: utmParams.utm_source,
         utm_medium: utmParams.utm_medium,
         utm_campaign: utmParams.utm_campaign,
@@ -97,7 +90,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     const updatedValue =
       name === 'phoneNumber' ? value.replace(/\D/g, '').slice(0, 10) : value;
@@ -248,6 +241,19 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                   <path d="M4 6L8 10L12 6" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
+            </div>
+
+            <div>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Message (Optional)"
+                rows={1}
+                maxLength={1000}
+                className="w-full px-4 py-3 rounded-lg border border-pink-300 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 text-gray-700 placeholder-gray-400 resize-y"
+                disabled={isLoading}
+              />
             </div>
 
             {/* Error Message */}
